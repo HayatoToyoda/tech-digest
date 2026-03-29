@@ -59,6 +59,10 @@ async function main(): Promise<void> {
   await mkdir('dist/archive', { recursive: true });
   await writeFile('dist/index.html', buildIndexPage(allDigests[0]), 'utf-8');
   for (const d of allDigests) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(d.date)) {
+      console.warn(`Skipping invalid date: ${d.date}`);
+      continue;
+    }
     await writeFile(`dist/archive/${d.date}.html`, buildArchivePage(d), 'utf-8');
   }
   await writeFile('dist/archive/index.html', buildArchiveIndex(allDigests), 'utf-8');

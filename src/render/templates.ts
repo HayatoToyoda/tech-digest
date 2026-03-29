@@ -21,6 +21,10 @@ export function escapeHtml(s: string): string {
     .replace(/'/g, '&#x27;');
 }
 
+export function isValidDate(date: string): boolean {
+  return /^\d{4}-\d{2}-\d{2}$/.test(date);
+}
+
 export function safeHref(url: string): string {
   try {
     const parsed = new URL(url);
