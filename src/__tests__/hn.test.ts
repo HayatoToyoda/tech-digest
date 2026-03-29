@@ -40,4 +40,13 @@ describe('collectHN', () => {
     expect(first?.score).toBe(300);
     expect(first?.commentCount).toBe(80);
   });
+
+  it('fetch に AbortSignal を渡す', async () => {
+    await collectHN(1);
+    const fetchMock = vi.mocked(global.fetch as (...args: unknown[]) => unknown);
+    expect(fetchMock).toHaveBeenCalledWith(
+      expect.stringContaining('topstories'),
+      expect.objectContaining({ signal: expect.any(AbortSignal) })
+    );
+  });
 });

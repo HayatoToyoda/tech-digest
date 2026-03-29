@@ -1,4 +1,3 @@
-import { collectRss } from './collect/rss.js';
 import { collectHN } from './collect/hn.js';
 import { prefilter } from './rank/prefilter.js';
 import { extractContent } from './extract/content.js';
@@ -14,16 +13,8 @@ const TODAY = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 async function main(): Promise<void> {
   console.log(`[${new Date().toISOString()}] Starting digest for ${TODAY}`);
 
-  // 1. 収集 (一部ソース失敗でも継続)
-  const [rssResult, hnResult] = await Promise.allSettled([
-    collectRss(),
-    collectHN(30),
-  ]);
-
-  const raw = [
-    ...(rssResult.status === 'fulfilled' ? rssResult.value : []),
-    ...(hnResult.status === 'fulfilled' ? hnResult.value : []),
-  ];
+  // 1. 収集 (MVP: Hacker News のみ)
+  const raw = await collectHN(50);
   console.log(`Collected ${raw.length} raw articles`);
 
   if (raw.length === 0) {

@@ -12,12 +12,13 @@ interface HNItem {
 }
 
 export async function collectHN(topN = 30): Promise<RawArticle[]> {
-  const resp = await fetch(`${HN_BASE}/topstories.json`);
+  const resp = await fetch(`${HN_BASE}/topstories.json`, { signal: AbortSignal.timeout(10_000) });
   const ids: number[] = await resp.json();
 
   const settled = await Promise.allSettled(
     ids.slice(0, topN).map((id) =>
-      fetch(`${HN_BASE}/item/${id}.json`).then((r) => r.json() as Promise<HNItem>)
+      fetch(`${HN_BASE}/item/${id}.json`, { signal: AbortSignal.timeout(10_000) })
+        .then((r) => r.json() as Promise<HNItem>)
     )
   );
 

@@ -1,8 +1,11 @@
 import { describe, it, expect, vi } from 'vitest';
+import type { FetchOptions } from '@extractus/article-extractor';
 
 vi.mock('@extractus/article-extractor', () => ({
-  extract: vi.fn(async (url: string) => {
+  extract: vi.fn(async (url: string, _parserOpts: unknown, fetchOpts?: FetchOptions) => {
     if (url === 'https://fail.example.com') throw new Error('fetch failed');
+    const sig = fetchOpts?.signal as AbortSignal | undefined;
+    if (sig?.aborted) throw new DOMException('Aborted', 'AbortError');
     return { content: '<p>Hello world article content here.</p>' };
   }),
 }));
@@ -34,5 +37,32 @@ describe('extractContent', () => {
     vi.mocked(extract).mockResolvedValueOnce({ content: 'x'.repeat(5000) });
     const result = await extractContent(baseArticle);
     expect(result.bodyText?.length).toBeLessThanOrEqual(3000);
+  });
+
+  it('extract に AbortSignal を渡す', async () => {
+    await extractContent(baseArticle);
+    expect(vi.mocked(extract)).toHaveBeenCalledWith(
+      baseArticle.url,
+      undefined,
+      expect.objectContaining({ signal: expect.any(AbortSignal) })
+    );
+  });
+
+  it('タイムアウト時は bodyText が undefined を返す', async () => {
+    vi.useFakeTimers();
+    vi.mocked(extract).mockImplementationOnce(
+      (_url: string, _p: unknown, fetchOpts?: FetchOptions) =>
+        new Promise((_res, rej) => {
+          (fetchOpts?.signal as AbortSignal | undefined)?.addEventListener('abort', () => {
+            rej(new DOMException('Aborted', 'AbortError'));
+          });
+        })
+    );
+    const promise = extractContent(baseArticle);
+    await vi.advanceTimersByTimeAsync(15_000);
+    const result = await promise;
+    vi.useRealTimers();
+    expect(result.bodyText).toBeUndefined();
+    expect(result.id).toBe('1');
   });
 });
