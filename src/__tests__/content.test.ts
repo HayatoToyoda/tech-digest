@@ -48,6 +48,20 @@ describe('extractContent', () => {
     );
   });
 
+  it('javascript: URL の記事は bodyText が undefined を返す', async () => {
+    const jsArticle = { ...baseArticle, url: 'javascript:alert(1)' };
+    const result = await extractContent(jsArticle);
+    expect(result.bodyText).toBeUndefined();
+    expect(vi.mocked(extract)).not.toHaveBeenCalledWith('javascript:alert(1)', expect.anything(), expect.anything());
+  });
+
+  it('プライベートIP URL の記事は bodyText が undefined を返す', async () => {
+    const privateArticle = { ...baseArticle, url: 'http://169.254.169.254/latest/meta-data/' };
+    const result = await extractContent(privateArticle);
+    expect(result.bodyText).toBeUndefined();
+    expect(vi.mocked(extract)).not.toHaveBeenCalledWith('http://169.254.169.254/latest/meta-data/', expect.anything(), expect.anything());
+  });
+
   it('タイムアウト時は bodyText が undefined を返す', async () => {
     vi.useFakeTimers();
     vi.mocked(extract).mockImplementationOnce(
