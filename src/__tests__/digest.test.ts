@@ -53,6 +53,18 @@ describe('generateDigest', () => {
     expect(new Date(result.generatedAt).toISOString()).toBe(result.generatedAt);
   });
 
+  it('system パラメータで呼ばれる', async () => {
+    await generateDigest('2026-03-29', candidates);
+    expect(mockCreate).toHaveBeenCalledWith(
+      expect.objectContaining({
+        system: expect.stringContaining('JSON'),
+        messages: expect.arrayContaining([
+          expect.objectContaining({ role: 'user' }),
+        ]),
+      })
+    );
+  });
+
   it('Claude レスポンスに JSON がない場合 throw する', async () => {
     mockCreate.mockResolvedValueOnce({
       content: [{ type: 'text', text: 'No JSON here' }],

@@ -3,24 +3,8 @@ import type { ArticleCandidate, DailyDigest } from '../types.js';
 
 const client = new Anthropic();
 
-export async function generateDigest(
-  date: string,
-  candidates: ArticleCandidate[]
-): Promise<DailyDigest> {
-  const candidateText = candidates
-    .map(
-      (c, i) =>
-        `[${i + 1}] Source: ${c.source}\nTitle: ${c.title}\nURL: ${c.url}\n` +
-        (c.bodyText ? `Body: ${c.bodyText}` : '(本文取得なし)')
-    )
-    .join('\n\n---\n\n');
-
-  const message = await client.messages.create({
-    model: 'claude-haiku-4-5-20251001',
-    max_tokens: 4096,
-    messages: [{
-      role: 'user',
-      content: `以下は本日のテック記事候補です。最も重要な5〜10本を選び、日本語ダイジェストを作成してください。
+const SYSTEM_PROMPT = `あなたはテックニュースのキュレーターです。
+提供された記事候補から最も重要な5〜10本を選び、日本語ダイジェストを作成してください。
 
 選定基準:
 - 実務影響が大きい
@@ -43,10 +27,27 @@ export async function generateDigest(
       "targetReaders": "読むべき人（日本語、1文）"
     }
   ]
-}
+}`;
 
-候補記事:
-${candidateText}`,
+export async function generateDigest(
+  date: string,
+  candidates: ArticleCandidate[]
+): Promise<DailyDigest> {
+  const candidateText = candidates
+    .map(
+      (c, i) =>
+        `[${i + 1}] Source: ${c.source}\nTitle: ${c.title}\nURL: ${c.url}\n` +
+        (c.bodyText ? `Body: ${c.bodyText}` : '(本文取得なし)')
+    )
+    .join('\n\n---\n\n');
+
+  const message = await client.messages.create({
+    model: 'claude-haiku-4-5-20251001',
+    max_tokens: 4096,
+    system: SYSTEM_PROMPT,
+    messages: [{
+      role: 'user',
+      content: `候補記事:\n\n${candidateText}`,
     }],
   });
 
