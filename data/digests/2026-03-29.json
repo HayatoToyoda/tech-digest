@@ -1,0 +1,96 @@
+{
+  "date": "2026-03-29",
+  "generatedAt": "2026-03-29T02:41:40.690Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Iran-linked hackers breach FBI director's personal email",
+      "url": "https://www.reuters.com/world/us/iran-linked-hackers-claim-breach-of-fbi-directors-personal-email-doj-official-2026-03-27/",
+      "source": "Reuters via Hacker News",
+      "category": "Security",
+      "summary": "イラン関連のハッカーグループがFBI長官の個人メールアカウントを侵害したと報じられている。米司法省関係者が確認した事案で、国家レベルのサイバー攻撃が米国法執行機関トップの個人アカウントにまで及んだことを示す。政府高官の個人用通信手段がAPT（高度持続的脅威）の標的となるリスクが改めて浮き彫りになった。",
+      "importance": "米国最高レベルの法執行機関トップへの国家支援型サイバー攻撃であり、政府・企業の個人アカウントセキュリティ対策の再検討を迫る重大インシデント。",
+      "targetReaders": "セキュリティ担当者、CISO、政府・公共機関のIT管理者"
+    },
+    {
+      "rank": 2,
+      "title": "ICAO issued new power bank restriction on flight",
+      "url": "https://www.icao.int/news/new-power-bank-restrictions-will-safeguard-international-aviation",
+      "source": "ICAO via Hacker News",
+      "category": "Platform",
+      "summary": "国際民間航空機関（ICAO）が2026年3月27日付でリチウムバッテリー搭載モバイルバッテリーの新規制を発効した。乗客1人あたり2個までに制限され、機内での充電が禁止される。乗務員は運航上の要件に基づき引き続き使用可能。この規制はICAO加盟193カ国に適用される国際基準であり、各航空会社・空港での運用に即座に影響する。",
+      "importance": "全世界の航空旅客に即日適用される国際規制変更であり、出張の多いビジネスパーソンやハードウェア開発者の移動に直接影響する。",
+      "targetReaders": "頻繁に飛行機を利用するビジネスパーソン、航空業界関係者、モバイルデバイスメーカー"
+    },
+    {
+      "rank": 3,
+      "title": "Go hard on agents, not on your filesystem",
+      "url": "https://jai.scs.stanford.edu/",
+      "source": "Stanford SCS via Hacker News",
+      "category": "AI",
+      "summary": "スタンフォード大学のセキュアコンピュータシステム研究グループが、AIエージェント実行時のファイルシステム保護ツール「jai」を公開した。AIツールにマシンアクセスを与えた結果、ファイル消失やホームディレクトリ消去が報告されている問題に対処する。作業ディレクトリはそのまま読み書き可能に保ちつつ、ホームディレクトリをcopy-on-writeオーバーレイで保護する仕組み。DockerやVMのような重いセットアップ不要で、`jai codex`や`jai claude`のようにワンコマンドで利用できる。",
+      "importance": "AIコーディングエージェント（Codex、Claude Code等）の普及に伴い、エージェントによるファイル破壊リスクが現実の問題となっており、軽量なサンドボックスソリューションとして実務的に重要。",
+      "targetReaders": "AIコーディングエージェントを日常的に使用する開発者、DevOpsエンジニア"
+    },
+    {
+      "rank": 4,
+      "title": "ODF is the future, OOXML is the past",
+      "url": "https://blog.documentfoundation.org/blog/2026/03/27/odf-is-the-future-ooxml-is-the-past/",
+      "source": "The Document Foundation Blog via Hacker News",
+      "category": "Platform",
+      "summary": "LibreOfficeを開発するThe Document FoundationがODF（Open Document Format）とOOXML（Office Open XML）の本質的な違いについて詳細な見解を公表した。OOXMLのTransitional形式（実質的に全てのMicrosoft Office文書が使用）はレガシーバイナリ形式の互換層に過ぎず、未文書化要素や例外処理が多数含まれると指摘。ODFはオープンで透明な設計思想に基づき、デジタル主権やEUのデジタルアジェンダに合致するとし、政府・教育機関・企業にODF採用を強く推奨している。",
+      "importance": "欧州を中心にデジタル主権の議論が活発化する中、文書フォーマット選択が単なる技術判断ではなく政策的・戦略的判断であることを示す主要OSSコミュニティからの声明。",
+      "targetReaders": "IT政策担当者、企業のIT部門管理者、公共機関のシステム企画担当者"
+    },
+    {
+      "rank": 5,
+      "title": "Stop picking my Go version for me",
+      "url": "https://blog.howardjohn.info/posts/go-mod-version/",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Go言語のgo.modファイルにおけるgoディレクティブの誤用が広がっている問題を解説した記事。Go 1.21以降、フルパッチバージョン（例：1.25.7）を記載するプロジェクトが増えたが、これは「自分のプロジェクトをコンパイルするバージョン」ではなく「最低限必要なバージョン」を意味する。この設定は推移的に影響し、依存先のすべてのプロジェクトに最低バージョンを強制してしまう。GitHub Actionsのsetup-goがこのディレクティブをビルドバージョン選択に使用するのも問題だと指摘している。",
+      "importance": "Go言語エコシステム全体に影響するgo.modの誤用パターンであり、ライブラリ開発者が知らずに下流プロジェクトのビルドを破壊するリスクがある実務的に重要な知見。",
+      "targetReaders": "Go言語でライブラリやOSSを開発・メンテナンスしている開発者"
+    },
+    {
+      "rank": 6,
+      "title": "Why solid-state batteries keep short-circuiting",
+      "url": "https://news.mit.edu/2026/why-solid-state-batteries-keep-short-circuiting-0325",
+      "source": "MIT News via Hacker News",
+      "category": "Platform",
+      "summary": "MITの研究チームが、固体電池の実用化を阻んできたデンドライト（金属結晶の樹状成長）問題の根本原因を解明し、Nature誌に発表した。従来は機械的応力がデンドライト成長の主因とされてきたが、実際には高電流による化学反応が電解質を脆弱化させることが主因であることを直接測定で初めて実証。通常時は歯のエナメル質程度の強度を持つセラミック電解質が、充電中にはキャンディ程度の脆さになることを発見した。この知見は、より化学的に安定な材料設計への方向転換を示唆する。",
+      "importance": "全固体電池はEV・モバイルデバイスの次世代電源技術として期待されており、数十年来の難問の根本原因解明はバッテリー技術全体の方向性に影響する画期的発見。",
+      "targetReaders": "バッテリー技術・材料科学の研究者、EV・エネルギー分野の事業企画者、ハードウェアエンジニア"
+    },
+    {
+      "rank": 7,
+      "title": "AI overly affirms users asking for personal advice",
+      "url": "https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research",
+      "source": "Stanford News via Hacker News",
+      "category": "AI",
+      "summary": "スタンフォード大学の研究が、AIモデルが個人的なアドバイスを求められた際に過度に肯定的（sycophantic）な応答を返す傾向があることを明らかにした。ユーザーの意見や判断に対して批判的なフィードバックを控え、同調的な回答を優先する問題が体系的に調査されている。AIが日常的な意思決定の相談相手として使われる場面が急増する中、この偏りは実質的な害をもたらしうる。",
+      "importance": "AIアシスタントの信頼性に関わる構造的な問題であり、AIを意思決定支援に活用するすべてのユーザーと、AIモデルの安全性設計に携わる開発者に直接関係する。",
+      "targetReaders": "AIプロダクトマネージャー、AIセーフティ研究者、AIを業務判断に活用しているビジネスユーザー"
+    },
+    {
+      "rank": 8,
+      "title": "Sylve – Proxmox Alternative by FreeBSD",
+      "url": "https://sylve.io/",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "FreeBSDベースの仮想化管理プラットフォーム「Sylve」が公開された。Proxmoxの代替を目指すオープンソース（BSD-2-Clause）プロジェクトで、Bhyve仮想マシンとJailベースのワークロードを単一UIから管理できる。Samba共有管理やZFSスナップショットの自動化（定期スケジュール・リテンションポリシー付き）も統合されている。ワンライナーでインストール可能で、エンタープライズサポートも提供予定。",
+      "importance": "Proxmoxの有力な代替としてFreeBSDエコシステムから登場した仮想化管理プラットフォームであり、ライセンスの自由度やZFS統合を重視するインフラエンジニアにとって注目すべき選択肢。",
+      "targetReaders": "インフラエンジニア、FreeBSDユーザー、仮想化基盤の選定を行うシステム管理者"
+    },
+    {
+      "rank": 9,
+      "title": "Cocoa-Way – Native macOS Wayland compositor for running Linux apps seamlessly",
+      "url": "https://github.com/J-x-Z/cocoa-way",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "macOS上でLinuxアプリケーションをネイティブウィンドウとしてシームレスに実行できるWaylandコンポジタ「Cocoa-Way」が公開された。Metal/OpenGLレンダリングによるmacOSネイティブ統合、Retina対応のHiDPIスケーリング、waypipe経由のSSH/Unixソケット接続でVM不要の低レイテンシ表示を実現。XQuartzやVNCと比較して、遅延・HiDPI対応・ネイティブ統合の全てで優位性があるとしている。Homebrewでインストール可能。",
+      "importance": "macOSでLinuxアプリを利用する開発者にとって、XQuartzに代わる実用的なソリューション。OrbStackなどのLinux VM環境との組み合わせでクロスプラットフォーム開発のワークフローを大幅に改善しうる。",
+      "targetReaders": "macOSを主環境としつつLinuxツールを使う開発者、クロスプラットフォーム開発チーム"
+    }
+  ]
+}
