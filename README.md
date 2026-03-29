@@ -1,137 +1,137 @@
-# Tech Digest
+<div align="center">
 
-> Hacker News のトップ記事を毎朝 Claude AI が日本語でまとめ、GitHub Pages へ自動公開するシステム。
+# 📰 Tech Digest
 
-**[→ 今日のダイジェストを読む](https://hayatotoyoda.github.io/tech-digest/)**
+**Claude AI curates and summarizes the best Hacker News articles daily in Japanese,
+auto-published to GitHub Pages via GitHub Actions — zero server costs.**
 
----
+[![Daily Digest](https://github.com/HayatoToyoda/tech-digest/actions/workflows/daily-digest.yml/badge.svg)](https://github.com/HayatoToyoda/tech-digest/actions/workflows/daily-digest.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D22-brightgreen.svg)](https://nodejs.org/)
+[![Tests](https://img.shields.io/badge/tests-46%20passing-brightgreen.svg)](src/__tests__)
 
-## スクリーンショット
+**[→ View Today's Digest](https://hayatotoyoda.github.io/tech-digest/)**
 
-```
-┌─────────────────────────────────────────────────────┐
-│  Tech Digest          2026-03-29 の厳選 9 本         │
-├─────────────────────────────────────────────────────┤
-│  #1  [Security]  TechCrunch                         │
-│  Iran-linked hackers breach FBI director's email    │
-│  ─────────────────────────────────────────────────  │
-│  FBIディレクターの個人メールがイラン系ハッカーに侵    │
-│  害された。標的型スピアフィッシングにより…           │
-│                                                     │
-│  重要な理由: 政府高官への標的型攻撃の深刻化を示す    │
-│  対象読者:  セキュリティ担当者・政策立案者           │
-└─────────────────────────────────────────────────────┘
-```
+</div>
 
 ---
 
-## 特徴
+## The Problem
 
-| 機能 | 内容 |
-|---|---|
-| **自動収集** | Hacker News API からトップ 50 件を毎朝取得 |
-| **日本語要約** | Claude Haiku が各記事を 3〜5 文で要約 |
-| **カテゴリ分類** | AI / Web / Security / OSS / Platform の 5 カテゴリ |
-| **アーカイブ** | 過去のダイジェストを日付別に保存・公開 |
-| **フルオートメーション** | GitHub Actions が毎朝 07:00 JST に自動実行 |
-| **ゼロ運用コスト** | GitHub Pages でホスティング、サーバー不要 |
+Reading English tech news every morning takes time.
+Scanning Hacker News means parsing titles, judging relevance, and understanding context — all in a foreign language.
+
+**Tech Digest automates all of it:**
+
+- Fetches the **top 50 Hacker News articles** every morning at 07:00 JST
+- Claude AI **selects, categorizes, and summarizes** the most important ones in Japanese
+- Publishes a clean digest to **GitHub Pages** automatically — no server, no maintenance
 
 ---
 
-## 仕組み
+## How It Works
 
-```
-GitHub Actions (毎朝 07:00 JST)
-        │
-        ▼
-  Hacker News API
-  (トップ 50 件取得)
-        │
-        ▼
-  記事本文フェッチ
-  (タイムアウト 10 秒・SSRF ブロック付き)
-        │
-        ▼
-  Claude Haiku API
-  (重要度判定・日本語ダイジェスト生成)
-        │
-        ├─── data/digests/YYYY-MM-DD.json → git commit
-        │
-        └─── dist/ (HTML) → GitHub Pages デプロイ
+```mermaid
+flowchart LR
+    A["⏰ GitHub Actions\n07:00 JST daily"] --> B["Hacker News\nFirebase API\ntop 50 stories"]
+    B --> C["Article Content\nExtractor\n10s timeout · SSRF blocked"]
+    C --> D["Claude Haiku\nAI Summarizer\nsystem/user separated"]
+    D --> E[("data/digests/\nYYYY-MM-DD.json\n→ git commit")]
+    D --> F["🌐 GitHub Pages\ndist/index.html\nauto-deployed"]
 ```
 
 ---
 
-## セットアップ（自分のリポジトリで動かす）
+## Output Example
 
-### 1. リポジトリを Fork
+```
+#1  [Security]  TechCrunch
+Iran-linked hackers breach FBI director's personal email
+
+FBIディレクターの個人メールアカウントがイラン系ハッカー集団に侵害された。
+標的型スピアフィッシングにより認証情報が盗まれ、機密性の高い通信内容が
+流出した可能性がある。米政府機関の高官を標的にした攻撃の高度化を示す事例。
+
+重要な理由: 政府高官への標的型攻撃の深刻化と、個人アカウントの
+           セキュリティ管理の重要性を改めて示している
+対象読者:  セキュリティ担当者・政策立案者・ITエンジニア全般
+```
+
+---
+
+## Quick Start
+
+> Fork → Add secret → Enable Pages → **Done in 3 minutes**
+
+### 1. Fork this repository
 
 ```bash
 gh repo fork HayatoToyoda/tech-digest --clone
-cd tech-digest
 ```
 
-### 2. シークレットを追加
+### 2. Add your Anthropic API key
 
-リポジトリの **Settings → Secrets → Actions** に追加:
+Go to **Settings → Secrets and variables → Actions** and add:
 
-| シークレット名 | 値 |
+| Secret | Value |
 |---|---|
-| `ANTHROPIC_API_KEY` | [Anthropic Console](https://console.anthropic.com/) で取得した API キー |
+| `ANTHROPIC_API_KEY` | Get yours at [console.anthropic.com](https://console.anthropic.com/) |
 
-### 3. GitHub Pages を有効化
+### 3. Enable GitHub Pages
 
-**Settings → Pages → Source** を `GitHub Actions` に設定。
+**Settings → Pages → Source**: set to `GitHub Actions`
 
-### 4. 初回テスト実行
+Then trigger a first run: **Actions → Daily Tech Digest → Run workflow**
 
-**Actions → Daily Tech Digest → Run workflow** で手動実行。
+Your digest will be live at `https://<your-username>.github.io/tech-digest/`.
 
 ---
 
-## ローカル開発
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Runtime | Node.js 22, TypeScript (via tsx) |
+| AI | Claude Haiku (`claude-haiku-4-5-20251001`) |
+| Data source | Hacker News Firebase API |
+| Testing | Vitest (46 tests) |
+| CI/CD | GitHub Actions (SHA-pinned) |
+| Hosting | GitHub Pages |
+
+---
+
+## Security
+
+- **Prompt Injection** — Instructions in `system` parameter only; article data stays in `user` role
+- **SSRF** — Private IPs (10.x / 172.16-31.x / 192.168.x / 127.x / 169.254.x) and non-http(s) URLs blocked
+- **XSS** — All output sanitized via `escapeHtml` and `safeHref`
+- **Timeouts** — 10-second `AbortController` timeout on every external fetch
+- **Least privilege** — Build and deploy jobs separated with minimal permission scopes
+- **Supply chain** — All Actions pinned to exact commit SHAs; `npm audit` runs on every build
+
+---
+
+## Local Development
 
 ```bash
 npm install
 
-# ダイジェスト生成（ANTHROPIC_API_KEY 必要）
+# Generate digest (requires ANTHROPIC_API_KEY)
 ANTHROPIC_API_KEY=sk-ant-... npm run build
 
-# テスト実行
+# Run tests
 npm test
 
-# 型チェック
+# Type check
 npx tsc --noEmit
 ```
 
-生成されたページは `dist/index.html` をブラウザで開いて確認できます。
+The generated page is available at `dist/index.html`.
 
 ---
 
-## 技術スタック
+## License
 
-| レイヤー | 技術 |
-|---|---|
-| ランタイム | Node.js 22, TypeScript (tsx で直接実行) |
-| AI | Anthropic Claude Haiku (`claude-haiku-4-5-20251001`) |
-| データソース | Hacker News Firebase API |
-| テスト | Vitest (46 テスト) |
-| CI/CD | GitHub Actions (SHA 固定) |
-| ホスティング | GitHub Pages |
+MIT — Feel free to fork and run your own digest.
 
----
-
-## セキュリティ対策
-
-- **Prompt Injection 対策** — 指示は `system` パラメータで分離。記事データは `user` ロールのみ
-- **SSRF ブロック** — プライベートIP（10.x / 172.16-31.x / 192.168.x / 169.254.x）・非 http(s) URL を拒否
-- **XSS 対策** — 全出力に `escapeHtml`・`safeHref` 適用
-- **タイムアウト** — 全外部フェッチに 10 秒タイムアウト + AbortController
-- **最小権限** — build ジョブと deploy ジョブを分離し、権限スコープを最小化
-- **依存関係監査** — CI で `npm audit --audit-level=high` を毎回実行
-
----
-
-## ライセンス
-
-MIT
+**日本語版 README**: [README.ja.md](README.ja.md)
