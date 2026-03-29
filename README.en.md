@@ -20,10 +20,11 @@ auto-published to GitHub Pages via GitHub Actions — zero server costs.**
 
 ## The Problem
 
-Reading English tech news every morning is demanding for non-native readers.
-Scanning Hacker News means parsing titles, judging relevance, and understanding context — entirely in English.
+You open Twitter, scroll through the feed. Then Instagram. Then Hacker News — good articles, but all in English. Parse the title, judge whether it's worth reading, skim the content. Repeat for a dozen more. Thirty minutes later, you're drained and still not sure what actually mattered today.
 
-**Tech Digest automates all of it:**
+The problem isn't a lack of information. It's the daily exhaustion of curating and processing it all on your own.
+
+**Tech Digest does the curation for you:**
 
 - Fetches the **top 50 Hacker News articles** every morning at 07:00 JST
 - Claude AI **selects, categorizes, and summarizes** the most important ones in Japanese
