@@ -17,7 +17,18 @@ export function escapeHtml(s: string): string {
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
+}
+
+export function safeHref(url: string): string {
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol === 'http:' || parsed.protocol === 'https:') return url;
+  } catch {
+    // 無効なURL
+  }
+  return '#';
 }
 
 export function articleCard(item: DigestItem): string {
@@ -28,7 +39,7 @@ export function articleCard(item: DigestItem): string {
     <span class="badge" style="background:${color}">${escapeHtml(item.category)}</span>
     <span class="source">${escapeHtml(item.source)}</span>
   </div>
-  <h2><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h2>
+  <h2><a href="${safeHref(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h2>
   <p class="summary">${escapeHtml(item.summary)}</p>
   <div class="meta">
     <div><strong>重要な理由:</strong> ${escapeHtml(item.importance)}</div>

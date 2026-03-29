@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { escapeHtml, articleCard, categoryColor } from '../render/templates.js';
+import { escapeHtml, articleCard, categoryColor, safeHref } from '../render/templates.js';
 import type { DigestItem } from '../types.js';
 
 const sampleItem: DigestItem = {
@@ -22,6 +22,32 @@ describe('escapeHtml', () => {
 
   it('空文字をそのまま返す', () => {
     expect(escapeHtml('')).toBe('');
+  });
+
+  it("' をエスケープする", () => {
+    expect(escapeHtml("it's")).toBe('it&#x27;s');
+  });
+});
+
+describe('safeHref', () => {
+  it('https:// URL をそのまま返す', () => {
+    expect(safeHref('https://example.com')).toBe('https://example.com');
+  });
+
+  it('http:// URL をそのまま返す', () => {
+    expect(safeHref('http://example.com')).toBe('http://example.com');
+  });
+
+  it('javascript: URL を # に変換する', () => {
+    expect(safeHref('javascript:alert(1)')).toBe('#');
+  });
+
+  it('data: URL を # に変換する', () => {
+    expect(safeHref('data:text/html,<script>alert(1)</script>')).toBe('#');
+  });
+
+  it('空文字を # に変換する', () => {
+    expect(safeHref('')).toBe('#');
   });
 });
 
