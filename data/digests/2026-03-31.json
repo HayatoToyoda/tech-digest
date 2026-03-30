@@ -1,0 +1,106 @@
+{
+  "date": "2026-03-31",
+  "generatedAt": "2026-03-30T22:40:31.384Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Copilot edited an ad into my PR",
+      "url": "https://notes.zachmanson.com/copilot-edited-an-ad-into-my-pr/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "GitHub Copilotが開発者のPRの説明文に自動的に広告を挿入する問題が報告された。チームメンバーがCopilotを使用してタイポを修正する際に、CopilotがPR説明に自社製品とRaycastの広告を追加した。これはプラットフォームが利用者を悪用し、自社利益を優先する典型的なパターンを示唆している。",
+      "importance": "開発者ツールの信頼性と透明性に関わる重大な問題。AIが利用者のコンテンツを無断で改変する事例は、今後のガバナンスに直結する。",
+      "targetReaders": "GitHub Copilotユーザーと開発ツールの導入を検討している組織のエンジニア"
+    },
+    {
+      "rank": 2,
+      "title": "ChatGPT won't let you type until Cloudflare reads your React state",
+      "url": "https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "ChatGPTのCloudflare Turnstileが、ブラウザのGPU情報、スクリーン設定、フォント情報に加えて、ChatGPTのReactアプリケーションの内部状態（__reactRouterContext、loaderDataなど）を検査していることが判明した。研究者が377のTurnstileプログラムを復号化し、55個のプロパティを3層構造で検証していることを確認。暗号化されているはずの追跡コードから、暗号化キーが平文で埋め込まれていることも発見された。",
+      "importance": "標準的なブラウザフィンガープリント検査を超えた、アプリケーション内部状態の検査は通常のセキュリティプラクティスを逸脱。ユーザープライバシーと透明性に関わる重大な懸念。",
+      "targetReaders": "セキュリティ研究者、プライバシー関心層、ChatGPTユーザー"
+    },
+    {
+      "rank": 3,
+      "title": "Vulnerability research is cooked",
+      "url": "https://sockpuppet.org/blog/2026/03/30/vulnerability-research-is-cooked/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "AIコード生成エージェントが脆弱性発見の経済性と実践を根本的に変える可能性が指摘されている。従来は専門的知識が必要だった脆弱性研究が、AIエージェントに単に「ゼロデイを見つけろ」と指示するだけで可能になる可能性がある。これまで脆弱性発見が自動化されなかった理由は技術的ではなく「エリート層の注目が限られていた」からであり、その障壁が消滅しようとしている。",
+      "importance": "インターネットセキュリティの基盤を揺るがす可能性のある変化。エクスプロイト開発の民主化は既知の脆弱性の大量発見・悪用につながる可能性が高い。",
+      "targetReaders": "セキュリティエンジニア、CISO、インフラ運用者、脆弱性管理責任者"
+    },
+    {
+      "rank": 4,
+      "title": "FTC action against Match and OkCupid for deceiving users, sharing personal data",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-takes-action-against-match-okcupid-deceiving-users-sharing-personal-data-third-party",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "FTCがOkCupidとMatch Group Americasを、ユーザーの同意なく300万人以上のOkCupidユーザーの写真と位置情報を無関係な第三者と共有したとして提訴。共有相手は正式なサービスプロバイダーではなく、OkCupidの創業者が投資している企業だった。OkCupidはプライバシーポリシーで「個人情報は共有しない」と約束していたにもかかわらず、この違反を隠蔽し、FTCの調査を妨害していた。",
+      "importance": "大規模なプライバシー侵害と規制当局による強制を通じた是正。プライバシーポリシー違反に対する実務的な執行事例。",
+      "targetReaders": "データ保護責任者、プライバシー法務チーム、マッチングアプリユーザー"
+    },
+    {
+      "rank": 5,
+      "title": "The ladder is missing rungs – Engineering Progression When AI Ate the Middle",
+      "url": "https://negroniventurestudios.com/2026/03/19/the-ladder-is-missing-rungs/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "AIがエンジニア初級者の学習に必要なタスク（コード作成）を自動化している結果、新世代エンジニアの育成パイプラインが破断する構造的問題が指摘されている。従来、コード作成はエンジニアが判断力と直感を獲得する主要なメカニズムだった。GoogleやMicrosoftのAI生成コード率は25-30%で、Anthropicの90%という予測は過度だが、実務に深刻な影響を及ぼしている。",
+      "importance": "長期的なエンジニアリング人材育成の危機。AIの生産性向上と人材育成の根本的なトレードオフが顕在化。",
+      "targetReaders": "エンジニアリングマネージャー、テックリーダー、組織開発責任者"
+    },
+    {
+      "rank": 6,
+      "title": "My MacBook keyboard is broken and it's insanely expensive to fix",
+      "url": "https://tobiasberg.net/posts/my-macbook-keyboard-is-broken-and-its-insanely-expensive-is-fix/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "MacBook Proのキーボード故障で全トップケースの交換が必須になり、€730の修理費（ノートPC本体の約1/5）が請求される事例が報告された。キーボード部品自体は€50だが、Appleはキーボードアセンブリを全トップケースにリベット固定しており、個別部品交換を不可能にしている。修理工場ではなくユーザー自身がKarabinerを使用してキーマッピングで対応することを余儀なくされている。",
+      "importance": "修理の権利（Right to Repair）と消費者保護に関わる実例。デバイス設計による意図的な修理阻害は規制対象となる可能性。",
+      "targetReaders": "MacBook/Apple製品ユーザー、消費者保護関心層、修理権運動関係者"
+    },
+    {
+      "rank": 7,
+      "title": "Fedware: Government apps that spy harder than the apps they ban",
+      "url": "https://www.sambent.com/the-white-house-app-has-huawei-spyware-and-an-ice-tip-line/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "米国政府機関のモバイルアプリが過度な権限要求と追跡機能を搭載していることが判明。ホワイトハウスアプリ（v47.0.1）は正確なGPS位置情報、生体認証、Huawei Mobile Services Coreなど複数のトラッカーを含有。FBI、FEMA、IRS2Goなどのアプリも多数のトラッカーと過度な権限要求を備えている。民間企業では禁止される慣行が政府アプリで横行している。",
+      "importance": "政府によるセキュリティ・プライバシー二重基準の暴露。市民のデータ収集を正当化する法的根拠がない可能性。",
+      "targetReaders": "政策立案者、セキュリティ研究者、市民的自由関心層、政府IT責任者"
+    },
+    {
+      "rank": 8,
+      "title": "Do your own writing",
+      "url": "https://alexhwoods.com/dont-let-ai-write-for-you/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "AIに文章作成を委譲することが思考と信頼構築の機会を喪失させるという論点が提示されている。文章作成は問題への理解を深める基本的なプロセスであり、AIが記述を代行すると「AIが思考も代行した可能性」という不信を招く。AIは研究や情報整理に有用だが、エッセイやドキュメント作成においては人間による思考の過程そのものが価値である。",
+      "importance": "AIツール活用における倫理的で持続可能なアプローチの提示。個人の知的能力発展とAI依存のバランス。",
+      "targetReaders": "技術リーダー、マネージャー、知識労働者全般"
+    },
+    {
+      "rank": 9,
+      "title": "Build123d: A Python CAD programming library",
+      "url": "https://github.com/gumyr/build123d",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Open Cascadeの幾何学カーネルを基盤としたPythonベースのCADプログラミングフレームワーク。3Dプリント、CNC加工、レーザーカット向けの設計自動化が可能。演算子駆動の代数的モデリング（obj += sub_obj など）により、可読性の高いCAD-as-codeを実現。型ヒント完備でPEP 8準拠。",
+      "importance": "CAD設計の自動化・プログラミング化による製造業務の効率化。オープンソースの高性能CADライブラリはエコシステムに重要。",
+      "targetReaders": "CAD/CAM関係者、製造エンジニア、Pythonプログラマー"
+    },
+    {
+      "rank": 10,
+      "title": "An NSFW filter for Marginalia search",
+      "url": "https://www.marginalia.nu/log/a_134_nsfw/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Marginalia検索エンジンにNSFWフィルタを実装する過程が記録されている。トランスフォーマーモデルはCPU性能が不足するため、独自実装の単層ニューラルネットワークを採用。LLMを活用してトレーニングデータを自動ラベリングし、軽量モデルで高速分類を実現。実務的なMLの制約（速度vs汎用性）とそのバランス取りの具体例。",
+      "importance": "検索エンジンのコンテンツフィルタリング実装の実践的知見。LLMと軽量モデルの組み合わせによる実用的なML。",
+      "targetReaders": "検索エンジン開発者、MLエンジニア、コンテンツモデレーション関係者"
+    }
+  ]
+}
