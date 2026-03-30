@@ -14,11 +14,15 @@ const TODAY = jstToday();
 async function main(): Promise<void> {
   console.log(`[${new Date().toISOString()}] Starting digest for ${TODAY}`);
 
-  // 当日 JSON が既に存在する場合は API 呼び出しをスキップ（冪等性・コスト節約）
+  // 当日 JSON が既に存在し正常にパースできる場合は API 呼び出しをスキップ（冪等性・コスト節約）
   const jsonPath = `data/digests/${TODAY}.json`;
-  const existingJson = await readFile(jsonPath, 'utf-8').catch(() => null);
+  const existingRaw = await readFile(jsonPath, 'utf-8').catch(() => null);
+  const alreadyExists = existingRaw !== null && (() => {
+    try { JSON.parse(existingRaw); return true; }
+    catch { console.warn(`Existing ${jsonPath} is corrupt, regenerating`); return false; }
+  })();
 
-  if (existingJson === null) {
+  if (!alreadyExists) {
     // 1. 収集 (MVP: Hacker News のみ)
     const raw = await collectHN(50);
     console.log(`Collected ${raw.length} raw articles`);
@@ -64,14 +68,14 @@ async function main(): Promise<void> {
     )
   );
   const allDigests: DailyDigest[] = parseResults
-    .filter((r, i) => {
+    .filter((r, i): r is PromiseFulfilledResult<DailyDigest> => {
       if (r.status === 'rejected') {
         console.warn(`Skipping corrupt file: ${jsonFiles[i]} — ${String(r.reason)}`);
         return false;
       }
       return true;
     })
-    .map((r) => (r as PromiseFulfilledResult<DailyDigest>).value);
+    .map((r) => r.value);
 
   if (allDigests.length === 0) {
     throw new Error('No valid digest files found');
