@@ -32,6 +32,22 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: npm run build
 
+      - name: Send email digest
+        run: npx tsx src/mail/send.ts
+        continue-on-error: true  # メール失敗でもデプロイを止めない
+        env:
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          GMAIL_TO: ${{ secrets.GMAIL_TO }}
+
+      - name: Send webhook notifications
+        run: npx tsx src/notify/send.ts
+        continue-on-error: true  # 通知失敗でもデプロイを止めない
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
       - name: Commit digest JSON
         run: |
           git config user.name "github-actions[bot]"
