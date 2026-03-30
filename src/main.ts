@@ -7,53 +7,79 @@ import { buildArchivePage, buildArchiveIndex } from './render/archive-page.js';
 import { mkdir, writeFile, readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { DailyDigest } from './types.js';
+import { jstToday } from './utils/date.js';
 
-const TODAY = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+const TODAY = jstToday();
 
 async function main(): Promise<void> {
   console.log(`[${new Date().toISOString()}] Starting digest for ${TODAY}`);
 
-  // 1. 収集 (MVP: Hacker News のみ)
-  const raw = await collectHN(50);
-  console.log(`Collected ${raw.length} raw articles`);
+  // 当日 JSON が既に存在し正常にパースできる場合は API 呼び出しをスキップ（冪等性・コスト節約）
+  const jsonPath = `data/digests/${TODAY}.json`;
+  const existingRaw = await readFile(jsonPath, 'utf-8').catch(() => null);
+  const alreadyExists = existingRaw !== null && (() => {
+    try { JSON.parse(existingRaw); return true; }
+    catch { console.warn(`Existing ${jsonPath} is corrupt, regenerating`); return false; }
+  })();
 
-  if (raw.length === 0) {
-    throw new Error('No articles collected from any source');
+  if (!alreadyExists) {
+    // 1. 収集 (MVP: Hacker News のみ)
+    const raw = await collectHN(50);
+    console.log(`Collected ${raw.length} raw articles`);
+
+    if (raw.length === 0) {
+      throw new Error('No articles collected from any source');
+    }
+
+    // 2. プレフィルタ (最大 30 件)
+    const topRaw = prefilter(raw);
+    console.log(`Pre-filtered to ${topRaw.length} candidates`);
+
+    // 3. 本文抽出 (失敗は無視して続行)
+    const extractResults = await Promise.allSettled(topRaw.map(extractContent));
+    const candidates = extractResults
+      .filter((r): r is PromiseFulfilledResult<Awaited<ReturnType<typeof extractContent>>> =>
+        r.status === 'fulfilled'
+      )
+      .map((r) => r.value);
+    console.log(`Extracted content for ${candidates.length} articles`);
+
+    // 4. Claude でダイジェスト生成
+    const digest = await generateDigest(TODAY, candidates);
+    console.log(`Generated digest: ${digest.items.length} items`);
+
+    // 5. JSON 保存 (repo に commit される)
+    await mkdir('data/digests', { recursive: true });
+    await writeFile(jsonPath, JSON.stringify(digest, null, 2), 'utf-8');
+    console.log(`Saved ${jsonPath}`);
+  } else {
+    console.log(`Digest for ${TODAY} already exists, skipping API call`);
   }
 
-  // 2. プレフィルタ (最大 30 件)
-  const topRaw = prefilter(raw);
-  console.log(`Pre-filtered to ${topRaw.length} candidates`);
-
-  // 3. 本文抽出 (失敗は無視して続行)
-  const extractResults = await Promise.allSettled(topRaw.map(extractContent));
-  const candidates = extractResults
-    .filter((r): r is PromiseFulfilledResult<Awaited<ReturnType<typeof extractContent>>> =>
-      r.status === 'fulfilled'
-    )
-    .map((r) => r.value);
-  console.log(`Extracted content for ${candidates.length} articles`);
-
-  // 4. Claude でダイジェスト生成
-  const digest = await generateDigest(TODAY, candidates);
-  console.log(`Generated digest: ${digest.items.length} items`);
-
-  // 5. JSON 保存 (repo に commit される)
-  await mkdir('data/digests', { recursive: true });
-  await writeFile(`data/digests/${TODAY}.json`, JSON.stringify(digest, null, 2), 'utf-8');
-  console.log(`Saved data/digests/${TODAY}.json`);
-
-  // 6. 全 JSON 読み込み (新しい順)
+  // 6. 全 JSON 読み込み (新しい順、破損ファイルはスキップ)
   const jsonFiles = (await readdir('data/digests'))
     .filter((f) => f.endsWith('.json'))
     .sort()
     .reverse();
 
-  const allDigests: DailyDigest[] = await Promise.all(
+  const parseResults = await Promise.allSettled(
     jsonFiles.map(async (f) =>
       JSON.parse(await readFile(path.join('data/digests', f), 'utf-8')) as DailyDigest
     )
   );
+  const allDigests: DailyDigest[] = parseResults
+    .filter((r, i): r is PromiseFulfilledResult<DailyDigest> => {
+      if (r.status === 'rejected') {
+        console.warn(`Skipping corrupt file: ${jsonFiles[i]} — ${String(r.reason)}`);
+        return false;
+      }
+      return true;
+    })
+    .map((r) => r.value);
+
+  if (allDigests.length === 0) {
+    throw new Error('No valid digest files found');
+  }
 
   // 7. HTML 生成
   await mkdir('dist/archive', { recursive: true });
