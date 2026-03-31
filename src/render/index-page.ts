@@ -17,10 +17,11 @@ export function buildIndexPage(digest: DailyDigest): string {
 </head>
 <body>
   <header>
-    <h1>Tech Digest</h1>
-    <p>${safeDate} の厳選 ${safeCount} 本</p>
+    <p class="site-title">Tech Digest</p>
+    <h1 class="header-date">${safeDate}</h1>
+    <p class="header-meta">本日の厳選 ${safeCount} 本</p>
     <nav>
-      <a href="archive/index.html">過去のアーカイブ →</a>
+      <a href="archive/index.html">アーカイブ →</a>
     </nav>
   </header>
   <main>

@@ -40,14 +40,14 @@ export function articleCard(item: DigestItem): string {
   return `<article class="card">
   <div class="card-header">
     <span class="rank">#${item.rank}</span>
-    <span class="badge" style="background:${color}">${escapeHtml(item.category)}</span>
+    <span class="badge"><span class="badge-dot" style="background:${color}"></span>${escapeHtml(item.category)}</span>
     <span class="source">${escapeHtml(item.source)}</span>
   </div>
   <h2><a href="${safeHref(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h2>
   <p class="summary">${escapeHtml(item.summary)}</p>
   <div class="meta">
-    <div><strong>重要な理由:</strong> ${escapeHtml(item.importance)}</div>
-    <div><strong>対象読者:</strong> ${escapeHtml(item.targetReaders)}</div>
+    <div><strong>重要な理由</strong>　${escapeHtml(item.importance)}</div>
+    <div><strong>対象読者</strong>　${escapeHtml(item.targetReaders)}</div>
   </div>
 </article>`;
 }
