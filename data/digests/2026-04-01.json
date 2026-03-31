@@ -1,0 +1,106 @@
+{
+  "date": "2026-04-01",
+  "generatedAt": "2026-03-31T22:38:05.525Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Axios compromised on NPM – Malicious versions drop remote access trojan",
+      "url": "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan",
+      "source": "StepSecurity",
+      "category": "Security",
+      "summary": "axios（100万週間ダウンロード超）のNPMパッケージ1.14.1と0.30.4が悪質な依存関係を注入され、クロスプラットフォーム対応のリモートアクセストロイの木馬（RAT）をドロップしました。インストール2秒以内にC2サーバーに接続し、自動削除・パッケージ.jsonの置換により痕跡を消します。StepSecurityのAI検出により特定された、記録的に洗練されたサプライチェーン攻撃です。",
+      "importance": "NPMエコシステムの最上位パッケージが侵害され、数百万の開発者が影響を受ける可能性があります。自動削除機能により被害者の検出が困難で、すでに大規模なOSSプロジェクト（Backstage等）で異常なC2通信が検出されています。",
+      "targetReaders": "Node.js開発者、CI/CDパイプライン構築者、セキュリティ責任者は直ちに環境確認が必要"
+    },
+    {
+      "rank": 2,
+      "title": "The Claude Code Source Leak: fake tools, frustration regexes, undercover mode",
+      "url": "https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "AnthropicのClaude Code CLIツールの完全ソースコードが、npmパッケージに同梱された.mapファイル経由で意図せず公開されました（1週間内にモデル仕様漏洩に次ぐ2度目）。ソースコード分析で、fake_toolsの挿入による逆行蒸留対策、署名付きテキスト要約によるAPI記録汚染など、複数の検閲回避機構が発見されました。",
+      "importance": "Anthropicの短期間での複数漏洩とセキュアな設計意図の露呈は、企業信頼と技術的防御戦略の有効性に関する深刻な懸念を生じさせます。",
+      "targetReaders": "Claude Code利用者、AI開発企業のセキュリティチーム、OSS蒸留対策に関心のある研究者"
+    },
+    {
+      "rank": 3,
+      "title": "Claude Code users hitting usage limits 'way faster than expected'",
+      "url": "https://www.theregister.com/2026/03/31/anthropic_claude_code_limits/",
+      "source": "The Register",
+      "category": "AI",
+      "summary": "Claude Code利用者が予想外の速度でトークン使用量上限に達しており、Anthropicは調査中と発表しています。Pro（月$200）ユーザーは12日で上限達成、Max 5（月$100）は1時間で消尽。原因は複数候補：ピーク時間割当削減、プロモーション終了、または逆エンジニアリングで特定された「プロンプトキャッシュを破壊する2つのバグが使用量を10-20倍増加」。",
+      "importance": "有料ユーザーの実用性が著しく低下しており、Anthropicの利用規約不透明性（「5倍以上」など曖昧な表記）とバグの両者が信頼喪失につながっています。",
+      "targetReaders": "Claude Pro/Max加入者、AIコーディング生産性に依存する開発チーム"
+    },
+    {
+      "rank": 4,
+      "title": "Ollama is now powered by MLX on Apple Silicon in preview",
+      "url": "https://ollama.com/blog/mlx",
+      "source": "Ollama",
+      "category": "AI",
+      "summary": "OllamaがAppleのMLXフレームワークを統合し、Apple SiliconでのLLM推論パフォーマンスを大幅向上。プリフィル性能は前バージョン比56%向上（1810 tokens/s）、デコード性能は93%向上（112 tokens/s）。NVFP4量子化、キャッシュ改善、M5シリーズのGPU Neural Accelerator活用により、編集量削減やアジェント処理高速化を実現。",
+      "importance": "Apple Silicon搭載MacでのローカルLLM実行がクラウド利用に匹敵する速度を達成し、プライバシー重視・低レイテンシコーディングエージェントの実用化が加速します。",
+      "targetReaders": "M1以上のMac開発者、ローカルLLMデプロイメント責任者、EdgetestやPrivacy-firstなアプリケーション構築者"
+    },
+    {
+      "rank": 5,
+      "title": "OpenAI closes funding round at an $852B valuation",
+      "url": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html",
+      "source": "CNBC",
+      "category": "AI",
+      "summary": "OpenAIが記録的な$852B評価額での資金調達（122億ドル）を完了。SoftBank主導、AmazonやNvidiaを含む複数パートナーが参加。ChatGPT月9億人以上のアクティブユーザー、月20億ドル収益、昨年13.1億ドル売上を達成。一方でSora等コスト高機能の廃止、IPO準備段階での利益化圧力に直面。",
+      "importance": "AIスタートアップの評価最高値更新は業界マイルストーンですが、同時に単位経済と継続的創新のバランス課題を浮き彫りにしており、IPO前の業績圧力が投資判断に影響。",
+      "targetReaders": "AIベンチャー投資家、OpenAIパートナー企業、生成AIの商業化トレンド追跡者"
+    },
+    {
+      "rank": 6,
+      "title": "Google's 200M-parameter time-series foundation model with 16k context",
+      "url": "https://github.com/google-research/timesfm",
+      "source": "Google Research",
+      "category": "AI",
+      "summary": "Google ResearchがTimesFM 2.5をリリース。パラメータ500MからダウンコンパイルされたLLM等、コンテキスト長16kへの拡張、連続分位予測、周波数インジケータ廃止を実現。従来バージョン比で推論効率向上。Apache 2.0ライセンス、HuggingFace/BigQueryで公開。ICML 2024で論文発表済み。",
+      "importance": "軽量でありながら長コンテキスト対応の時系列ファウンデーションモデルが公開され、金融・製造・IoTの予測ワークロードをより効率的に処理可能に。",
+      "targetReaders": "時系列予測・財務分析エンジニア、エッジデバイス展開検討者、生成AIモデル開発者"
+    },
+    {
+      "rank": 7,
+      "title": "RubyGems Fracture Incident Report",
+      "url": "https://rubycentral.org/news/rubygems-fracture-incident-report/",
+      "source": "Ruby Central",
+      "category": "OSS",
+      "summary": "2025年9月10-18日、RubyGemsのGitHubアクセス削除（André Arko、Samuel Giddinsの離職に伴うオフボード処理）が6名のメインテナーによる連鎖的な離職を招きました。Ruby Centralの管理者権限不足とコミュニケーション不備が引き金。回顧的分析により、アクセス制御の構造的脆弱性と意思決定の透明性欠如が指摘されています。",
+      "importance": "Ruby言語の最重要インフラストラクチャーの一時的な管理危機であり、組織ガバナンスの不備がOSS継続性を脅かす可能性を実証。",
+      "targetReaders": "Ruby/Rails開発者、OSSメンテナンス組織の管理者、セキュリティアクセス制御の設計者"
+    },
+    {
+      "rank": 8,
+      "title": "Cohere Transcribe: Speech Recognition",
+      "url": "https://cohere.com/blog/transcribe",
+      "source": "Cohere",
+      "category": "AI",
+      "summary": "CohereがConformerベース音声認識モデル（2B参数）Transcribeを公開。HuggingFaceオープンASR Leaderboardで首位（5.42% WER）、Whisper Large v3やZoom Scribeを超過。14言語対応、エンタープライズ対応推論フットプリント、Apache 2.0ライセンス、本番適用意識で設計。Model VaultでもフルマネージドAPI提供。",
+      "importance": "オープンソース音声認識の精度が閾値を超え、エンタープライズAIアシスタント・コンタクトセンター自動化の可用性が実用段階に。",
+      "targetReaders": "音声インターフェース構築者、コンタクトセンター自動化責任者、エッジ推論デプロイメント検討者"
+    },
+    {
+      "rank": 9,
+      "title": "Ministack (Replacement for LocalStack)",
+      "url": "https://ministack.org/",
+      "source": "MiniStack",
+      "category": "Platform",
+      "summary": "LocalStackの有料化に対抗するMIT認可フリー版LocalStack互換ツール。33AWSサービス搭載、単一ポート構成、実PostgreSQL/Redisコンテナ、2秒起動、30MB RAM、150MBイメージ。Dockerオンデマンド起動、計測/ライセンスキー不要。763テスト合格。ECS、Lambda、RDS等コアサービス完全実装。",
+      "importance": "LocalStackの商用化で困窮する開発者・CI/CDパイプラインに無料でプロダクション同等のローカル開発環境を提供。",
+      "targetReaders": "ローカルAWS開発環境構築者、CI/CDエンジニア、スタートアップ開発チーム"
+    },
+    {
+      "rank": 10,
+      "title": "Microsoft: Copilot is for entertainment purposes only",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/termsofuse",
+      "source": "Microsoft",
+      "category": "AI",
+      "summary": "Microsoft Copilotの新規約で「entertainment purposes only」と明記。プロンプト・レスポンス・生成物の定義化、AI生成コンテンツの著作権帰属曖昧性、ユーザー個人利用限定、スクレイパーbot禁止を規定。年齢制限（13歳以上/地域により18歳）を適用。",
+      "importance": "AIツール企業の法的責任回避姿勢を明確化。「entertainment only」免責は業務利用時の故障・誤情報対応における企業責任を制限し、ユーザー期待と実際のサービス用途の乖離を顕在化。",
+      "targetReaders": "Copilot活用企業、AI利用規約解析者、法務・コンプライアンス責任者"
+    }
+  ]
+}
