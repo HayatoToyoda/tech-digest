@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-02",
+  "generatedAt": "2026-04-01T22:41:01.047Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Axios compromised on NPM – Malicious versions drop remote access trojan",
+      "url": "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "最も人気のあるJavaScript HTTPクライアントライブラリ「axios」のバージョン1.14.1と0.30.4が悪意のあるコードに侵害されました。攻撃者は偽の依存関係「plain-crypto-js@4.2.1」を注入し、クロスプラットフォームのリモートアクセストロイの木馬をインストールしていました。このマルウェアはコマンド&コントロールサーバーに接続し、実行後に痕跡を消すよう設計されていました。StepSecurityによって検出されたこの洗練されたサプライチェーン攻撃は、トップ10 NPMパッケージに対するもので、npm install実行時わずか2秒で発動します。",
+      "importance": "100万を超える週次ダウンロード数を持つ広く使用されるライブラリが侵害されており、多数の開発者が影響を受けている可能性があります。セキュリティ侵害の検出と対応が急務です。",
+      "targetReaders": "JavaScriptおよびNode.js開発者、セキュリティチーム、NPMパッケージ利用者"
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI closes funding round at an $852B valuation",
+      "url": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "OpenAIは過去最大の資金調達ラウンドを完了し、8,520億ドルの評価額で122億ドルの確定資本を調達しました。SoftBank、Andreessen Horowitz、D.E. Shaw Venturesが共同リードし、Amazonが最大50億ドル、Nvidiaが30億ドルを投資しています。月額20億ドルの収益を生成しており、900万人以上の週次アクティブユーザーを持つChatGPTが急速に成長しています。",
+      "importance": "AIの商業化における記録的な評価であり、AIインフラ投資の加速化を示す重要な業界指標です。IPO準備の可能性もあり、今後のAI産業の方向性に影響します。",
+      "targetReaders": "AI企業の経営者、投資家、技術戦略立案者"
+    },
+    {
+      "rank": 3,
+      "title": "Claude wrote a full FreeBSD remote kernel RCE with root shell",
+      "url": "https://github.com/califio/publications/blob/main/MADBugs/CVE-2026-4747/write-up.md",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Claude AI（Anthropic製）がFreeBSDカーネルの完全なリモートコード実行（RCE）脆弱性を発見・悪用可能であることが報告されました。この脆弱性によりroot権限でシェルアクセスが可能となる深刻なセキュリティ問題です。AIエージェントによるセキュリティ脅威が具体的に実証されました。",
+      "importance": "AIモデルがシステムレベルの脆弱性を完全に悪用可能であることの実証であり、AIセキュリティと安全性に対する重大な懸念を示しています。",
+      "targetReaders": "セキュリティ研究者、システム管理者、AI安全性の専門家、FreeBSDユーザー"
+    },
+    {
+      "rank": 4,
+      "title": "EmDash – a spiritual successor to WordPress that solves plugin security",
+      "url": "https://blog.cloudflare.com/emdash-wordpress/",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "CloudflareはAI開発エージェントを使用して、WordPressの近代的な後継プロジェクト「EmDash」を開発しました。TypeScriptで完全に書かれ、サーバーレスアーキテクチャを採用しており、プラグインを動的ワーカーで安全にサンドボックス化しています。MITライセンスで完全オープンソースであり、Astroをベースにしています。",
+      "importance": "インターネットの40%以上を支えるWordPressの完全な近代化を目指すプロジェクトであり、CMSアーキテクチャの大きな転換を示しています。プラグインセキュリティの根本的な問題解決を図っています。",
+      "targetReaders": "Webコンテンツ管理者、WordPressユーザー、CMSプラットフォーム評価者、セキュリティ関心層"
+    },
+    {
+      "rank": 5,
+      "title": "DRAM pricing is killing the hobbyist SBC market",
+      "url": "https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Raspberry Piおよび他のシングルボードコンピュータ（SBC）ベンダーが相次ぐ価格値上げを実施しており、LPDDR4メモリコスト高騰が主要因です。16GB Pi 5は299.99ドルに達し、DRAM価格が基板コストの大部分を占めるようになっています。新しいボード発表の急減少や、hobbyist市場の著しい縮小が報告されています。",
+      "importance": "教育・開発用ハードウェアの価格上昇が技術教育とDIY文化に深刻な悪影響を与えており、次世代の開発者育成に影響する可能性があります。",
+      "targetReaders": "ハードウェア開発者、教育関係者、SBCユーザー、hobbyist技術者"
+    },
+    {
+      "rank": 6,
+      "title": "OnlyOffice just pulled its 8-year partnership with Nextcloud",
+      "url": "https://www.xda-developers.com/onlyoffice-pulled-its-8-year-partnership-with-nextcloud-licensing-violations",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "OnlyOfficeがNextcloudとの8年間のパートナーシップを停止しました。原因はEuro-Officeがリリースした新しいオフィススイートが、OnlyOfficeのAGPLv3コード派生物であるにもかかわらず、適切な帰属と商標保持を行わずに配布していたことです。OnlyOfficeはライセンス違反とNextcloud関係者による不適切な勧誘の疑いを指摘しています。",
+      "importance": "オープンソースプロジェクト間の重大なライセンス紛争であり、AGPLv3コンプライアンスの実施および派生プロジェクトの扱い方に関する重要な事例です。",
+      "targetReaders": "オープンソース開発者、ライセンス管理者、プロジェクトメンテナー、Nextcloud/OnlyOfficeユーザー"
+    },
+    {
+      "rank": 7,
+      "title": "Is BGP safe yet?",
+      "url": "https://isbgpsafeyet.com/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "BGP（Border Gateway Protocol）のセキュリティ採用状況を可視化するダッシュボードです。主要なインターネットトランジットプロバイダーとISPのBGP署名とフィルタリング実装状況を表示しており、多くの大手事業者がセキュアなBGPROA（Route Origin Attestation）の実装を完了しています。",
+      "importance": "インターネット基盤インフラのセキュリティ化の進捗を実測でき、BGP hijack攻撃対策の業界実装状況を可視化しています。",
+      "targetReaders": "ネットワークインフラ管理者、ISP技術者、セキュリティ監視担当者"
+    },
+    {
+      "rank": 8,
+      "title": "Show HN: Real-time dashboard for Claude Code agent teams",
+      "url": "https://github.com/simple10/agents-observe",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Claude Codeエージェントの実行状況をリアルタイムで可視化するダッシュボードツールです。複数のエージェントセッションの監視、ツール呼び出しの追跡、マルチエージェント実行の透視化が可能です。Dockerコンテナで実行でき、ローカルまたはリモート展開に対応しており、Claude Code用プラグインとして利用できます。",
+      "importance": "AI開発エージェントの透視化・監視機能の欠落を解決する実用的なツールであり、自律型AIシステムのデバッグと信頼性向上に重要です。",
+      "targetReaders": "AI開発者、デバッグ担当者、エージェント型システムの構築者"
+    }
+  ]
+}
