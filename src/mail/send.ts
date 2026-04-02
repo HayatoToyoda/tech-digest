@@ -15,10 +15,8 @@ const recipients = (process.env.GMAIL_TO ?? '')
   .map(s => s.trim())
   .filter(Boolean);
 
-// GMAIL_CC も同様にカンマ区切り。未設定・空のときは既定で hayato.toyoda@daikin.co.jp を CC に付与
-const DEFAULT_CC = 'hayato.toyoda@daikin.co.jp';
-const ccEnv = process.env.GMAIL_CC?.trim();
-const ccRecipients = (ccEnv && ccEnv.length > 0 ? ccEnv : DEFAULT_CC)
+// GMAIL_CC は任意。カンマ区切りで複数。未設定・空なら Cc ヘッダーは付けない（公開リポではアドレスをコードに埋め込まない）
+const ccRecipients = (process.env.GMAIL_CC ?? '')
   .split(',')
   .map(s => s.trim())
   .filter(Boolean);
