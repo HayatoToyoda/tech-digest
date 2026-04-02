@@ -86,6 +86,25 @@ gh repo fork HayatoToyoda/tech-digest --clone
 
 > ヒント: 事前に `npm test` でローカル確認しておくと、問題の切り分けが楽になる。
 
+### （任意）Gmail でダイジェストをメール受信
+
+メール配信は**既定では無効**です。使う場合は、**リポジトリ所有者が次を自分で設定**します（公開 Fork でもメールアドレスをコードに書かずに済みます）。
+
+1. [Google Cloud Console](https://console.cloud.google.com/) でプロジェクトを作成し、**Gmail API** を有効化する
+2. **OAuth 2.0 クライアント ID**（デスクトップアプリなど）を作成し、クライアント ID / シークレットを取得する
+3. ローカルで `.env` に `GMAIL_CLIENT_ID` と `GMAIL_CLIENT_SECRET` を置き、`npx tsx scripts/get-gmail-token.ts` を実行してブラウザ認証し、表示された**リフレッシュトークン**を控える
+4. リポジトリの **Settings → Secrets and variables → Actions** に、次を追加する
+
+| シークレット名 | 説明 |
+|---|---|
+| `GMAIL_CLIENT_ID` | OAuth クライアント ID |
+| `GMAIL_CLIENT_SECRET` | OAuth クライアントシークレット |
+| `GMAIL_REFRESH_TOKEN` | 手順 3 で取得したリフレッシュトークン |
+| `GMAIL_TO` | 宛先（To）。カンマ区切りで複数可 |
+| `GMAIL_CC` | （任意）CC。カンマ区切りで複数。**未設定なら Cc ヘッダーは付かない** |
+
+ワークフロー `daily-digest.yml` の「Send email digest」ステップがこれらのシークレットを読み込みます。CC が不要なら `GMAIL_CC` は登録しなくて構いません。
+
 ---
 
 ## 仕組み

@@ -81,6 +81,25 @@ Your digest will be live at `https://<your-username>.github.io/tech-digest/`.
 
 > Tip: Run `npm test` locally first to verify your setup before triggering the workflow.
 
+### (Optional) Receive the digest via Gmail
+
+Email delivery is **off by default**. To enable it, **you (the repo owner) must configure the following** — no addresses need to be hardcoded in the repo.
+
+1. Create a project in [Google Cloud Console](https://console.cloud.google.com/), enable the **Gmail API**
+2. Create an **OAuth 2.0 Client ID** (e.g. Desktop app) and copy the client ID and secret
+3. Locally, put `GMAIL_CLIENT_ID` and `GMAIL_CLIENT_SECRET` in `.env`, run `npx tsx scripts/get-gmail-token.ts`, complete the browser consent flow, and copy the **refresh token** shown in the terminal
+4. Add these under **Settings → Secrets and variables → Actions**:
+
+| Secret | Description |
+|---|---|
+| `GMAIL_CLIENT_ID` | OAuth client ID |
+| `GMAIL_CLIENT_SECRET` | OAuth client secret |
+| `GMAIL_REFRESH_TOKEN` | Refresh token from step 3 |
+| `GMAIL_TO` | To recipients (comma-separated for multiple) |
+| `GMAIL_CC` | (Optional) Cc recipients (comma-separated). **If omitted, no Cc header is added** |
+
+The `daily-digest.yml` workflow’s **Send email digest** step reads these secrets. Skip `GMAIL_CC` if you do not need Cc.
+
 ---
 
 ## How It Works
