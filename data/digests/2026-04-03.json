@@ -1,0 +1,96 @@
+{
+  "date": "2026-04-03",
+  "generatedAt": "2026-04-02T22:35:37.242Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Google releases Gemma 4 open models",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Googleが最新のオープンAIモデル「Gemma 4」を発表しました。Gemini 3の研究と技術をベースにしており、パラメータあたりの効率性を最大化した設計になっています。31B、26B、その他のサイズで利用可能で、140言語対応、マルチモーダル推論、エージェント機能に対応しています。ベンチマークではGPT-5.2を上回るスコアを達成しており、モバイルからPC環境まで幅広い利用が可能です。",
+      "importance": "大規模言語モデルの最新動向を示す重要なリリースであり、オープンモデルの選択肢が大幅に拡大されることは開発者エコシステムに大きな影響を与えます。",
+      "targetReaders": "AI開発者、機械学習エンジニア、オープンモデルの導入を検討している企業技術者"
+    },
+    {
+      "rank": 2,
+      "title": "LinkedIn is searching your browser extensions",
+      "url": "https://browsergate.eu/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "調査団体Fairlinkedが、LinkedInが隠しコードでユーザーのブラウザ拡張機能を無断スキャンしていると報告しています。宗教信条、政治的意見、障害情報、求職活動を識別する拡張機能を検出し、ユーザーの知らないうちに200以上の競合製品を監視しています。EUのデジタル市場法違反およびGDPR違反の可能性があります。",
+      "importance": "大規模なプライバシー侵害の疑いであり、ユーザーのデータ保護やプラットフォームのコンプライアンスに関わる重大な問題です。",
+      "targetReaders": "セキュリティエンジニア、プライバシーコンプライアンス担当者、LinkedInユーザー、規制当局"
+    },
+    {
+      "rank": 3,
+      "title": "Cursor 3",
+      "url": "https://cursor.com/blog/cursor-3",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "AIコード生成ツールCursorが大型アップデート「Cursor 3」をリリースしました。マルチワークスペース対応、複数エージェントの並列実行、ローカルとクラウド環境間のシームレスなハンドオフが可能になりました。VS Codeをフォークした独自UIを完全に再構築し、エージェント中心の設計に変更しています。",
+      "importance": "開発者ツールの大型アップデートであり、AIエージェントを活用したソフトウェア開発の次世代化を示しており、開発効率の大幅な向上が期待できます。",
+      "targetReaders": "ソフトウェア開発者、開発ツール導入担当者、AIエージェント活用に興味のあるエンジニア"
+    },
+    {
+      "rank": 4,
+      "title": "IBM Announces Strategic Collaboration with Arm",
+      "url": "https://newsroom.ibm.com/2026-04-02-ibm-announces-strategic-collaboration-with-arm-to-shape-the-future-of-enterprise-computing",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "IBMとArmが戦略的協業を発表し、エンタープライズAIと データ集約的ワークロード向けの新型デュアルアーキテクチャハードウェアを開発します。IBMのシステム信頼性・セキュリティ・スケーラビリティとArmの低消費電力アーキテクチャを組み合わせ、ミッションクリティカルな環境でAI活用を加速させます。",
+      "importance": "エンタープライズコンピューティングの基盤を変革する可能性を持つ協業であり、AIやデータワークロードのインフラ選択肢が拡大されることは業界全体に大きな影響を与えます。",
+      "targetReaders": "エンタープライズアーキテクト、データセンター運用者、AI基盤整備担当者、IT戦略立案者"
+    },
+    {
+      "rank": 5,
+      "title": "Artemis II will use laser beams to live-stream 4K moon footage at 260 Mbps",
+      "url": "https://www.tomshardware.com/networking/artemis-ii-will-use-laser-beams-to-live-stream-4k-moon-footage-one-giant-step-beyond-the-s-band-radio-comms-of-the-apollo-era",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "NASAのArtemis II月面探査ミッションは、革新的なレーザー通信システム（O2O）を使用して4K映像を時速260Mbpsで地球に送信します。従来のラジオ通信に代わるもので、ニューメキシコとカリフォルニアの地上局から運用されます。手順、画像、飛行計画などのデータ送受信も高速化されます。",
+      "importance": "宇宙通信技術の大幅な進化を示すもので、将来の月面・火星ミッション通信基盤となる技術的な検証です。",
+      "targetReaders": "ネットワークエンジニア、通信システム設計者、宇宙技術関連の技術者"
+    },
+    {
+      "rank": 6,
+      "title": "Mercor says it was hit by cyberattack tied to compromise LiteLLM",
+      "url": "https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "AI採用スタートアップMercorが、オープンソースプロジェクト「LiteLLM」の侵害に関連するサイバー攻撃の被害を確認しました。ハッキンググループTeamPCPによる攻撃で、数千社が影響を受けました。LiteLLMは日1回数百万回以上ダウンロードされており、サプライチェーン攻撃による広範な影響が懸念されます。",
+      "importance": "オープンソースプロジェクトへのサプライチェーン攻撃であり、依存関係のあるすべてのプロジェクトとユーザーに直接的なセキュリティリスクをもたらしています。",
+      "targetReaders": "セキュリティエンジニア、DevOps担当者、オープンソース利用企業のセキュリティ担当者"
+    },
+    {
+      "rank": 7,
+      "title": "Steam on Linux Use Skyrocketed Above 5% in March",
+      "url": "https://www.phoronix.com/news/Steam-On-Linux-Tops-5p",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "SteamデータによるとLinuxでのSteamシェアが2026年3月に5.33%に達し、過去最高を記録しました。前月の2.23%から3.1ポイント上昇し、SteamDeckの普及により約4分の1のLinuxゲーマーがSteamOSを使用しています。AMDハードウェアの採用率は70%近くに達しています。",
+      "importance": "Linuxゲーミングの急速な成長を示す重要な指標であり、Linux採用とゲーム業界の動向を反映しています。",
+      "targetReaders": "ゲーム開発者、Linux環境構築者、ゲームプラットフォーム戦略立案者"
+    },
+    {
+      "rank": 8,
+      "title": "Lemonade by AMD: a fast and open source local LLM server using GPU and NPU",
+      "url": "https://lemonade-server.ai",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "AMDがLemonadeというオープンソースのローカルLLMサーバーをリリースしました。GPUやNPUで高速実行でき、1分でインストール可能で、プライベート環境で利用できます。OpenAI APIと互換性があり、マルチモーダル対応（チャット、画像生成、音声など）でWindows、Linux、macOS対応です。",
+      "importance": "ローカルAI実行環境の簡素化と民主化を推進するもので、プライバシー重視のAI活用を容易にします。",
+      "targetReaders": "エンタープライズ開発者、プライバシー志向のAI導入企業、ローカルLLM運用者"
+    },
+    {
+      "rank": 9,
+      "title": "Amazon is adding a fuel surcharge to fees it collects from third-party sellers",
+      "url": "https://www.cnbc.com/2026/04/02/amazon-add-3point5percent-fuel-and-logistics-surcharge-for-sellers-amid-iran-war.html",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Amazonが2024年4月17日からアメリカとカナダの出品者に対して3.5%の燃料・ロジスティクス追加料金を導入します。イラン戦争による油価高騰に対応するもので、平均17セント/ユニットの追加コストとなります。UPSやFedExも同様の追加料金を導入しています。",
+      "importance": "大規模eコマースプラットフォームの料金体系変更であり、数百万の出品者と消費者価格に直接的な影響を与えます。",
+      "targetReaders": "Amazonマーケットプレイス出品者、eコマース事業者、サプライチェーン管理者"
+    }
+  ]
+}
