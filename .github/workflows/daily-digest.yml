@@ -40,6 +40,8 @@ jobs:
           GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
           GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
           GMAIL_TO: ${{ secrets.GMAIL_TO }}
+          # 省略時はコード側の既定 CC（hayato.toyoda@daikin.co.jp）が使われる
+          GMAIL_CC: ${{ secrets.GMAIL_CC }}
 
       - name: Send webhook notifications
         run: npx tsx src/notify/send.ts
