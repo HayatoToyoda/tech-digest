@@ -1,0 +1,106 @@
+{
+  "date": "2026-04-04",
+  "generatedAt": "2026-04-03T22:37:36.266Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Google releases Gemma 4 open models",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Googleが最新のオープンモデル「Gemma 4」をリリースしました。Gemini 3の研究技術を基に構築され、31B、26B、E4B、E2Bなど複数のサイズで提供されます。マルチモーダル推論、140言語サポート、エージェンティックワークフロー対応など、エンタープライズから組込システムまで幅広い用途に対応します。",
+      "importance": "オープンAIモデルの領域で重大な進展であり、開発者が商用制限なしに高性能なモデルを利用できるようになります。競争力のあるベンチマークスコアはクローズドモデルとの差を縮めています。",
+      "targetReaders": "AI開発者、機械学習エンジニア、オープンモデル利用者"
+    },
+    {
+      "rank": 2,
+      "title": "Apfel – The free AI already on your Mac",
+      "url": "https://apfel.franzai.com",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "ApfelはmacOS TahoeのApple Intelligence LLMをCLI、OpenAI互換サーバー、チャットインターフェースとして無料で公開するツールです。Apple Siliconのニューラルエンジンでオンデバイス実行され、API費用やトークン課金がありません。4,096トークンのコンテキストウィンドウで、パイプ対応のUNIXツールとして機能します。",
+      "importance": "Appleハードウェアに組み込まれたLLMを開発者が自由に活用できるようにしており、オンデバイスAIの実践的な実現例です。プライバシーとコスト両立の利点が大きい。",
+      "targetReaders": "Macユーザー、オンデバイスAI開発者、コスト志向の企業"
+    },
+    {
+      "rank": 3,
+      "title": "We replaced RAG with a virtual filesystem for our AI documentation assistant",
+      "url": "https://www.mintlify.com/blog/how-we-built-a-virtual-filesystem-for-our-assistant",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "MintlifyがRAG（検索増強生成）をChromaFsという仮想ファイルシステムで置き換えました。エージェントがgrepやcat、lsなどのUNIXコマンドで文書を探索でき、セッション起動時間が46秒から100ミリ秒に削減され、インフラコストがゼロになりました。既存のChromaデータベースを再利用しながら、柔軟な文書ナビゲーションが実現されています。",
+      "importance": "AIエージェントの実装パターンとしての重要な知見であり、RAGの限界を超えた設計アプローチです。スケーラビリティとコスト効率が劇的に改善されています。",
+      "targetReaders": "AIアシスタント開発者、エージェント設計者、インフラコスト最適化を考える企業"
+    },
+    {
+      "rank": 4,
+      "title": "Solana Drift Protocol drained of $285M via fake token and governance hijack",
+      "url": "https://anonhaven.com/en/news/drift-protocol-hack-285-million-solana/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Solanaの大型デリバティブ取引プロトコルDrift Protocolが2026年4月1日、$285M相当が盗まれました。攻撃者は偽トークン(CVT)を作成して価格操作し、Solanaの「durable nonce」機能を悪用してセキュリティカウンシルのマルチシグ署名者を社会工学で騙し、ガバナンスを乗っ取りました。2026年最大のDeFiハック事件です。",
+      "importance": "ガバナンス層の攻撃、社会工学、Solana固有の機能の悪用という複合的脅威を示します。セキュリティプロトコルの実装とマルチシグ運用の重大な教訓です。",
+      "targetReaders": "DeFi開発者、セキュリティ監査人、ブロックチェーン運営チーム、Solanaユーザー"
+    },
+    {
+      "rank": 5,
+      "title": "Iran Strikes Leave Amazon Availability Zones \"Hard Down\" in Bahrain and Dubai",
+      "url": "https://www.bigtechnology.com/p/iran-strikes-leave-amazon-availability",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "イラン空爆によりAWSのバーレーン・ドバイデータセンター内の複数可用性ゾーン（AZ）が「hard down」状態に陥りました。バーレーンでは水曜日の火災を含む複数の被弾があり、復旧タイムラインは不明です。AmazonはAWSおよび他のテック企業にIRGCから追加脅迫を受けており、顧客にはリージョン移行が強く推奨されています。",
+      "importance": "クラウドインフラの地政学的リスク露呈であり、中東における戦闘エスカレーションの経済的影響です。事業継続性やディザスターリカバリー計画の見直しが必要です。",
+      "targetReaders": "クラウド運用者、BCP担当者、中東地域利用企業、インフラ戦略策定者"
+    },
+    {
+      "rank": 6,
+      "title": "H.264 streaming license fees jump from $100,000 to $4.5 million",
+      "url": "https://www.tomshardware.com/service-providers/streaming/h264-streaming-license-fees-jump-from-100000-to-4-5-million",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Via Licensing Alliance(Via LA)がH.264/AVCのストリーミングライセンス体系を改定し、年間$100K固定キャップから階層型へ移行しました。大規模プラットフォーム(OTT 1億+加入者等)は年間$4.5Mの新料金が適用されます。2025年末時点でアクティブなライセンスは旧条件を維持しますが、新規申請は新料金になります。",
+      "importance": "コーデックライセンス費用の劇的な値上げはストリーミング企業経営に直結します。HEVC/H.265の値上げに続く波で、複数プール合算でプラットフォームは9桁のライセンス費用に直面する可能性があります。",
+      "targetReaders": "ストリーミング企業、メディア企業、コンテンツ配信担当者、ライセンス戦略立案者"
+    },
+    {
+      "rank": 7,
+      "title": "TDF ejects its core developers",
+      "url": "https://meeksfamily.uk/~michael/blog/2026-04-02-tdf-ejects-core-devs.html",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "LibreOffice開発母体のDocument Foundation(TDF)理事会が中核開発者らを除外するという決定を下しました。ボード構成の変化によりコーダー代表が激減し、企業アフィリエーション減少とTDF職員アフィリエーション増加という傾向が続いています。メリトクラシー原則が形骸化し、実装作業者の経営参加が排除されたことが問題とされています。",
+      "importance": "OSSプロジェクトのガバナンス危機を示唆しており、コミュニティ主導の開発体制が機関化によって損なわれるリスクを明示しています。",
+      "targetReaders": "LibreOffice開発者、OSSプロジェクト管理者、ガバナンス設計者"
+    },
+    {
+      "rank": 8,
+      "title": "Oracle Files H-1B Visa Petitions Amid Mass Layoffs",
+      "url": "https://nationaltoday.com/us/tx/austin/news/2026/04/03/oracle-files-thousands-of-h-1b-visa-petitions-amid-mass-layoffs/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Oracleは大規模レイオフと同時にH-1Bビザ申請を提出しています。会計年度2025で2,690件、2026年度上期で436件の合計3,100件超。米市民労働者の解雇と外国人労働者の採用が同時進行しており、H-1Bプログラムの労働者代替目的での使用疑惑が生じています。",
+      "importance": "H-1Bビザプログラムの労働市場への影響に関する懸念を具体化した事例であり、移民政策と企業戦略の交点で継続的な議論を促進します。",
+      "targetReaders": "労働政策関心者、テック業界HR、移民規制監視団体"
+    },
+    {
+      "rank": 9,
+      "title": "NHS staff refusing to use FDP over Palantir ethical concerns",
+      "url": "https://www.freevacy.com/news/financial-times/nhs-staff-refusing-to-use-fdp-over-palantir-ethical-concerns/7272",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "NHS職員がPalantir提供のFederated Data Platform(FDP)使用を拒否しています。Palantirは米国防部門関連とその指導層の政治的立場が問題視されており、社会的「ワークプレイス調整」として従業員が意図的に遅延使用や回避を行っています。123/205信託がFDP利用中ですが、下院議員と医療労組がPalantir契約破棄圧力をかけています。",
+      "importance": "公共インフラ構築におけるベンダー倫理要件と従業員の良心的反対権の衝突を示します。政府調達の透明性と国防関連技術企業の市民インフラ参入に関わる重要な議論です。",
+      "targetReaders": "公共部門調達担当者、データプライバシー担当者、医療機関指導部、倫理監視組織"
+    },
+    {
+      "rank": 10,
+      "title": "ESP32-S31: Dual-Core RISC-V SoC with Wi-Fi 6, Bluetooth 5.4, and Advanced HMI",
+      "url": "https://www.espressif.com/en/news/ESP32_S31_Release",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Espressifが高性能デュアルコアRISC-V SoC「ESP32-S31」を発表予定です。Wi-Fi 6、Bluetooth 5.4、IEEE 802.15.4、1Gbps Ethernet MAC、512KB SRAM、250MHz DDR PSRAM対応、最大14チャネルの静電容量式タッチセンシング、JPEG/2Dグラフィクス加速を搭載します。IoTアプライアンス、スマートスピーカー、音声制御デバイスを対象としています。",
+      "importance": "IoT/エッジ領域における統合コネクティビティとAI機能の成熟を示しており、低電力マルチプロトコル環境での実装選択肢が拡大します。",
+      "targetReaders": "IoT開発者、組込システム設計者、Espressifプラットフォーム利用者"
+    }
+  ]
+}
