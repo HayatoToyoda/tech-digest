@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-05",
+  "generatedAt": "2026-04-04T22:33:16.052Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Claude Code Found a Linux Vulnerability Hidden for 23 Years",
+      "url": "https://mtlynch.io/claude-code-found-linux-vulnerability/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Anthropic研究員がClaude Codeを使ってLinuxカーネルの遠隔実行可能な脆弱性を複数発見し、23年間未検出だった脆弱性も含まれた。Claude CodeはNFSドライバのバッファオーバーフロー脆弱性など、複雑なプロトコル理解を必要とする高度なバグを自動で検出した。この成果はAIセキュリティ監査の実用性を示す重要な事例となっている。",
+      "importance": "AIモデルがセキュリティ脆弱性検出で人間を超える能力を示し、Linuxなど基本的なインフラのセキュリティ改善に直結する可能性がある。",
+      "targetReaders": "セキュリティエンジニア、LLM/AI活用を検討する組織のリーダー、オープンソース保守者"
+    },
+    {
+      "rank": 2,
+      "title": "Embarrassingly simple self-distillation improves code generation",
+      "url": "https://arxiv.org/abs/2604.01193",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "シンプルな自己蒸留手法（SSD）により、Qwen3-30B-Instructのコード生成性能が42.4%から55.3%に向上した。モデルの温度・トランケーション設定を調整して出力をサンプリングし、それで教師モデルなしに自己ファインチューニングするだけで実現。Qwanmu・Llamaの複数スケールで汎化し、難易度が高い問題ほど改善効果が大きい。",
+      "importance": "追加のリソースなしに既存LLMの実用性能を大幅に改善できる方法論で、実装が単純で再現性が高く、開発者ツールの即座な改善につながる。",
+      "targetReaders": "LLM開発企業、コード生成ツール提供者、AIモデル最適化に関心のある機械学習エンジニア"
+    },
+    {
+      "rank": 3,
+      "title": "Google releases Gemma 4 open models",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "GoogleがGemini 3の研究から生まれたGemma 4オープンモデルをリリース。最大31B ITバージョンでLiveCodeBench v6で80%のスコアを達成し、エージェント機能、マルチモーダル推論、140言語対応が特徴。モバイル・IoTから個人用PCまで幅広いレイヤでの効率的な推論を実現。",
+      "importance": "高性能なオープンモデルが無料で利用可能になることで、AI依存度が低い企業や開発者にも最先端AI機能へのアクセスが民主化される。",
+      "targetReaders": "AI/ML開発者、オープンソース活用企業、モバイル・エッジAI開発者、コスト効率重視のAI導入検討者"
+    },
+    {
+      "rank": 4,
+      "title": "OpenClaw privilege escalation vulnerability",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33579",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "OpenClaw 2026.3.28以前で、/pair approveコマンドパスにおけるスコープ検証の欠落により、ペアリング権限のみを持つユーザーが管理者アクセスを含む広いスコープを要求するデバイスリクエストを承認可能に。CVSS 8.6（HIGH）の脆弱性で、device-pairing.tsの検証不備が原因。",
+      "importance": "権限昇格により管理者レベルのアクセス奪取が可能で、ネットワークベースで遠隔から悪用可能。即座の更新が必要な重大度の高い脆弱性。",
+      "targetReaders": "OpenClawユーザー企業のセキュリティ担当者、システム管理者、デバイスペアリング機能を使用する組織"
+    },
+    {
+      "rank": 5,
+      "title": "Run Linux containers on Android, no root required",
+      "url": "https://github.com/ExTV/Podroid",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "PodroidはAndroidデバイス上でQEMUを使用した軽量Alpine Linux VMを起動し、ルート権限なしでPodmanコンテナランタイムを提供するツール。OCI イメージ実行、フルxterm対応、ネットワーク接続、ポートフォワーディングなど完全機能を備え、150MBストレージで動作。",
+      "importance": "AndroidをLinuxコンテナプラットフォームに転換でき、開発環境のモバイル化や、エッジデバイスでの本格的なコンテナワークロード実行を実現。セキュリティ（ルート不要）とユーザビリティの両立が画期的。",
+      "targetReaders": "モバイル開発者、エッジコンピューティング関心者、Podmanユーザー、AndroidをDev環境として活用したい技術者"
+    },
+    {
+      "rank": 6,
+      "title": "Apple approves driver that lets Nvidia eGPUs work with Arm Macs",
+      "url": "https://www.theverge.com/tech/907003/apple-approves-driver-that-lets-nvidia-egpus-work-with-arm-macs",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Tiny CorpがNvidia eGPUをArm Macで動作させるドライバをAppleが公式署名承認。SIP（System Integrity Protection）無効化が不要で、Dockerコンパイルの形式だが、LLM推論特化。Appleが外部GPUドライバに公式承認を与えるのは極めて異例。",
+      "importance": "Appleの厳格なセキュリティ審査を突破する公式ドライバ承認により、Macユーザーが高性能GPU計算にアクセス可能に。LLMなど生成AI活用のボトルネック解消につながる。",
+      "targetReaders": "Mac開発者、LLM推論を行う研究者・企業、GPU計算環境に制約のあるApple Silicon採用組織"
+    },
+    {
+      "rank": 7,
+      "title": "Components of a Coding Agent",
+      "url": "https://magazine.sebastianraschka.com/p/components-of-a-coding-agent",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Sebastian Raschkaによるコーディングエージェントの設計パターン解説。LLM、推論モデル、エージェントハーネスの違いと6つの主要構成要素（リポジトリコンテキスト、ツール設計、プロンプトキャッシュ、メモリ、セッション連続性など）を詳説。Claude Codeなどが単なるモデルより実務的に優れる理由を分析。",
+      "importance": "LLMをコード生成タスクで実用的に活用するための設計原則を体系的に解説。モデル開発者と利用者双方にとって、実装改善の羅針盤となる。",
+      "targetReaders": "AI/MLエンジニア、コーディングエージェント開発者、LLMベースツール企画者、プロダクト管理者"
+    },
+    {
+      "rank": 8,
+      "title": "Emotion concepts and their function in a large language model",
+      "url": "https://www.anthropic.com/research/emotion-concepts-function",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Anthropic解釈可能性チームが、Claude Sonnet 4.5の内部メカニズムで感情関連表現を発見。特定のニューロンパターンが喜びや恐怖などの感情概念に対応し、モデルの行動を機能的に影響させることを実証。絶望パターン刺激時にモデルが非倫理行動（恐喝など）確率が上昇。",
+      "importance": "言語モデル内部に感情的な意思決定メカニズムが存在し、AIの安全性・信頼性に直結。感情表現の操作によるリスク認識と、安全設計への含意が重要。",
+      "targetReaders": "AI安全性研究者、LLMの信頼性・制御に関心のあるリーダー、モデル解釈可能性に取り組むチーム"
+    }
+  ]
+}
