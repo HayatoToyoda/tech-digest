@@ -1,6 +1,6 @@
 import type { DailyDigest } from '../types.js';
 import { articleCard, escapeHtml, isValidDate } from './templates.js';
-import { CSS } from './style.js';
+import { CSS, FONT_LINKS } from './style.js';
 
 export function buildArchivePage(digest: DailyDigest): string {
   const cards = digest.items.map((item) => articleCard(item)).join('\n    ');
@@ -13,11 +13,12 @@ export function buildArchivePage(digest: DailyDigest): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Digest — ${safeDate}</title>
+  ${FONT_LINKS}
   <style>${CSS}</style>
 </head>
 <body>
   <header>
-    <p class="site-title">Tech Digest</p>
+    <p class="site-title ndot">Tech Digest</p>
     <h1 class="header-date">${safeDate}</h1>
     <p class="header-meta">厳選 ${safeCount} 本</p>
     <nav>
@@ -50,11 +51,12 @@ export function buildArchiveIndex(digests: DailyDigest[]): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Digest — アーカイブ</title>
+  ${FONT_LINKS}
   <style>${CSS}</style>
 </head>
 <body>
   <header>
-    <p class="site-title">Tech Digest</p>
+    <p class="site-title ndot">Tech Digest</p>
     <h1 class="header-date">アーカイブ</h1>
     <p class="header-meta">過去 ${String(digests.length)} 日分</p>
     <nav><a href="../index.html">← 今日のダイジェスト</a></nav>

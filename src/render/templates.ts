@@ -1,11 +1,12 @@
 import type { DigestItem, Category } from '../types.js';
 
+/** ダーク背景上で視認しやすいカテゴリ色 */
 const CATEGORY_COLORS: Record<Category, string> = {
-  AI: '#6366f1',
-  Web: '#0ea5e9',
-  Security: '#ef4444',
-  OSS: '#22c55e',
-  Platform: '#f59e0b',
+  AI: '#a5b4fc',
+  Web: '#7dd3fc',
+  Security: '#fca5a5',
+  OSS: '#86efac',
+  Platform: '#fcd34d',
 };
 
 export function categoryColor(cat: Category): string {
@@ -39,7 +40,7 @@ export function articleCard(item: DigestItem): string {
   const color = categoryColor(item.category);
   return `<article class="card">
   <div class="card-header">
-    <span class="rank">#${item.rank}</span>
+    <span class="rank ndot">#${item.rank}</span>
     <span class="badge"><span class="badge-dot" style="background:${color}"></span>${escapeHtml(item.category)}</span>
     <span class="source">${escapeHtml(item.source)}</span>
   </div>
