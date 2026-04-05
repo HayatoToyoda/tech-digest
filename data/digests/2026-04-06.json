@@ -1,0 +1,106 @@
+{
+  "date": "2026-04-06",
+  "generatedAt": "2026-04-05T22:35:48.738Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Eight years of wanting, three months of building with AI",
+      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "開発者がAIコーディングエージェントを活用して、8年間構想していたSQLite開発ツール「syntaqlite」を3ヶ月で実装した事例。250時間の開発時間をかけ、AIが具体的にどの場面で有効だったか、逆に不適切だったかを詳細に検証している。この記事はAIとの協働開発がいかに実務的な影響を与えるかを示す重要な実例となっている。",
+      "importance": "AI時代の実践的なソフトウェア開発プロセスを示す貴重なケーススタディであり、個人開発者による大型プロジェクト完成を加速させるAIの実力を実証している。",
+      "targetReaders": "AI開発ツールの導入を検討している開発者やプロジェクトマネージャー、開発効率化に関心のある技術チーム"
+    },
+    {
+      "rank": 2,
+      "title": "Caveman: Why use many token when few token do trick",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Claude APIの出力トークンを平均65%削減するプラグイン。技術的正確性を保ちながら冗長な表現を排除し、「洞窟人言語」で会話させることでコスト削減と高速化を実現。実測値では複数タスクで58～87%のトークン削減を確認。",
+      "importance": "LLM API利用コストの大幅削減と応答速度の向上を同時に実現する実用的ソリューション。開発効率とコスト効率の両面で実務的な価値がある。",
+      "targetReaders": "Claude APIを利用して開発効率を重視する開発者、AI開発ツールの運用コスト削減を検討する企業"
+    },
+    {
+      "rank": 3,
+      "title": "German implementation of eIDAS will require an Apple/Google account to function",
+      "url": "https://bmi.usercontent.opencode.de/eudi-wallet/wallet-development-documentation-public/latest/architecture-concept/06-mobile-devices/02-mdvm/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "ドイツが実装する欧州デジタルアイデンティティ規格（eIDAS）が、実質的にAppleおよびGoogleのプラットフォームアカウントへの依存を必須としている。デジタル主権に関する重大な規制上の矛盾を示唆している。",
+      "importance": "欧州のデジタル規制がアメリカの大手IT企業に支配される構造を露呈させており、プラットフォーム規制とデジタル主権に関わる大型課題である。",
+      "targetReaders": "デジタル規制に関わる政策立案者、キャッシュレス化に対応する決済企業、プラットフォーム依存リスク管理を行うシステム設計者"
+    },
+    {
+      "rank": 4,
+      "title": "Apple approves driver that lets Nvidia eGPUs work with Arm Macs",
+      "url": "https://twitter.com/__tinygrad__/status/2039213719155310736",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "AppleがNvidiaの外部GPU（eGPU）をArm Mac上で動作させるドライバーを承認。従来不可能だったNvidiaハードウェアのMac互換性が実現し、Apple Siliconユーザーの高性能GPU選択肢が大幅に拡大される。",
+      "importance": "AppleがNvidiaとの歴史的な対立を実質的に解消し、Arm Macプラットフォームの実用性が劇的に向上。開発者やクリエイターのプラットフォーム選択の制約が軽減される。",
+      "targetReaders": "機械学習・3Dレンダリング開発者、Apple Silicon Macへのプラットフォーム移行を検討する企業、GPUコンピューティング環境の構築者"
+    },
+    {
+      "rank": 5,
+      "title": "Someone at BrowserStack is leaking users' email addresses",
+      "url": "https://shkspr.mobi/blog/2026/04/someone-at-browserstack-is-leaking-users-email-address/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "BrowserStackのユーザーメールアドレスがApollo.ioに流出。ベンダーは当初「公開情報から派生」と虚偽報告し、後に「顧客が共有」と釈明。BrowserStackが複数接触試行にも応じない状態が続いている。",
+      "importance": "大手開発ツールプロバイダーのセキュリティ体制と説明責任の欠如を示し、ユーザーデータの二次流出リスクと企業の隠蔽姿勢を露呈させている。",
+      "targetReaders": "ブラウザテストプラットフォームユーザー、SaaS/クラウドサービスのセキュリティ監視を行うセキュリティ責任者、個人情報保護監督者"
+    },
+    {
+      "rank": 6,
+      "title": "Lisette a little language inspired by Rust that compiles to Go",
+      "url": "https://lisette.run/",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Rust風の言語設計（代数的データ型、パターンマッチ、nil排除、型推論）でGoコードにコンパイルする言語。Goの生態系との相互運用性を保ちながら、Rustレベルの型安全性とメモリ安全性を提供。",
+      "importance": "Go開発者にRustレベルの言語安全性をもたらし、Goの実行効率とRustの開発体験を統合。言語選択の新たな選択肢を提供する。",
+      "targetReaders": "Go開発者、Rust的な型安全性を求めるバックエンド開発者、言語設計と相互運用性に関心のあるシステム開発者"
+    },
+    {
+      "rank": 7,
+      "title": "Gemma 4 on iPhone",
+      "url": "https://apps.apple.com/nl/app/google-ai-edge-gallery/id6749645337",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "GoogleがGemma 4ファミリーのオンデバイス実行対応。iPhoneで完全オフラインで大規模言語モデルが動作し、プライバシー維持、遅延なし、コスト無料を実現。エージェント機能やマルチモーダル対応も統合。",
+      "importance": "エッジAIの成熟により、クラウド依存からの脱却が個人デバイスでも現実化。プライバシー重視ユーザーと低遅延AIが必要な実装が促進される。",
+      "targetReaders": "プライバシー重視の開発者・ユーザー、エッジAIの実装を検討するモバイルアプリ開発者、クラウドAPI依存からの脱却を目指す企業"
+    },
+    {
+      "rank": 8,
+      "title": "Aegis – open-source FPGA silicon",
+      "url": "https://github.com/MidstallSoftware/aegis",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "シリコンレベルまで完全にオープンソースなFPGA。従来の逆工学リバースエンジニアに依存しない独自設計で、オープンツールチェーン（Yosys、nextpnr）と公開PDK（GF180MCU、Sky130）で完全製造パイプラインを提供。",
+      "importance": "ハードウェア設計の民主化を実現し、専有FPGA市場の垂直統合に対抗。チップ設計の透明性と再現性が確立される。",
+      "targetReaders": "オープンハードウェア開発者、FPGA設計の独立性を求める研究機関、半導体設計の完全オープンソース化に関心のある企業"
+    },
+    {
+      "rank": 9,
+      "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
+      "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Gemma 4の26B-A4B MoEモデルがMacBook Proで実用的速度（毎秒51トークン）で実行可能。4B稼働パラメータで10B相当の性能を実現し、$200以下のTPUコストで訓練可能。ローカル推論によりAPI費用と遅延を排除。",
+      "importance": "大規模言語モデルがコンシューマーハードウェアで実用的に動作する段階に到達。AI開発のハードウェア敷居が大幅に低下。",
+      "targetReaders": "個人開発者、API依存から脱却したい企業、エッジAIの推論コスト削減を検討するチーム"
+    },
+    {
+      "rank": 10,
+      "title": "Reaffirming our commitment to child safety in the face of European Union inaction",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/reaffirming-commitment-to-child-safety/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "欧州がCSAM検出技術の適法化期限（4月3日）を延長せず、Google等主要企業が250児童保護団体の支持下で自発的対応継続を宣言。ePrivacy規制と児童保護のバランスをめぐる深刻な規制空白が発生。",
+      "importance": "児童保護と規制確実性のジレンマが顕在化し、技術企業の自発的対応への依存リスク増加。EU規制体制の政策目標間の矛盾が露呈。",
+      "targetReaders": "児童オンラインセーフティを管轄する規制当局、プラットフォーム企業のコンプライアンス担当者、プライバシー規制と社会課題のバランス設計者"
+    }
+  ]
+}
