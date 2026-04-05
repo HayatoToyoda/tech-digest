@@ -1,6 +1,6 @@
 import type { DailyDigest } from '../types.js';
 import { articleCard, escapeHtml } from './templates.js';
-import { CSS } from './style.js';
+import { CSS, FONT_LINKS } from './style.js';
 
 export function buildIndexPage(digest: DailyDigest): string {
   const cards = digest.items.map((item) => articleCard(item)).join('\n    ');
@@ -13,11 +13,12 @@ export function buildIndexPage(digest: DailyDigest): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Digest — ${safeDate}</title>
+  ${FONT_LINKS}
   <style>${CSS}</style>
 </head>
 <body>
   <header>
-    <p class="site-title">Tech Digest</p>
+    <p class="site-title ndot">Tech Digest</p>
     <h1 class="header-date">${safeDate}</h1>
     <p class="header-meta">本日の厳選 ${safeCount} 本</p>
     <nav>
