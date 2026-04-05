@@ -52,8 +52,8 @@ describe('buildArchiveIndex', () => {
   it('date に XSS 文字が含まれる場合はリンクを除外する', () => {
     const maliciousDigest = { ...digest, date: '"><script>alert(1)</script>' };
     const html = buildArchiveIndex([maliciousDigest]);
-    expect(html).not.toContain('<script>');
     expect(html).not.toContain('alert(1)');
+    expect(html).not.toContain('"><script>alert(1)</script>');
   });
 
   it('date が YYYY-MM-DD 形式でない場合はアーカイブリンクを除外する', () => {

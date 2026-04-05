@@ -7,7 +7,7 @@ export function buildSlackPayload(digest: DailyDigest): object {
   const blocks: object[] = [
     {
       type: 'header',
-      text: { type: 'plain_text', text: `📰 Tech Digest ${digest.date}`, emoji: true },
+      text: { type: 'plain_text', text: `TECH DIGEST · ${digest.date}`, emoji: false },
     },
     {
       type: 'section',
@@ -48,14 +48,14 @@ export function buildDiscordPayload(digest: DailyDigest): object {
 
   const content =
     remaining > 0
-      ? `📰 **Tech Digest ${digest.date}** — 本日のトップ ${digest.items.length} 件（上位 ${PREVIEW_COUNT} 件を表示）\n${ARCHIVE_URL}`
-      : `📰 **Tech Digest ${digest.date}** — 本日のトップ ${digest.items.length} 件\n${ARCHIVE_URL}`;
+      ? `**TECH DIGEST** · ${digest.date} — 本日のトップ ${digest.items.length} 件（上位 ${PREVIEW_COUNT} 件を表示）\n${ARCHIVE_URL}`
+      : `**TECH DIGEST** · ${digest.date} — 本日のトップ ${digest.items.length} 件\n${ARCHIVE_URL}`;
 
   const embeds = preview.map(item => ({
     title: `#${item.rank} [${item.category}] ${item.title}`,
     url: item.url,
     description: item.summary,
-    color: 0x5865f2, // Discord blurple
+    color: 0xd71921, // Nothing accent red
   }));
 
   return { content, embeds };

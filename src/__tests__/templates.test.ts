@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { escapeHtml, articleCard, categoryColor, safeHref } from '../render/templates.js';
+import { escapeHtml, articleCard, categoryClass, safeHref } from '../render/templates.js';
 import type { DigestItem } from '../types.js';
 
 const sampleItem: DigestItem = {
@@ -51,14 +51,14 @@ describe('safeHref', () => {
   });
 });
 
-describe('categoryColor', () => {
-  it('既知カテゴリに hex カラーを返す', () => {
-    expect(categoryColor('AI')).toMatch(/^#[0-9a-f]{6}$/i);
-    expect(categoryColor('Security')).toMatch(/^#[0-9a-f]{6}$/i);
+describe('categoryClass', () => {
+  it('既知カテゴリにそのままの識別子を返す', () => {
+    expect(categoryClass('AI')).toBe('AI');
+    expect(categoryClass('Security')).toBe('Security');
   });
 
-  it('未知カテゴリにフォールバックカラーを返す', () => {
-    expect(categoryColor('Unknown' as any)).toMatch(/^#[0-9a-f]{6}$/i);
+  it('未知カテゴリは AI にフォールバックする', () => {
+    expect(categoryClass('Unknown' as any)).toBe('AI');
   });
 });
 
