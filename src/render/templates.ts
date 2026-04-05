@@ -1,16 +1,9 @@
 import type { DigestItem, Category } from '../types.js';
 
-/** ダーク背景上で視認しやすいカテゴリ色 */
-const CATEGORY_COLORS: Record<Category, string> = {
-  AI: '#a5b4fc',
-  Web: '#7dd3fc',
-  Security: '#fca5a5',
-  OSS: '#86efac',
-  Platform: '#fcd34d',
-};
-
-export function categoryColor(cat: Category): string {
-  return CATEGORY_COLORS[cat] ?? '#6b7280';
+/** CSS クラス名用（nothing-design: データ値に色、ラベルはモノクロ） */
+export function categoryClass(cat: Category): string {
+  const allowed: Category[] = ['AI', 'Web', 'Security', 'OSS', 'Platform'];
+  return allowed.includes(cat) ? cat : 'AI';
 }
 
 export function escapeHtml(s: string): string {
@@ -37,18 +30,18 @@ export function safeHref(url: string): string {
 }
 
 export function articleCard(item: DigestItem): string {
-  const color = categoryColor(item.category);
+  const cat = categoryClass(item.category);
   return `<article class="card">
   <div class="card-header">
-    <span class="rank ndot">#${item.rank}</span>
-    <span class="badge"><span class="badge-dot" style="background:${color}"></span>${escapeHtml(item.category)}</span>
+    <span class="rank">#${item.rank}</span>
+    <span class="badge"><span class="badge-dot cat-${cat}"></span>${escapeHtml(item.category)}</span>
     <span class="source">${escapeHtml(item.source)}</span>
   </div>
   <h2><a href="${safeHref(item.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h2>
   <p class="summary">${escapeHtml(item.summary)}</p>
   <div class="meta">
-    <div><strong>重要な理由</strong>　${escapeHtml(item.importance)}</div>
-    <div><strong>対象読者</strong>　${escapeHtml(item.targetReaders)}</div>
+    <div class="meta-row"><strong>重要な理由</strong><span>${escapeHtml(item.importance)}</span></div>
+    <div class="meta-row"><strong>対象読者</strong><span>${escapeHtml(item.targetReaders)}</span></div>
   </div>
 </article>`;
 }
