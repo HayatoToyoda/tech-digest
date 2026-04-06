@@ -1,0 +1,96 @@
+{
+  "date": "2026-04-07",
+  "generatedAt": "2026-04-06T22:40:23.990Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
+      "url": "https://github.com/anthropics/claude-code/issues/42796",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Anthropicの「Claude Code」が2月のアップデート後、複雑なエンジニアリングタスクで大幅に品質が低下したことが報告されている。ユーザーの分析によると、思考内容の非表示化（redact-thinking）の展開時期と品質低下が完全に一致している。17,871個の思考ブロックと234,760個のツール呼び出しの分析から、拡張思考トークンが高度なワークフローに必須であることが明らかになった。",
+      "importance": "Claudoの主要な利用層（プロ開発者）の生産性が大幅に低下しており、AIアシスタントの品質問題として重要。",
+      "targetReaders": "Claude APIを使用している開発者、AI開発ツール検討中の企業技術リーダー"
+    },
+    {
+      "rank": 2,
+      "title": "A cryptography engineer's perspective on quantum computing timelines",
+      "url": "https://words.filippo.io/crqc-timeline/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "暗号化エンジニアのフィリッポが、量子耐性暗号への移行の緊急性について見解を変更した。GoogleとOratomicの最新論文により、256ビット楕円曲線が予想より少ない物理キュービットで破られることが示された。Google論文はWebPKI MitM攻撃の実行可能性を示唆し、2029年が重要な期限として設定されている。",
+      "importance": "暗号インフラの根本的な脅威が現実化する時期が予想より早まったことで、組織全体のセキュリティ戦略の即時見直しが必要。",
+      "targetReaders": "セキュリティ責任者、暗号化システム管理者、金融機関のIT戦略立案者"
+    },
+    {
+      "rank": 3,
+      "title": "Sam Altman may control our future – can he be trusted?",
+      "url": "https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "New Yorkerが報道した調査記事により、OpenAIの科学責任者イリヤ・サツキバーが2023年秋、サムアルトマンCEOの信頼性について懸念を示す70ページの機密メモを取締役会メンバーに送信していたことが判明。メモには「Samは嘘をつく」という指摘を含む組織内の信頼問題が詳細に記載されている。",
+      "importance": "AGI開発の中核を担うOpenAIのリーダーシップと安全性体制に重大な問題があることが公開され、AI産業全体のガバナンスへの信頼に影響。",
+      "targetReaders": "AI産業への投資家、AI企業の経営層、規制当局、AI安全性に関心のある研究者"
+    },
+    {
+      "rank": 4,
+      "title": "Microsoft hasn't had a coherent GUI strategy since Petzold",
+      "url": "https://www.jsnover.com/blog/2026/03/13/microsoft-hasnt-had-a-coherent-gui-strategy-since-petzold/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Microsoftの元開発者が、Windowsプラットフォームが過去30年間、一貫したGUI戦略を失ったまま、WPF、WinUI 3、Electron等多数の競合フレームワークが並立している状況を批評。1988年のPetzoldの『Programming Windows』以来、明確な方向性がなくなり、開発者が「どのフレームワークを選ぶか」に答えられない状態が続いている。",
+      "importance": "Windows開発エコシステムの混乱がプラットフォーム戦略レベルで深刻化しており、新規プロジェクトの技術選定に大きな影響。",
+      "targetReaders": "Windowsアプリ開発者、エンタープライズアーキテクト、クロスプラットフォーム戦略検討中の組織"
+    },
+    {
+      "rank": 5,
+      "title": "Adobe modifies hosts file to detect whether Creative Cloud is installed",
+      "url": "https://www.osnews.com/story/144737/adobe-secretly-modifies-your-hosts-file-for-the-stupidest-reason/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "AdobeがCreative Cloudのインストール検知目的でユーザーのhostsファイルを無断で改変していることが判明。Chrome が Local Network Access をブロックしたため、従来のローカルホスト接続の代わりにhostsファイルへのエントリを追加してDNS解決を迂回する手法に変更。",
+      "importance": "エンタープライズソフトウェアベンダーが基本的なシステムファイルを秘密裏に改変する行為は、セキュリティと信頼性の脅威。",
+      "targetReaders": "Creative Cloud利用企業のセキュリティ責任者、ソフトウェアサプライチェーン管理者"
+    },
+    {
+      "rank": 6,
+      "title": "The cult of vibe coding is dogfooding run amok",
+      "url": "https://bramcohen.com/p/the-cult-of-vibe-coding-is-insane",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Anthropic内でAIコード生成に大きく依存する「vibe coding」（AIの出力を検証なしで採用）が蔓延し、ソースコード品質が低下していることが指摘される。開発者が意図的にコード内部を見ない姿勢により、重複や設計的問題の蓄積が放置されている。AIでコード生成することは正当だが、技術的負債の整理無しには破綻する。",
+      "importance": "AI活用企業の開発効率化が品質低下を招く具体例として、組織的なAI導入戦略に警告信号。",
+      "targetReaders": "AI開発ツール導入予定の技術リーダー、開発プロセス改善推進者"
+    },
+    {
+      "rank": 7,
+      "title": "Show HN: I built a tiny LLM to demystify how language models work",
+      "url": "https://github.com/arman-bd/guppylm",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "9M パラメータの小規模LLMを Google Colab で5分で学習・デプロイできるプロジェクト。フロム・スクラッチでトークナイザー、モデル、訓練、推論を実装、ブラウザで実行可能。LLMの動作原理を「ブラックボックス」でなく具体的に理解するための教育リソース。",
+      "importance": "AI技術の民主化を推進し、LLM開発が PhD や大規模GPU 不要であることを実証する点で開発者教育に有益。",
+      "targetReaders": "AI学習者、LLM基礎を学びたい学生、機械学習エンジニア"
+    },
+    {
+      "rank": 8,
+      "title": "Show HN: Ghost Pepper – Local hold-to-talk speech-to-text for macOS",
+      "url": "https://github.com/matthartman/ghost-pepper",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "100%ローカル実行のmacOS音声テキスト変換アプリ。Whisper と Qwen モデルを Apple Silicon で実行、クラウド API 不要。Ctrl キー保持で録音、離すと変換・貼付。バックグラウンドで定期的なダウンロードやテレメトリがなく、プライバシー重視。",
+      "importance": "クラウド依存から脱却した実用的なAI機能が個人デバイスで実行可能になった実例で、エンタープライズプライバシー要件に対応。",
+      "targetReaders": "セキュリティ・プライバシー重視の組織、オンプレミス AI 導入検討中の企業"
+    },
+    {
+      "rank": 9,
+      "title": "A macOS bug that causes TCP networking to stop working after 49.7 days",
+      "url": "https://photon.codes/blog/we-found-a-ticking-time-bomb-in-macos-tcp-networking",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "macOS TCP ネットワークが約49.7日後に停止する重大バグが発見。整数オーバーフロー系の時間計算の問題と推定され、ロングランニングサーバーやバックグラウンドプロセスに影響。",
+      "importance": "macOS ベースのサーバーやホームサーバー運用に深刻な障害をもたらす可能性があり、早期の修正・回避策実装が必須。",
+      "targetReaders": "macOS サーバー運用者、インフラ管理者、Apple プラットフォーム選定検討中の組織"
+    }
+  ]
+}
