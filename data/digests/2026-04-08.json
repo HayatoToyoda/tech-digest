@@ -1,0 +1,106 @@
+{
+  "date": "2026-04-08",
+  "generatedAt": "2026-04-07T22:41:22.610Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Project Glasswing: Securing critical software for the AI era",
+      "url": "https://www.anthropic.com/glasswing",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Anthropic、Amazon、Google、Microsoft、NVIDIA等の主要企業が参加する「Project Glasswing」を発表。Anthropic開発の「Claude Mythos Preview」が、主要OS・ブラウザの脆弱性発見で人間のセキュリティ研究者を上回る能力を示した。プロジェクトは防御目的での活用に向けて、100M$の使用クレジットと400万ドルのオープンソース寄付を提供。AI時代のサイバーセキュリティの新局面を示唆している。",
+      "importance": "AI が人間のセキュリティ専門家を超える脆弱性発見能力を持つようになったことで、産業全体の防御戦略の根本的な見直しが必要になった極めて重要な転機である。",
+      "targetReaders": "セキュリティ責任者、IT基盤の管理者、開発チームリーダー"
+    },
+    {
+      "rank": 2,
+      "title": "Assessing Claude Mythos Preview's cybersecurity capabilities",
+      "url": "https://red.anthropic.com/2026/mythos-preview/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Anthropicのセキュリティ評価チームが、Claude Mythos Previewがゼロデイ脆弱性を発見・悪用できることを実証。主要OS全て・ブラウザ全てで脆弱性を発見し、27年前のOpenBSD内のバグまで特定。99%以上の発見脆弱性がまだパッチ未適用。AIの能力が既に防御側の対応能力を上回る可能性を示唆。",
+      "importance": "セキュリティ業界全体が、AI主導の脅威に対する防御体制の抜本的再構築を迫られていることが明白になった。",
+      "targetReaders": "セキュリティ研究者、企業の情報セキュリティ部門、OS・ブラウザ開発チーム"
+    },
+    {
+      "rank": 3,
+      "title": "Cloudflare targets 2029 for full post-quantum security",
+      "url": "https://blog.cloudflare.com/post-quantum-roadmap/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Cloudflareが量子コンピュータ対策のロードマップを加速し、2029年の完全なポスト量子セキュリティ実現を目標に設定。Google が楕円曲線暗号破壊アルゴリズムの改善を発表、Oratomic社がP-256破壊に必要な量子ビット数を10,000に推定。これらの進展によりQ-Day（量子コンピュータが実用的脅威となる時点）が従来予想より大幅に早い2029～2030年の可能性を示唆。",
+      "importance": "量子脅威の現実化タイムラインが従来予想の数十年単位から数年単位へ劇的に短縮され、企業全体のポスト量子暗号化への移行が緊急課題になった。",
+      "targetReaders": "インフラ管理者、暗号化・認証システム担当者、リスク管理部門"
+    },
+    {
+      "rank": 4,
+      "title": "We found an undocumented bug in the Apollo 11 guidance computer code",
+      "url": "https://www.juxt.pro/blog/a-bug-on-the-dark-side-of-the-moon/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "JUXT社が、57年間誰も発見しなかったApollo 11誘導コンピュータ内のバグを特定。ジャイロコントロールコードのリソースロックが特定エラーパスで解放されず、誘導プラットフォームの位置合わせ能力が無効化される問題。Claude と自社のAllium言語を使用して130,000行のアセンブリを12,500行の仕様に抽出し、発見。",
+      "importance": "高度な スタティック分析・AI検証手法が、従来の読解やエミュレーション検証で見落とされた重大バグを発見できることを実証し、レガシーシステムの品質保証手法の進化を示唆している。",
+      "targetReaders": "クリティカルシステムの開発・保守者、ソフトウェア品質保証エンジニア"
+    },
+    {
+      "rank": 5,
+      "title": "Google open-sources experimental agent orchestration testbed Scion",
+      "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Googleが複数の AI エージェント実行を管理するオーケストレーション用テストベッド「Scion」をオープンソース化。各エージェント（Claude Code、Gemini CLIなど）をコンテナで分離し、独立した認証・ワークスペースで並行実行。タスクグラフの動的生成・実行、複数ハーネスによるエージェント管理に対応。",
+      "importance": "マルチエージェント AI システムの実装・運用を標準化する実践的なツールの登場により、複数 AI 組み合わせの生産運用が加速される可能性が高い。",
+      "targetReaders": "AI アプリケーション開発者、マルチエージェント・ワークフロー構築者、インフラエンジニア"
+    },
+    {
+      "rank": 6,
+      "title": "S3 Files",
+      "url": "https://www.allthingsdistributed.com/2026/04/s3-files-and-the-changing-face-of-s3.html",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "AWS が新データ型「S3 Files」を発表し、大規模データ移動・管理の根本的な課題を解決。ゲノミクス研究など並列計算・バースト型ワークロードでの複数コピー管理の煩雑性を低減。S3 の新しい インターフェース層として、ファイルセマンティクスを提供。",
+      "importance": "クラウドストレージの抽象化レベルが進化することで、大規模データ処理の開発生産性が大幅に向上する可能性がある。",
+      "targetReaders": "ビッグデータ・機械学習エンジニア、AWS ユーザー、データ基盤の設計者"
+    },
+    {
+      "rank": 7,
+      "title": "SQLite in Production: Lessons from Running a Store on a Single File",
+      "url": "https://ultrathink.art/blog/sqlite-in-production-lessons",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "実運用の e-commerce ストアをSQLiteで運営する事例。Rails 8でのポスト量子暗号化デフォルト有効化により実現。WAL(Write-Ahead Logging)で複数プロセス対応。ただし複数デプロイ時にWALファイル争合でデータロストの事例も発生。接続管理・スケーラビリティの限界に直面。",
+      "importance": "SQLite の実運用での限界ケース（マルチコンテナ・高頻度デプロイ）が明確になり、軽量データベースの選択判断基準が具体化された。",
+      "targetReaders": "スタートアップ・小〜中規模事業者のバックエンド開発者、インフラ設計者"
+    },
+    {
+      "rank": 8,
+      "title": "You can't cancel a JavaScript promise (except sometimes you can)",
+      "url": "https://www.inngest.com/blog/hanging-promises-for-control-flow",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "JavaScript で Promise キャンセル機構なしでもガベージコレクタを活用して無限ループ Promise を return し、await を永遠に保留させる技法。Inngest TypeScript SDK がサーバーレスの実行時間制限内で非同期ワークフロー関数を中断するのに活用。例外を投げない割り込み実装として新しい手法。",
+      "importance": "Promise キャンセルの根本的な解決策がない中、ガベージコレクション の挙動を応用した実用的代替手法の事例が示された。",
+      "targetReaders": "JavaScript/TypeScript 開発者、非同期制御・ワークフロー実装者"
+    },
+    {
+      "rank": 9,
+      "title": "Taste in the age of AI and LLMs",
+      "url": "https://rajnandan.com/posts/taste-in-the-age-of-ai-and-llms/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "LLM の普及により「有能な出力は安い」ようになり、差別化の軸が「判断」に移行。AI出力は平均的で確率論的に安全な内容に偏るため、コンテキスト・制約・本質的構築を伴う「批評的判断」が新しい価値になることを論じる。「直感」から「診断」への精度化が重要。",
+      "importance": "AI 時代の人間の役割が、制作から選別へシフトするリスクを指摘し、本質的価値創造のために「判断力」の質的向上が必須になったことを示唆している。",
+      "targetReaders": "プロダクト・UXデザイナー、マーケター、コンテンツ制作者、エグゼクティブ"
+    },
+    {
+      "rank": 10,
+      "title": "Show HN: Gemma 4 Multimodal Fine-Tuner for Apple Silicon",
+      "url": "https://github.com/mattmireles/gemma-tuner-multimodal",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Apple Silicon（M チップ）ネイティブで Gemma をテキスト・画像・音声マルチモーダル学習できるツール。LoRA ファイン チューニング対応。GCS/BigQuery からのストリーミング学習で大規模データセットをローカル SSD に収納できない制約を回避。既存ツール（MLX-LM、Unsloth等）ではカバーされない音声マルチモーダル処理。",
+      "importance": "エッジ（ローカル Mac）での大規模モデル学習が実現され、NVIDIA GPU 依存からの脱却とプライベート学習が可能になった。",
+      "targetReaders": "機械学習エンジニア、Apple Silicon ユーザー、エッジAI開発者"
+    }
+  ]
+}
