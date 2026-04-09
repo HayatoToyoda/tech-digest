@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-10",
+  "generatedAt": "2026-04-09T22:43:42.072Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Claude mixes up who said what",
+      "url": "https://dwyer.co.za/static/claude-mixes-up-who-said-what-and-thats-not-ok.html",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Anthropic's Claude AIエージェントで重大なバグが報告されており、内部推論メッセージをユーザーからの指示と誤認識する現象が発生しています。このバグによりClaudeは自分自身に与えた指示をユーザーが与えたものと主張し、破壊的な操作を実行する可能性があります。複数のユーザーが同様の問題を報告しており、コンテキストウィンドウの限界に達すると特に発生しやすいとされています。",
+      "importance": "AI開発者に対して、LLMベースのエージェントシステムの信頼性に関わる重大な問題を示唆しており、本番環境での利用には慎重な対応が必要です。",
+      "targetReaders": "AI開発者、LLM活用の意思決定者、AI安全性に関心を持つ技術者"
+    },
+    {
+      "rank": 2,
+      "title": "Session is shutting down in 90 days",
+      "url": "https://getsession.org/donate",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "プライバシー重視のメッセージングアプリ「Session」が資金不足により90日以内の操業停止を予告しています。月間170万ユーザーを持つ成熟したアプリケーションながら、年間100万ドルの資金確保が困難な状況です。基本インフラの維持に今後3ヶ月間必要な65,000ドルの寄付は既に受け付けており、7月8日にサービスが終了する見込みです。",
+      "importance": "OSSの持続性に関わる根本的な課題を示す事例であり、ユーザーとしての代替手段検討、および開発プロジェクトの資金モデルについての警告となります。",
+      "targetReaders": "Sessionユーザー、OSSプロジェクト運営者、プライバシー重視のメッセージングアプリ利用者"
+    },
+    {
+      "rank": 3,
+      "title": "EFF is leaving X",
+      "url": "https://www.eff.org/deeplinks/2026/04/eff-leaving-x",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "電子フロンティア財団（EFF）が20年近いX(Twitter)での活動から撤退することを発表しました。2018年には月5000万～1億インプレッションを獲得していた投稿が、2024年には月200万インプレッション、2025年は年1300万インプレッションまで低下しています。Elon Musk買収後の透明性低下、人権チーム解散、ユーザー制御機能の削減などを理由に挙げています。",
+      "importance": "大規模組織がプラットフォームから撤退する傾向を示唆し、X上のコンテンツ配信戦略の見直しが必要なことを明示します。同時にプラットフォーム企業の方針転換がアクティビズム活動に及ぼす影響を示しています。",
+      "targetReaders": "SNS活動戦略に関わる組織・団体、プラットフォーム依存のマーケティング担当者"
+    },
+    {
+      "rank": 4,
+      "title": "Maine is about to become the first state to ban major new data centers",
+      "url": "https://www.gadgetreview.com/maine-is-about-to-become-the-first-state-to-ban-major-new-data-centers",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "メイン州が2027年11月まで20メガワット以上のデータセンター新設許可を禁止する全米初の措置を可決しました。州内の電力価格上昇とAIブーム時代の電力需要増を理由としており、他州でも同様の動きが広がる可能性があります。データセンター消費電力は米国全体の4%を占め、2030年までに倍増する見込みです。",
+      "importance": "AI基盤となるインフラへの規制動向であり、データセンター運営コストの増加、サービス料金値上げへの連鎖反応、クラウドサービス供給に影響する可能性があります。",
+      "targetReaders": "クラウドサービス事業者、AI企業経営者、インフラ投資家"
+    },
+    {
+      "rank": 5,
+      "title": "The Vercel plugin on Claude Code wants to read your prompts",
+      "url": "https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Claude Code上のVercelプラグインがすべてのユーザープロンプトを読み取ることを要求していることが判明しました。同意画面はプロンプトインジェクション経由で実装されており、ネイティブなUIではなく、ユーザーは第三者プラグインからの質問であることを認識できません。Bash コマンド文字列を含む「匿名」データがサーバーに送信されています。",
+      "importance": "開発ツール内での暗黙的なテレメトリ収集問題を露呈させ、AIエージェント環境でのプロンプトセキュリティ、プラグインシステムの透明性に関わる重大な懸念を示唆しています。",
+      "targetReaders": "Claude Code利用開発者、セキュリティエンジニア、ツール監査関係者"
+    },
+    {
+      "rank": 6,
+      "title": "Reallocating $100/Month Claude Code Spend to Zed and OpenRouter",
+      "url": "https://braw.dev/blog/2026-04-06-reallocating-100-month-spend/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Claude Code月額100ドルユーザーが、より厳しい利用制限を理由にZed + OpenRouterへの乗り換えを発表しました。複数のユーザーから同様の報告があり、Claudeの使用窓が以前より短縮されている模様です。代替案として、複数モデル対応のエージェントハーネスを構築し、より高い柔軟性とコスト効率を実現しています。",
+      "importance": "Anthropicの課金制度への不満と、AI開発者層による代替ツールへの移行傾向を示し、AI開発ツール市場の競争激化を示唆しています。",
+      "targetReaders": "Claude Code利用開発者、AI開発ツール導入検討者"
+    },
+    {
+      "rank": 7,
+      "title": "Research-Driven Agents: When an agent reads before it codes",
+      "url": "https://blog.skypilot.co/research-driven-agents/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "AIコーディングエージェントが論文やコンペティングプロジェクトを事前に研究した場合、コードのみの文脈で動作するエージェントより高度な最適化を発見することが実証されました。llama.cpp に適用した結果、3時間で5つの最適化が実装され、x86上でFlash Attention +15%、ARM上で+5%の高速化が達成されました。総コスト約29ドルで実現されています。",
+      "importance": "LLMベースの自動最適化手法の有効性を示し、コード生成エージェントの活用方法の新たな方向性を提示しています。",
+      "targetReaders": "AI/ML開発者、自動最適化システム構築者、エージェントアーキテクチャ研究者"
+    },
+    {
+      "rank": 8,
+      "title": "Reverse engineering Gemini's SynthID detection",
+      "url": "https://github.com/aloshdenny/reverse-SynthID",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "GoogleのGeminiに埋め込まれた透かし「SynthID」がリバースエンジニアリングされました。信号処理を用いた分析により、90%の検出精度、75%のキャリア周波数エネルギー削減、91%の位相コヒーレンス削減が達成されています。透かしは解像度依存的であり、マルチ解像度スペクトルコードブックにより外科的に削除可能です。",
+      "importance": "生成AI出力への透かし技術の実装と脆弱性を示すものであり、AI生成コンテンツの検証、知的財産保護の有効性に関わる重要な知見です。",
+      "targetReaders": "AI生成コンテンツ検証関係者、セキュリティ研究者、知的財産保護実務者"
+    }
+  ]
+}
