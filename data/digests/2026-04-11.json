@@ -1,0 +1,96 @@
+{
+  "date": "2026-04-11",
+  "generatedAt": "2026-04-10T22:41:35.529Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "FBI used iPhone notification data to retrieve deleted Signal messages",
+      "url": "https://9to5mac.com/2026/04/09/fbi-used-iphone-notification-data-to-retrieve-deleted-signal-messages/",
+      "source": "9to5Mac",
+      "category": "Security",
+      "summary": "FBIがiPhoneの通知データベースから削除されたSignalメッセージを復元することに成功したことが判明した。アプリ削除後も通知キャッシュに内容が保存されており、ユーザーが通知プレビュー設定を有効にしていない場合に内容全体が記録されていた。Appleはその直後のiOS 26.4でプッシュ通知トークン検証を変更しており、この事件との関連が指摘されている。Signal削除後の情報復元という重大な脆弱性を示している。",
+      "importance": "Signalなどのエンドツーエンド暗号化メッセージアプリでもOSレベルの設計によって会話内容が復元される可能性があり、プライバシー機能の限界を示す重要な事例である。",
+      "targetReaders": "セキュリティ意識の高いユーザー、企業のセキュリティ責任者、メッセージアプリ開発者"
+    },
+    {
+      "rank": 2,
+      "title": "CPU-Z and HWMonitor compromised",
+      "url": "https://www.theregister.com/2026/04/10/cpuid_site_hijacked/",
+      "source": "The Register",
+      "category": "Security",
+      "summary": "CPUID公式サイトがバックエンド侵害され、CPU-ZとHWMonitorのダウンロードリンクがマルウェアに差し替えられた。約6時間の間にダウンロードを試みたユーザーが偽のインストーラを入手した可能性がある。マルウェアはPowerShellやメモリ内実行を使用しGoogleChromeの認証情報盗聴を試みている。署名されたオリジナルファイルは侵害されておらず、配信インフラの問題であることが確認されている。",
+      "importance": "広く使用されているシステム診断ツールの配信インフラが侵害され、信頼できるダウンロード元の脆弱性が露呈した事例で、開発者ツール利用者全般へのセキュリティリスク。",
+      "targetReaders": "ダウンロード元セキュリティを重視するシステム管理者、セキュリティエンジニア、エンドユーザー"
+    },
+    {
+      "rank": 3,
+      "title": "You can't trust macOS Privacy and Security settings",
+      "url": "https://eclecticlight.co/2026/04/10/why-you-cant-trust-privacy-security/",
+      "source": "Eclectic Light",
+      "category": "Security",
+      "summary": "macOSのプライバシー設定で「アクセス許可なし」と表示されていても、アプリがファイルフォルダにアクセス可能な脆弱性が発見された。ユーザーが明示的にフォルダを選択した場合、その後の同意なしアクセスが可能になる。この状態は設定から表示されず、tccutil resetで初期化するまで続く。macOSの透過的なアクセス制御がユーザーの表示と実際の状態で乖離している。",
+      "importance": "macOSのプライバシー機能が実際の保護を提供していないことを実証した深刻な問題で、ユーザーが信頼できるセキュリティ情報を得られない状態を作り出している。",
+      "targetReaders": "macOSユーザー、セキュリティ研究者、Appleセキュリティチーム"
+    },
+    {
+      "rank": 4,
+      "title": "France to ditch Windows for Linux to reduce reliance on US tech",
+      "url": "https://techcrunch.com/2026/04/10/france-to-ditch-windows-for-linux-to-reduce-reliance-on-us-tech/",
+      "source": "TechCrunch",
+      "category": "Platform",
+      "summary": "フランス政府がWindowsからLinuxへの移行を発表した。デジタル主権（米国企業への依存削減）を目的としており、政府デジタル庁（DINUM）から開始される。MicrosoftTeamsからFrench製のVisioへの切り替えに続く施策で、ヘルスデータプラットフォームの信頼できるプラットフォームへの移行も予定されている。EUレベルでも外国プロバイダ依存削減の動きが広がっている。",
+      "importance": "主要な民主主義国家がOSレベルで米国技術依存を戦略的に削減する動きで、グローバルなエコシステム分裂を示唆する事例。",
+      "targetReaders": "政府情報システム担当者、地政学的リスク管理の意思決定者、Linuxプラットフォーム関係者"
+    },
+    {
+      "rank": 5,
+      "title": "We've raised $17M to build what comes after Git",
+      "url": "https://blog.gitbutler.com/series-a",
+      "source": "GitButler",
+      "category": "Web",
+      "summary": "GitButlerがa16zが主導するシリーズAで1,700万ドルの資金調達を発表。Git後継を目指し、GitButler CLIのテクニカルプレビューをリリースした。従来のGitは単線的な個人ワークフロー向けで、現代のAIエージェントや複数人の並行作業に対応していないと指摘。スタック可能なブランチや変更の整理・統合に特化した新ツールの実装を進めている。",
+      "importance": "20年以上の標準版制御ツールの刷新を目指す野心的なプロジェクトで、AI時代の開発ワークフロー構造を定義する可能性がある。",
+      "targetReaders": "ソフトウェア開発チーム、開発ツール選定の意思決定者、AIを活用した開発フローを模索する組織"
+    },
+    {
+      "rank": 6,
+      "title": "WireGuard makes new Windows release following Microsoft signing resolution",
+      "url": "https://lists.zx2c4.com/pipermail/wireguard/2026-April/009561.html",
+      "source": "WireGuard Mailing List",
+      "category": "Security",
+      "summary": "WireGuardがWindows向けの大型アップデート（WireGuardNT v0.11、WireGuard for Windows v0.6）をリリース。長期間のアップデート空白の後の重要な更新で、Microsoft署名問題の解決後の発表。コードベースの大幅な整理とツールチェーンの最新化により、パフォーマンス向上と保守性が改善された。Windows 10 1507からの古いバージョンもサポート対象。",
+      "importance": "広く採用されているVPNプロトコルの正式な更新で、Windowsユーザーのセキュアな通信基盤の強化につながる。",
+      "targetReaders": "VPN利用者、ネットワークセキュリティ管理者、WindowsシステムにおけるVPN導入検討者"
+    },
+    {
+      "rank": 7,
+      "title": "Bluesky April 2026 Outage Post-Mortem",
+      "url": "https://pckt.blog/b/jcalabro/april-2026-outage-post-mortem-219ebg2",
+      "source": "Bluesky Blog",
+      "category": "Platform",
+      "summary": "Blueskyが約8時間に及ぶ大規模障害（約50%ユーザーに影響）の詳細ポストモーテムを公開。根本原因は新しい内部サービス（GetPostRecord RPC）が並行数制限なしで15-20万URIを一括処理し、memcachedへの接続を枯渇させたこと。TCPのTIME_WAIT状態ポート枯渇が発生。Go言語でのerrgroup.SetLimit()使用の重要性を強調。",
+      "importance": "バッチ処理の並行数制限の重要性と、スケール環境でのシステムリソース管理の具体的な失敗事例を示す貴重な学習ケース。",
+      "targetReaders": "バックエンド開発者、SRE/インフラエンジニア、Goプログラマー、規模のあるサービス開発者"
+    },
+    {
+      "rank": 8,
+      "title": "A new trick brings stability to quantum operations",
+      "url": "https://ethz.ch/en/news-and-events/eth-news/news/2026/04/a-new-trick-brings-stability-to-quantum-operations.html",
+      "source": "ETH Zurich",
+      "category": "AI",
+      "summary": "ETH Zurichの研究チームが、幾何学的位相を利用した高精度のスワップゲート実装をNatureに発表。従来のRydberg原子やトンネル効果に依存した方法に比べ、レーザー強度の変動に強い安定性を実現。複数千キュービットへの同時適用が可能で、中性原子ベース量子コンピュータの大規模化に道を開く技術。",
+      "importance": "量子コンピュータの実用化に向けた根本的な技術課題（ノイズ耐性）を革新的に解決した進展で、実現可能な量子コンピュータの構成方法を大きく前進させている。",
+      "targetReaders": "量子コンピュータ研究者、量子技術投資家、次世代コンピューティングの実装者"
+    },
+    {
+      "rank": 9,
+      "title": "AI assistance when contributing to the Linux kernel",
+      "url": "https://github.com/torvalds/linux/blob/master/Documentation/process/coding-assistants.rst",
+      "source": "Linux Kernel Documentation",
+      "category": "OSS",
+      "summary": "Linuxカーネルプロジェクトが公式にAI支援ツール使用のガイドラインを文書化。AIコーディング支援の活用を認める一方で、正確性確認や理解のないコード投入への警告を明記。オープンソースコミュニティにおけるAIツール統合の現実的な取り扱い方針を示唆する。",
+      "importance": "最大規模のオープンソースプロジェクトがAIツール使用を正式に認め、その制約条件を明示することで、エコシステム全体のAI導入方針に影響を与える。",
+      "targetReaders": "Linux開発者、AIコーディング支援ツール利用者、オープンソースプロジェクト管理者"
+    }
+  ]
+}
