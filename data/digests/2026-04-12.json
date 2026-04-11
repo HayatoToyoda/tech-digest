@@ -1,0 +1,96 @@
+{
+  "date": "2026-04-12",
+  "generatedAt": "2026-04-11T22:36:13.721Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Small models also found the vulnerabilities that Mythos found",
+      "url": "https://aisle.com/blog/ai-cybersecurity-after-mythos-the-jagged-frontier",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "AILEが独自のAIサイバーセキュリティシステムでテストした結果、AnthropicのMythosが発見した脆弱性を小規模な安価なオープンモデル（3.6Bパラメータ）も検出できることを発見。AIセキュリティ能力は不均等に発展しており、モデルサイズではなくシステムに統合された専門知識がもたらす価値が真の差別化要因であることが明らかになった。",
+      "importance": "高性能AIモデルの優位性が相対化される中、実装システムの重要性が示唆される。セキュリティコミュニティの投資決定に影響を与える可能性がある。",
+      "targetReaders": "AI開発者、セキュリティエンジニア、AIインフラストラクチャへ投資を検討している組織"
+    },
+    {
+      "rank": 2,
+      "title": "How We Broke Top AI Agent Benchmarks: And What Comes Next",
+      "url": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "UC Berkeleyの研究者が、SWE-bench、WebArena、OSWorldなど主要なAIエージェントベンチマーク8つすべてに対して、実際のタスク解決ではなくベンチマーク自体を悪用して高スコアを獲得するエクスプロイトを発見。既に複数企業がこれらの手法でスコアを改ざんしている実例も報告されている。",
+      "importance": "AIモデルの評価基準が根本的に信頼できないことが証明された。企業のモデル選定判断やリリース決定が虚偽データに基づいている可能性が高い。",
+      "targetReaders": "AI企業のエンジニア、モデル導入を検討する企業、業界の標準化を推進する機関"
+    },
+    {
+      "rank": 3,
+      "title": "France's government is ditching Windows for Linux, says US tech a strategic risk",
+      "url": "https://www.xda-developers.com/frances-government-ditching-windows-for-linux/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "フランス政府はEU外のプロプライエタリ技術への依存を削減する戦略の一環として、WindowsをLinuxに置き換える計画を発表。DINUM（政府デジタル庁）は全省庁に秋までにEU外技術からの脱却計画を策定するよう指示。データ主権とデジタル自立性を名目に進められている。",
+      "importance": "政府規模でのオープンソースへの転換は、EU全体への波及効果が大きく、ソフトウェアライセンスビジネスに構造的影響を与える。",
+      "targetReaders": "Linuxディストリビューション企業、政府IT部門、エンタープライズソフトウェア企業"
+    },
+    {
+      "rank": 4,
+      "title": "AI assistance when contributing to the Linux kernel",
+      "url": "https://github.com/torvalds/linux/blob/master/Documentation/process/coding-assistants.rst",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Linuxカーネル開発者向けにAIツール利用時のガイドラインが公式ドキュメント化された。AIエージェントによるSigned-off-byタグ追加禁止、proper attribution要件、GPL-2.0-onlyライセンス遵守などが明記。AIが生成したコードでもヒューマン開発者が完全責任を負うことが規定された。",
+      "importance": "メジャーOSSプロジェクトによるAI生成コード受け入れ方針の明文化は、業界全体のガイドラインとなる可能性がある。",
+      "targetReaders": "Linuxカーネル開発者、OSS貢献者、AIアシスタント開発企業"
+    },
+    {
+      "rank": 5,
+      "title": "Cirrus Labs to join OpenAI",
+      "url": "https://cirruslabs.org/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "CI/CDツール開発企業のCirrus LabsはOpenAIのAgent Infrastructure teamに買収される。設立者は、2017年のクラウドコンピューティング時代到来と同様に、2026年は\"agentic engineering\"の時代であると指摘。既存製品（Tart等）はより寛容なライセンスで無料化される。",
+      "importance": "AIエージェント開発インフラの獲得をOpenAIが積極化させており、開発ツール領域への支配を強化している。",
+      "targetReaders": "開発ツール企業、インフラ企業、M&A戦略を検討するテック企業"
+    },
+    {
+      "rank": 6,
+      "title": "Rockstar Games Hacked, Hackers Threaten a Massive Data Leak If Not Paid Ransom",
+      "url": "https://kotaku.com/rockstar-games-reportedly-hacked-massive-data-leak-ransom-gta-6-shinyhunters-2000686858",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "ハッカーグループShinyHuntersがRockstar GamesのSnowflakeクラウドサーバへのアクセスを侵害。侵入経路は、クラウド監視ツール「Anodot」の脆弱性を利用したもの。企業情報・契約・財務資料などの漏洩を脅迫。Rockstar Gamesは4月11日に侵害を確認、影響は限定的と主張。",
+      "importance": "Snowflakeなどクラウドサービスの監視ツール経由での大規模侵害は新しい攻撃パターン。サプライチェーン攻撃の一環として注視が必要。",
+      "targetReaders": "クラウドセキュリティ担当者、企業CISO、ゲーム企業、金融情報を扱う企業"
+    },
+    {
+      "rank": 7,
+      "title": "South Korea introduces universal basic mobile data access",
+      "url": "https://www.theregister.com/2026/04/10/south_korea_data_access_universal/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "韓国政府がユニバーサル基本データアクセス制度を導入。700万以上の利用者にデータ制限後も400 kbpsでの無制限接続を保証。SK Telecom、KT、LG Uplusが同意。キャリアのセキュリティ違反への責任転換の性格も含む。",
+      "importance": "デジタルインフラの「ユニバーサルサービス」化は政策的な転換点。他国への波及可能性と通信事業者への長期的経営影響がある。",
+      "targetReaders": "通信キャリア、政策立案者、デジタルインクルージョン関連企業"
+    },
+    {
+      "rank": 8,
+      "title": "Installing every* Firefox extension",
+      "url": "https://jack.cab/blog/every-firefox-extension",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "セキュリティリサーチャーが84,000個のFirefoxエクステンションをすべてスクレイピングしてインストール試行。複数ソート方式でAPI検索の制限を回避し、67,945個の一意なエクステンションを収集。エクステンションマーケットプレイスの可視性問題と品質監視の不十分さが露呈。",
+      "importance": "ブラウザプラグインエコシステムの規模と管理課題が明確化。セキュリティリスク評価とマーケットプレイスの規制の必要性が高まる。",
+      "targetReaders": "ブラウザベンダー、セキュリティ研究者、エクステンション開発者"
+    },
+    {
+      "rank": 9,
+      "title": "The Problem That Built an Industry",
+      "url": "https://ajitem.com/blog/iron-core-part-1-the-problem-that-built-an-industry/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "飛行予約システムの歴史を追跡。1964年に稼働を開始したSABRE（American Airlines + IBM）は、1960年代に設計されたシステムながら60年以上継続稼働し、ピーク時に約10,000トランザクション/秒を処理。UNIX誕生前の技術基盤の上に現代のGDSが存在する実態を解説。",
+      "importance": "レガシーシステムの継続稼働コストと入れ替え困難性の具体例。モダンインフラ設計の参考となる同時に、技術負債の長期化リスクを示唆。",
+      "targetReaders": "レガシーシステム管理者、企業アーキテクト、インフラストラクチャ担当者"
+    }
+  ]
+}
