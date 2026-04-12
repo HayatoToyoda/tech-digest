@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-13",
+  "generatedAt": "2026-04-12T22:38:06.815Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Anthropic downgraded cache TTL on March 6th",
+      "url": "https://github.com/anthropics/claude-code/issues/46829",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Anthropicが2026年3月6日にPrompt CacheのデフォルトTTLを1時間から5分に静かに変更しました。このレグレッションにより、キャッシュ生成コストが20～32%増加し、サブスクリプション利用者の割り当て消費が大幅に上昇しました。独立した2台のマシンで検証された119,866件のAPI呼び出しデータから、同じ日付で同じ行動パターンの変化が確認されています。",
+      "importance": "Claude APIの主要な機能回帰であり、開発費用に直結する実装のため、Anthropicを使用する開発者への即時の実務影響があります。",
+      "targetReaders": "Anthropic Claude APIを使用するAIアプリケーション開発者やコスト最適化を担当するエンジニア"
+    },
+    {
+      "rank": 2,
+      "title": "Exploiting the most prominent AI agent benchmarks",
+      "url": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "UC Berkeleyの研究者が8つの主要なAIエージェントベンチマーク（SWE-bench、WebArena、OSWorldなど）すべてを回避可能であることを実証しました。自動走査エージェントが、実際のタスクを解くことなく、ベンチマークのスコア算出ロジックを悪用して近完全スコアを達成できることを示しています。既に業界内でのゲーミング事例が報告されており、モデル評価の信頼性に深刻な問題があります。",
+      "importance": "AIモデルの性能評価の基盤となるベンチマークが無効である可能性を示唆しており、企業によるモデル選定やベンチマークを根拠とした主張の信頼性に関わる重大な問題です。",
+      "targetReaders": "AI企業の研究開発者、LLMモデル評価・選定に関わるエンジニア、ベンチマーク設計者"
+    },
+    {
+      "rank": 3,
+      "title": "I run multiple $10K MRR companies on a $20/month tech stack",
+      "url": "https://stevehanov.ca/blog/how-i-run-multiple-10k-mrK-companies-on-a-20month-tech-stack",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "複数の月商$10K企業を月$20のコストで運用しているBootstrapperが、リーンなスタックの実践的なプレイブックを公開しています。単一VPS（Linode/DigitalOcean $5-10/月）、Go言語での開発、静的バイナリのデプロイなど、スケーラビリティと効率性を両立させた具体的な手法を詳説。AWS・複雑なフレームワークを避けることで、理解しやすく保守しやすいシステムを実現しています。",
+      "importance": "スタートアップやインディ開発者にとって実行可能な低コスト構築方法を提示しており、資金調達に依存しない事業モデルの実現可能性を実証しています。",
+      "targetReaders": "スタートアップ創業者、インディ開発者、リーン開発を志向する技術者"
+    },
+    {
+      "rank": 4,
+      "title": "European AI. A playbook to own it",
+      "url": "https://europe.mistral.ai/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Mistral AIが欧州のAI産業競争力強化のための包括的なプレイブック（52分読み）を公表しました。ビザ制度改革、規制整備、投資動員、単一市場の活用など、実行可能な施策を詳述。欧州の学術的強みと4億5000万人の市場規模を活かし、アメリカやアジアの企業に対抗するための戦略的枠組みを示しています。",
+      "importance": "欧州におけるAI開発の制度的・経済的障壁を特定し、国際競争力強化のための具体的施策を提言しており、政策立案者と欧州AI企業の戦略形成に影響を与える可能性があります。",
+      "targetReaders": "欧州のAI企業経営者、AI関連政策立案者、欧州でのAI事業展開を検討する企業"
+    },
+    {
+      "rank": 5,
+      "title": "Building a SaaS in 2026 Using Only EU Infrastructure",
+      "url": "https://eualternative.eu/guides/building-saas-eu-stack/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "AWS/Azure/GCP、Stripe、Cloudflareを使わずに欧州インフラのみで完全なSaaS構築スタックが実現可能であることを実証ガイド。ホスティング（Hetzner/Scaleway）、決済（Mollie）、CDN（Bunny.net）、分析（Plausible）など、各層で欧州の信頼性の高いオルタナティブが成熟していることを詳説。",
+      "importance": "GDPR準拠、データ主権、規制リスク低減を求める企業にとって、実用的な欧州技術スタック構築の具体的ロードマップを提供します。",
+      "targetReaders": "欧州でのSaaS構築を検討する起業家、データ主権・GDPR準拠を重視する企業技術者、EU展開企業のCTO"
+    },
+    {
+      "rank": 6,
+      "title": "The Closing of the Frontier",
+      "url": "https://tanyaverma.sh/2026/04/10/closing-of-the-frontier.html",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "個人開発者がAI産業における経済格差の拡大に対する危機感を表現しています。Anthropic Mythosなどの最新モデルが富裕層向けに制限されることで、低リソース開発者の競争機会が失われることを懸念。インターネットの初期と異なり、テクノロジー領域における無制限の探索機会が失われつつある現状を批評。",
+      "importance": "AI開発の民主化と不平等拡大という構造的課題を指摘しており、AI産業の長期的なイノベーション・ダイバーシティに対する潜在的リスクを提起しています。",
+      "targetReaders": "AI企業の経営層・政策検討者、インディ開発者、AI倫理・公平性を関心事とする技術者"
+    },
+    {
+      "rank": 7,
+      "title": "The peril of laziness lost",
+      "url": "https://bcantrill.dtrace.org/2026/04/12/the-peril-of-laziness-lost/",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "プログラミングの美徳「Laziness（怠惰）」の喪失が招く危機について論じています。本来の怠惰は優れた抽象化を通じたシステム簡素化を意味していたが、LLMの台頭が過度な生産性強調とコード量追加を助長し、可読性や保守性を損なわせている傾向を批評。",
+      "importance": "LLM時代のソフトウェア品質劣化リスクを警告しており、開発チームの文化とコード品質管理の重要性を喚起します。",
+      "targetReaders": "ソフトウェアエンジニア、開発チームリーダー、コード品質・アーキテクチャを重視する組織"
+    },
+    {
+      "rank": 8,
+      "title": "Show HN: Claudraband – Claude Code for the Power User",
+      "url": "https://github.com/halfwhey/claudraband",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Claude Code TUIをラップし、セッション永続化、リモート制御、ACP統合を実現するツールです。CLI、Daemon API、TypeScriptライブラリを提供し、非対話的なワークフロー、HTTP経由のリモートセッション制御、エディタ統合が可能になります。Node.js/Bunで動作し、既存のClaude Code認証を活用。",
+      "importance": "Claude Code（Anthropic公式ツール）の操作性と統合性を大幅に拡張する実用的ツールであり、AI開発者の生産性向上に直結します。",
+      "targetReaders": "Claude Code利用者、AI駆動開発を実践するエンジニア、エディタ統合を求める開発者"
+    }
+  ]
+}
