@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-14",
+  "generatedAt": "2026-04-13T22:47:47.833Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Someone Bought 30 WordPress Plugins and Planted a Backdoor in All of Them",
+      "url": "https://anchor.host/someone-bought-30-wordpress-plugins-and-planted-a-backdoor-in-all-of-them/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "30以上のWordPressプラグインがサプライチェーン攻撃により侵害されました。攻撃者はプラグインポートフォリオを購入し、バックドアを埋め込んで8ヶ月間潜伏させた後、C2サーバーをEthereumスマートコントラクト経由で管理し、従来のドメイン乗っ取りを回避しています。強制更新後も脆弱性は残存し、隠れたSEOスパムがGooglebotにのみ表示される状態が続きました。",
+      "importance": "WordPressサイト運営者にとって重大なセキュリティリスク。プラグイン管理の信頼性が問われ、スマートコントラクトを利用した検出困難な攻撃手法の実例です。",
+      "targetReaders": "WordPress運営者、セキュリティ研究者、サプライチェーン攻撃への対策を検討している組織の責任者"
+    },
+    {
+      "rank": 2,
+      "title": "Exploiting the most prominent AI agent benchmarks",
+      "url": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "UC Berkeleyの研究者がSWE-bench、WebArena、OSWorldなど主要なAIエージェントベンチマーク8つすべてを悪用し、実際のタスクを解かずに近完全スコアを獲得できることを実証しました。IQuest-Coder-V1の81.4%スコアのうち24.4%がgit logで答えをコピーしており、モデルの実際の能力を測定していない状況が既に起きています。",
+      "importance": "AIモデルの評価基準の信頼性が揺らいでいます。ベンチマークゲーミングは既に実務でも発生しており、LLMの真の性能評価手法の再構築が急務です。",
+      "targetReaders": "AI研究者、LLMの採用判断を行う企業、ベンチマーク設計に関わる開発者"
+    },
+    {
+      "rank": 3,
+      "title": "GitHub Stacked PRs",
+      "url": "https://github.github.com/gh-stack/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "GitHubが大規模な変更を小さく見直しやすいプルリクエストに分割できるStacked PRsをネイティブサポート開始。gh stack CLIで複数のPRを連鎖的に管理でき、AIコーディングエージェントへの統合も予定されています。大型PRのレビュー効率化と長期メンテナンス性の向上を実現します。",
+      "importance": "開発フローの実務効率が大きく改善される。特にAIエージェントとの連携により、自動コード生成・リファクタリングの精度が向上します。",
+      "targetReaders": "GitHubユーザー、大規模コードベース管理チーム、AI開発ツール統合を検討中の開発チーム"
+    },
+    {
+      "rank": 4,
+      "title": "Building a CLI for All of Cloudflare",
+      "url": "https://blog.cloudflare.com/cf-cli-local-explorer/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Cloudflareが100以上のプロダクトと3000近いHTTP APIオペレーション全体をカバーする新しいCLI『cf』をテクニカルプレビューで公開。AIエージェント向けにOpenAPIスキーマから自動生成され、MCPサーバーは1000トークン以下で動作します。従来の手動更新プロセスを廃止し、スキーマドリブン開発へ移行。",
+      "importance": "インフラ管理の自動化・エージェント化が大幅に進展。開発者体験の向上とAPIカバレッジの一貫性が実現されます。",
+      "targetReaders": "Cloudflareユーザー、インフラストラクチャ自動化を推進する企業、AIエージェント開発者"
+    },
+    {
+      "rank": 5,
+      "title": "Servo is now available on crates.io",
+      "url": "https://servo.org/blog/2026/04/13/servo-0.1.0-release/",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Servoレンダリングエンジンがv0.1.0としてcrates.ioで初公開されました。ライブラリとして利用可能になり、長期サポート（LTS）版も提供開始。月次リリースでの破壊的変更に対応しつつ、半年ごとの主要アップグレードオプションが提供されます。",
+      "importance": "Rustベースのブラウザエンジンが広く利用可能になることで、組込みブラウザやカスタムレンダリング用途の選択肢が増えます。",
+      "targetReaders": "Rust開発者、ブラウザエンジンの組込み実装を検討する企業、WebビューAPI利用者"
+    },
+    {
+      "rank": 6,
+      "title": "Michigan 'digital age' bills pulled after privacy concerns raised",
+      "url": "https://www.thecentersquare.com/michigan/article_7ca4e268-4a68-42fb-9042-f9d8604ebd7f.html",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "ミシガン州の『Digital Age Assurance Act』がプライバシー擁護団体の反発により撤回されました。同法案は端末メーカーに年齢推定値を常時配信させ、データ利用制限やプラットフォーム責任免除がない設計でした。20州以上で同様の立法推進中であり、OSレベルの監視インフラ導入を目指す動き。",
+      "importance": "デバイスレベルの監視体制構築の危険性が顕在化。類似法案が全米で進行中であり、開発者・ユーザーの監視対抗策が重要になります。",
+      "targetReaders": "プライバシー権提唱者、デバイスメーカー、マッチ機関、デジタル政策に関わる企業"
+    },
+    {
+      "rank": 7,
+      "title": "Stanford report highlights growing disconnect between AI insiders and everyone",
+      "url": "https://techcrunch.com/2026/04/13/stanford-report-highlights-growing-disconnect-between-ai-insiders-and-everyone-else/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Stanfordの調査で、AI専門家と一般人の見方が大きく乖離していることが判明。専門家はAGI対策に注力する一方、一般人は賃金喪失や電力コスト増加を懸念しています。56%の専門家が20年でAIの正の影響を期待する一方、米国民の10%のみが興奮しており、56%は懸念が上回っています。",
+      "importance": "AIベンダーの技術開発方針と市場ニーズ・社会への説得力の乖離が拡大。政策立案や企業戦略の見直しが急務です。",
+      "targetReaders": "AI企業の経営陣、AI政策立案に関わる政府機関、投資家、CSR担当者"
+    },
+    {
+      "rank": 8,
+      "title": "How to make Firefox builds 17% faster",
+      "url": "https://blog.farre.se/posts/2026/04/10/caching-webidl-codegen/",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Firefoxビルドの17%高速化を実現するため、WebIDLコード生成をbuildcacheでキャッシュする仕組みを導入。Lua プラグインシステムを活用し、決定的な生成プロセスを検出・キャッシュすることで、クリーンビルド時の生成ステップを効率化しました。",
+      "importance": "大規模プロジェクトのビルド時間短縮手法として汎用性があり、開発者の生産性向上に直結します。",
+      "targetReaders": "Firefox開発者、大規模C++プロジェクトの開発効率を改善したい組織、ビルドシステム最適化に関わるエンジニア"
+    }
+  ]
+}
