@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-16",
+  "generatedAt": "2026-04-15T22:45:12.266Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Google broke its promise to me – now ICE has my data",
+      "url": "https://www.eff.org/deeplinks/2026/04/google-broke-its-promise-me-now-ice-has-my-data",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Googleがユーザーに約束していた「法執行機関へのデータ提出前の通知」を初めて破り、ICEの行政召喚に対して通知なしでPh.D.候補者のデータを提出した。EFFが虚偽的商行為として実態調査を開始。Googleは10年近くこの通知政策を守ってきたが、今回はプロセスをバイパス。",
+      "importance": "大手テック企業によるプライバシー保護の約束破棄と、利用者データが政治的理由で政府に渡される具体例。個人のプライバシー権と企業の透明性に関わる重大な問題。",
+      "targetReaders": "プライバシー権を重視するユーザー、データ保護に関心がある開発者、法務関係者"
+    },
+    {
+      "rank": 2,
+      "title": "Cal.com is going closed source",
+      "url": "https://cal.com/blog/cal-com-goes-closed-source-why",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "カレンダリングOSSプロジェクトCal.comがセキュリティ上の理由で閉じたソース化に移行。AIがコードベースを自動スキャンして脆弱性を発見できるようになったため、オープンソースは「金庫の設計図を与えるようなもの」と判断。MIT ライセンスのCal.diyバージョンは公開継続。",
+      "importance": "AIの登場によるセキュリティ脅威の増加が、主要なOSSプロジェクトの商用化戦略を変える実例。開発者コミュニティのOSS哲学と実務的なセキュリティ必要性のジレンマを示す。",
+      "targetReaders": "OSSメンテナー、セキュリティエンジニア、エンタープライズ開発者"
+    },
+    {
+      "rank": 3,
+      "title": "Gemini Robotics-ER 1.6",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "GoogleがロボットAI「Gemini Robotics-ER 1.6」を発表。空間推論、計器読み取り、タスク計画で大幅改善。Boston Dynamicsとの協働で産業用ロボットの自律性を向上。視覚と空間認識能力により、複雑な物理環境でのロボット動作が可能に。",
+      "importance": "ロボティクス分野のAI応用が産業化段階に進行。物理世界での推論能力が具体的な実装レベルに達した重要なマイルストーン。",
+      "targetReaders": "ロボティクス開発者、製造業エンジニア、自動化ソリューション企業"
+    },
+    {
+      "rank": 4,
+      "title": "Cybersecurity looks like proof of work now",
+      "url": "https://www.dbreunig.com/2026/04/14/cybersecurity-is-proof-of-work-now.html",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "AnthropicのMythosモデルが複雑なネットワーク攻撃シミュレーション成功。セキュリティが「トークン支出量の競争」に。攻撃者より多くのトークンを費やし、より長く脆弱性を探索できる者が勝つプルーフオブワークモデルに変化。従来の賢い防御戦略の価値が低下の危機。",
+      "importance": "AIセキュリティ能力の急速な向上により、防御戦略の根本的な再検討が必要。暗号資産のPoWと同じく、計算コスト主導のセキュリティ経済が形成される可能性。",
+      "targetReaders": "セキュリティアーキテクト、エンタープライズCISO、インフラストラクチャ責任者"
+    },
+    {
+      "rank": 5,
+      "title": "Anna's Archive loses $322M Spotify piracy case without a fight",
+      "url": "https://torrentfreak.com/annas-archive-loses-322-million-spotify-piracy-case-without-a-fight/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "シャドウライブラリAnna's ArchiveがSpotify音楽バックアップで3.22億ドルのデフォルト判決。被告が出廷せず、裁判所が満額賠償を認可。著作権侵害で150,000ドル/作品、DMCA回避で2,500ドル/ファイルの統計的最大値を適用。",
+      "importance": "大規模音楽パイラシー訴訟の高額判決で業界の警告信号。デフォルト判決により被告の主張が一切検討されず、オンライン著作権侵害の法的リスクが可視化。",
+      "targetReaders": "デジタルコンテンツ企業、著作権管理担当者、法務専門家"
+    },
+    {
+      "rank": 6,
+      "title": "Show HN: Libretto – Making AI browser automations deterministic",
+      "url": "https://github.com/saffron-health/libretto",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "AIブラウザ自動化を確定的にするツールキット「Libretto」。医療ソフトウェア統合向けに開発。ライブブラウザ、トークン効率的CLI、ネットワークトラフィック記録、インタラクティブデバッグで堅牢なWeb統合を実現。",
+      "importance": "AIエージェントによるブラウザ自動化の実用化が進行。Playwright統合で確定的な動作が可能に。医療など規制環境でのAI自動化の信頼性向上。",
+      "targetReaders": "Web自動化エンジニア、AIエージェント開発者、医療IT部門"
+    },
+    {
+      "rank": 7,
+      "title": "Do you even need a database?",
+      "url": "https://www.dbpro.app/blog/do-you-even-need-a-database",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "JSONLファイルとメモリキャッシュ、バイナリサーチをデータベースと比較。ほぼ全てのアプリケーション規模がデータベース不要。ファイルベースアプローチでO(1)読み取り可能。エッジケースやスケーリング必要までの段階的成長を提唱。",
+      "importance": "初期段階アプリケーション開発の複雑性低減。データベース導入のオーバーヘッドが多くの場合不要であることを実証。スタートアップの開発効率向上に直結。",
+      "targetReaders": "スタートアップ創業者、バックエンド開発者、インフラコスト最適化担当者"
+    },
+    {
+      "rank": 8,
+      "title": "Show HN: Fakecloud – Free, open-source AWS emulator",
+      "url": "https://github.com/faiscadev/fakecloud",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "LocalStack有償化に対抗する無料オープンソースAWSエミュレータ。単一バイナリ、22サービス、1,668操作、100%準拠。Docker不要でLocalhost:4566で実動作。AGPL-3.0で永遠に無料。",
+      "importance": "LocalStackの有償化を受けた重要な代替手段。開発環境のローカルテストコスト削減、完全オープンソースAWS互換性。",
+      "targetReaders": "AWS開発者、インフラエンジニア、スタートアップ企業"
+    }
+  ]
+}
