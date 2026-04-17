@@ -1,0 +1,106 @@
+{
+  "date": "2026-04-18",
+  "generatedAt": "2026-04-17T22:42:51.902Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Claude Design",
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "AnthropicがClaude Design を発表。Claude Opus 4.7を搭載し、デザイン、プロトタイプ、スライド、ランディングページなどの視覚的成果物をAIと協調して作成できる。チームの設計システムを自動的に適用し、全プロジェクトで一貫性を保つ。テキストプロンプト、画像、ドキュメント、コードベースから開始でき、インラインコメントや直接編集で洗練可能。",
+      "importance": "デザイナーとビジネスユーザーの創造性を大幅に拡張し、プロトタイプ作成や初期デザイン段階の効率を3倍以上向上させる可能性がある。",
+      "targetReaders": "デザイナー、プロダクトマネージャー、起業家、マーケター"
+    },
+    {
+      "rank": 2,
+      "title": "Android CLI: Build Android apps 3x faster using any agent",
+      "url": "https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "GoogleがAndroid CLIとAndroid Skillsを発表。LLMエージェント向けの軽量プログラマティックインターフェースを提供し、SDKセットアップ、プロジェクト作成、デバイス管理を自動化。内部実験ではLLMトークン使用量を70%削減し、タスク完了を3倍高速化。Claude Code、Gemini CLI、Antigravityなど複数のエージェントに対応。",
+      "importance": "エージェント駆動開発の生産性を大幅に向上させ、どのLLMを使用するかに関わらずAndroid開発の最新ベストプラクティスを自動適用できる。",
+      "targetReaders": "Androidアプリ開発者、AI/エージェントビルダー"
+    },
+    {
+      "rank": 3,
+      "title": "Measuring Claude 4.7's tokenizer costs",
+      "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Claude Opus 4.7の新しいトークナイザーがAnthropicの公表値1.0-1.35xより実際には1.47xのトークン増加を引き起こすことを測定。技術ドキュメントで1.47x、実際のコンテンツで1.45xのトークン増加を確認。Max利用者のコンテキストウィンドウ枯渇が早まり、キャッシュプレフィックスコストが増加、レート制限に到達しやすくなる。",
+      "importance": "API利用コストとクォータの管理に直結する重要な仕様変更。Claude Code利用者に大きな影響。",
+      "targetReaders": "Claude API利用者、Claude Code利用者"
+    },
+    {
+      "rank": 4,
+      "title": "NIST gives up enriching most CVEs",
+      "url": "https://risky.biz/risky-bulletin-nist-gives-up-enriching-most-cves/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "NISTが脆弱性データベース(NVD)の充実化方針を変更し、今後は重要な脆弱性のみを対象に。CISA KEVに登録されたもの、米連邦機関が使用するソフト、NVDが指定する『重要なソフト』に限定。予算不足とCVE数の爆発的増加により、数万件の未処理脆弱性が残存。脆弱性管理企業は独自でデータ充実を行う必要が発生。",
+      "importance": "脆弱性管理の業界標準が変わり、企業のセキュリティ対応戦略の見直しが必須。小規模ベンダーのセキュリティ優先度判断に影響。",
+      "targetReaders": "セキュリティ管理者、脆弱性管理ツール利用企業"
+    },
+    {
+      "rank": 5,
+      "title": "Smol machines – subsecond coldstart, portable virtual machines",
+      "url": "https://github.com/smol-machines/smolvm",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "サブ秒コールドスタート、ポータブル仮想マシン(VM)を実現するCLIツール。信頼できないコードのサンドボックス実行、統合バイナリへのパック(200msで起動)、開発用永続マシン、SSHエージェント転送に対応。Smolfileで再現可能なVM設定を宣言可能。macOS/Linux対応でハイパーバイザーベースのセキュリティ境界を提供。",
+      "importance": "エージェント駆動開発の安全実行基盤として必須。信頼できないコードの実行環境として開発者ツールエコシステムに統合される可能性が高い。",
+      "targetReaders": "開発者、AI/エージェントデベロッパー、セキュリティ重視の企業"
+    },
+    {
+      "rank": 6,
+      "title": "Show HN: AutoProber – AI driven hardware hacker arm",
+      "url": "https://github.com/gainsec/autoprober",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "ハードウェアセキュリティ研究者向けのエージェント自動化スタック。ダクトテープと旧CNCマシンから構築したロボットアーム。プロジェクト取り込み、ハードウェア確認、キャリブレーション、プローブマッピング、ターゲット検証をエージェント指示で自動実行。GRBLマシン、USB顕微鏡、オシロスコープ、安全停止機構で構成。",
+      "importance": "ハードウェア脆弱性研究の自動化により、セキュリティ検証の効率が劇的に向上。エージェント活用の実践例として有意義。",
+      "targetReaders": "ハードウェアセキュリティ研究者、リバースエンジニア"
+    },
+    {
+      "rank": 7,
+      "title": "A better R programming experience thanks to Tree-sitter",
+      "url": "https://ropensci.org/blog/2026/04/02/tree-sitter-overview/",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "Tree-sitterベースのR言語文法により、Rの開発体験が革新的に向上。Air(コード整形)、Jarl(リント)、Positron IDE(自動補完/ホバーヘルプ)、GitHub検索の改善が実現。コード解析生成ツールTree-sitterはC言語で実装され、複数言語へのバインディング存在。パースツリー構築により、従来のR parse()機能を超える能力を提供。",
+      "importance": "R言語開発環境の大幅な改善。データサイエンティストとR開発者の生産性向上に直結。",
+      "targetReaders": "Rユーザー、データサイエンティスト、R言語IDEベンダー"
+    },
+    {
+      "rank": 8,
+      "title": "Ada, its design, and the language that built the languages",
+      "url": "https://www.iqiipi.com/the-quiet-colossus.html",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "1970年代後半の米国防総省契約で設計されたAda言語の歴史的重要性を再評価。ジェネリクス、パッケージ、タスク並行処理、型安全性、契約など現代言語の標準機能を先制的に実装。Rust、Python、C#が過去40年間かけて独立に再発見した安全機能を、Adaは初期から備えていた。形式標準が4回改訂、航空・防衛システムで広く使用。",
+      "importance": "言語設計の歴史的視点で、プログラミング言語進化の透視図を提供。現代言語の『新機能』がいかに先駆的設計に基づくかを示唆。",
+      "targetReaders": "言語設計者、システムプログラマー、アーキテクト"
+    },
+    {
+      "rank": 9,
+      "title": "Tesla tells HW3 owner to 'be patient' after 7 years of waiting for FSD",
+      "url": "https://electrek.co/2026/04/17/tesla-hw3-owners-be-patient-7-years-fsd/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "オランダのTesla HW3所有者がFSDの提供時期について問い合わせ、Teslaから『情報なし』『来るかどうか不明』『辛抱強く待て』との回答を受領。2019年の購入時にFSD能力への支払い(€6,400)は約束されたが、HW3ではAI4専用の新型FSDは実行不可。3,000人のHW3所有者から€6.5百万のFSD購入請求が発生。",
+      "importance": "企業責任と消費者信頼の重大問題。規制当局の注視対象となり、欧州での法的リスク増大。",
+      "targetReaders": "Tesla所有者、消費者保護当局、法務関係者"
+    },
+    {
+      "rank": 10,
+      "title": "Healthchecks.io now uses self-hosted object storage",
+      "url": "https://blog.healthchecks.io/2026/04/healthchecks-io-now-uses-self-hosted-object-storage/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Healthchecks.ioがS3互換マネージドストレージからself-hostedへ移行。Versity S3 GatewayとBtrfsファイルシステムで構成。月1,400万オブジェクト、119GB、平均8KB、毎秒30操作、スパイク時150操作を処理。OVHcloud、UpCloudの段階的なパフォーマンス低下で自社構築を選択。単一システム運用でも十分スケーラブル。",
+      "importance": "クラウドマネージドストレージの信頼性限界を示す実例。中規模SaaS企業の自己ホスト戦略の妥当性を実証。",
+      "targetReaders": "SaaS企業エンジニア、インフラストラクチャ設計者"
+    }
+  ]
+}
