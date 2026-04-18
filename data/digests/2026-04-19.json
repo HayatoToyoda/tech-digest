@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-19",
+  "generatedAt": "2026-04-18T22:39:10.827Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Claude Design",
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "source": "Anthropic",
+      "category": "AI",
+      "summary": "Anthropic が Claude Opus 4.7を搭載した Claude Design をリリース。テキスト説明から設計、プロトタイプ、スライドなどの視覚的成果物を自動生成し、インラインコメントや直接編集で反復改善できる。デザインシステムの自動適用により、企業全体で一貫性のあるデザインを実現。プロダクトマネージャーやマーケターなど非デザイナーも高品質な視覚資料を作成可能になった。",
+      "importance": "デザイン業界の変革をもたらす可能性があり、Figmaなどのツールとの競争関係が生まれる。エンジニアリング組織内でのデザイン効率が劇的に向上する可能性がある。",
+      "targetReaders": "プロダクトマネージャー、デザイナー、スタートアップ創業者、マーケター"
+    },
+    {
+      "rank": 2,
+      "title": "Measuring Claude 4.7's tokenizer costs",
+      "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
+      "source": "Claude Code Camp",
+      "category": "AI",
+      "summary": "Claude Opus 4.7の新しいトークナイザーは、実測で4.6比で1.25倍～1.47倍のトークン数を消費することが判明。技術ドキュメントでは1.47倍、実際のClaude.mdファイルでは1.45倍と、Anthropicの想定範囲(1.0～1.35倍)を上回っている。同じ価格設定のまま、Max利用時のコンテキストウィンドウ消費が加速し、キャッシュコストが増加。",
+      "importance": "Claude API利用者のコスト構造が変わり、メモリ効率の重要性が増す。開発者は利用コストの再計算が必須。",
+      "targetReaders": "Claude API利用企業、AI開発者、エンジニアリング責任者"
+    },
+    {
+      "rank": 3,
+      "title": "Migrating from DigitalOcean to Hetzner",
+      "url": "https://isayeter.com/posts/digitalocean-to-hetzner-migration/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "トルコ拠点の企業がDigitalOcean($1,432/月)からHetzner Dedicated($233/月)へ移行し、月額$1,199を削減。248GB MySQL、34 Nginx サイト、GitLab EE、Neo4jなど複雑なスタックをゼロダウンタイムで移行。新サーバーはすべてのスペック(CPU、メモリ、ストレージ)で劇的に優れている。CentOS 7からAlmaLinux 9.7への OS刷新も同時実施。",
+      "importance": "インフレやドル建てコスト上昇に直面する企業にとって、クラウドプロバイダ切り替えで大幅なコスト削減が可能であることを実証。複雑な本番環境の移行方法論として参考価値が高い。",
+      "targetReaders": "インフラエンジニア、CTO、DevOps責任者、コスト意識の高い企業"
+    },
+    {
+      "rank": 4,
+      "title": "Graphs that explain the state of AI in 2026",
+      "url": "https://spectrum.ieee.org/state-of-ai-index-2026",
+      "source": "IEEE Spectrum",
+      "category": "AI",
+      "summary": "Stanford大学のAI Index 2026レポートによると、世界AI計算能力は2022年以降3.3倍/年で成長(2021年比30倍増)。米国企業が2025年に50件の主要モデルをリリース、中国も急速に追い上げ中。産業界発のモデルは全体の90%超を占め(2003年はゼロ)、ロボット導入では中国が圧倒的リード(29.5万台 vs 米国3.4万台)。Nvidiaは全AI計算の60%超を占有。",
+      "importance": "AI業界の急速な拡大と計算基盤集約化、地政学的な競争構造が明確化。エネルギー消費や規制の議論が今後加速する基礎データ。",
+      "targetReaders": "企業戦略立案者、投資家、AI企業幹部、政策立案者"
+    },
+    {
+      "rank": 5,
+      "title": "Fuzix OS",
+      "url": "https://www.fuzix.org/",
+      "source": "Fuzix",
+      "category": "OSS",
+      "summary": "レトロコンピュータOSの Fuzix 0.4がリリース。8080/Z80/68HC11など複数CPUアーキテクチャ対応、ネットワークレイヤー完全再設計で将来的にカーネル分離が可能。実行形式を統一(8085/Z80は8080互換、32bit ARM形式を.outに)、ビルドプロセス簡素化(make diskimage)。RC2014/RCbusへの命名整理など基盤強化。",
+      "importance": "レガシーシステム開発やエンベデッドシステムの選択肢として継続的に進化。オープンソース組込みOS市場での存在感維持。",
+      "targetReaders": "組込みシステム開発者、レトロコンピュータ愛好家、オープンソースOSの研究者"
+    },
+    {
+      "rank": 6,
+      "title": "PgQue: Zero-Bloat Postgres Queue",
+      "url": "https://github.com/NikolayS/pgque",
+      "source": "GitHub",
+      "category": "OSS",
+      "summary": "Skypeが設計した戦闘検証済みPgQアーキテクチャを、C拡張やデーモン不要の純SQL/PL/pgSQLで再実装。Postgres 14+上で動作(RDS/Aurora/Cloud SQL等マネージドサービス対応)。スナップショットベースバッチ処理とTRUNCATE回転により、SKIP LOCKED削除方式のデッドタプル蓄積を排除。ACID保証を維持しながらゼロ膨張を実現。",
+      "importance": "マネージドPostgres環境でのキューイングが簡素化される。本番環境での安定性と拡張性を両立させた新しいパターン。",
+      "targetReaders": "Postgresデータベース管理者、バックエンド開発者、メッセージングシステム設計者"
+    },
+    {
+      "rank": 7,
+      "title": "State of Kdenlive",
+      "url": "https://kdenlive.org/news/2026/state-2026/",
+      "source": "Kdenlive",
+      "category": "OSS",
+      "summary": "オープンソース動画編集ソフト Kdenlive が25.04/25.08/25.12の3リリースで大幅進化。SAM2モデル使用のObject Segmentation(自動マスキング)、OpenTimelineIO C++ライブラリ対応、音声波形生成300%高速化、新しいドッキングシステム、ウェルカムスクリーン導入など。安定性優先で300以上のコミット、15以上のクラッシュ修正。",
+      "importance": "プロプライエタリ動画編集ソフトに追いつく機能を持つOSSの成熟度が向上。クリエイティブプロフェッショナルの選択肢が広がる。",
+      "targetReaders": "動画クリエイター、オープンソース動画編集ツール利用者、Linux・KDEデスクトップユーザー"
+    },
+    {
+      "rank": 8,
+      "title": "Any Color You Like: NIST Scientists Create 'Any Wavelength' Lasers",
+      "url": "https://www.nist.gov/news-events/news/2026/04/any-color-you-nist-scientists-create-any-wavelength-lasers-tiny-circuits",
+      "source": "NIST",
+      "category": "Web",
+      "summary": "NIST研究チームがシリコンウェハ上に複合材料を堆積させ、任意波長のレーザーを集積フォトニクスチップで生成する技術を開発(Nature掲載)。従来はインフラレッド980nmなど限定波長のみが実用的で、他波長は大型・高価な装置が必要だった。光量子コンピュータ、光原子時計など新興技術の小型化・低価格化を加速。",
+      "importance": "量子コンピューティングと光学技術の融合で、実装可能性が飛躍的に向上。未来の計算インフラの基盤技術確立。",
+      "targetReaders": "フォトニクス研究者、量子コンピュータ開発企業、光学技術者"
+    }
+  ]
+}
