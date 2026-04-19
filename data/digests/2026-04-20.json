@@ -1,0 +1,96 @@
+{
+  "date": "2026-04-20",
+  "generatedAt": "2026-04-19T22:40:21.716Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Vercel April 2026 security incident",
+      "url": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Vercelが限定的な顧客に影響を与えるセキュリティインシデントを公開しました。脅威行為者が盗まれたデータの販売を主張し、NPMトークンやGitHubトークンを含むAPIキーへのアクセスを販売していると述べています。調査の結果、サードパーティAIツールのGoogle Workspace OAuth アプリケーションの侵害が原因と特定されました。開発者は環境変数とシークレットを確認・ローテーションするよう勧告されています。",
+      "importance": "Vercelは開発者向けの主要なクラウドプラットフォームであり、多くの開発者が使用しているNext.jsの開発元です。NPMやGitHubのトークンが漏洩した可能性があるため、サプライチェーン攻撃のリスクが高い。",
+      "targetReaders": "Node.js/JavaScript開発者、DevOps エンジニア、セキュリティ担当者"
+    },
+    {
+      "rank": 2,
+      "title": "The RAM shortage could last years",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "メモリメーカーは2027年末までに需要の60%しか満たす見通しとなっており、ショートフォールは2030年まで続く可能性があります。Samsung、SK Hynix、Micronは生産能力を増強していますが、ほとんどが2027年以降のオンライン化となります。新しいファブはAI データセンター向けHBM生産に重点を置いており、一般的なDRAMの不足は続く見通しです。",
+      "importance": "スマートフォン、ラップトップ、ゲーム機など広範なコンシューマー電子機器の価格上昇に直結する。AI/ML開発者はHBMの優先化による影響を受け、汎用DRAM不足により計算環境のコストが上昇する可能性。",
+      "targetReaders": "ハードウェア担当者、AI/ML エンジニア、IT調達担当者"
+    },
+    {
+      "rank": 3,
+      "title": "The Bromine Chokepoint",
+      "url": "https://warontherocks.com/cogs-of-war/the-bromine-chokepoint-how-strife-in-the-middle-east-could-halt-production-of-the-worlds-memory-chips/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "半導体製造の重要な原料である臭素の供給に深刻な脆弱性があります。南韓は臭素輸入の97.5%をイスラエルに依存しており、イスラエルの臭素処理施設がミサイル攻撃範囲内にあります。臭素から製造される半導体用エッチングガスの代替生産施設は存在せず、中断は数週間以内に消費者機器からAIシステムまで全世界に波及します。",
+      "importance": "DRAM/NANDフラッシュメモリはあらゆる計算デバイスの基礎です。臭素の供給中断は代替できず、IT産業全体への急激な影響が発生する可能性がある極めて重要なサプライチェーンリスク。",
+      "targetReaders": "サプライチェーン管理者、インフラストラクチャ計画者、リスク管理職"
+    },
+    {
+      "rank": 4,
+      "title": "Swiss authorities want to reduce dependency on Microsoft",
+      "url": "https://www.swissinfo.ch/eng/swiss-ai/swiss-authorities-want-to-reduce-dependency-on-microsoft/91280532",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "スイス政府は段階的にMicrosoft製品への依存を削減する方針を発表しました。54,000の行政ワークステーションにはMicrosoft 365がインストールされていますが、オープンソースソフトウェアへの置き換えが可能と判明。ドイツのシュレースウィヒ・ホルシュタイン州が既にオープンソースソリューションに移行しており、スイスも関心を示しています。",
+      "importance": "政府機関が Microsoft からの脱却を進める動きは、クラウド法による米国政府によるデータアクセスの懸念に基づいている。企業のMicrosoft依存度も再検討される可能性があり、OSS/オルタナティブプラットフォームへの市場シフトの先例となる。",
+      "targetReaders": "デジタルインフラストラクチャ管理者、セキュリティ責任者、オープンソース推進者"
+    },
+    {
+      "rank": 5,
+      "title": "Notion leaks email addresses of all editors of any public page",
+      "url": "https://twitter.com/weezerOSINT/status/2045849358462222720",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Notionが公開ページのすべてのエディターのメールアドレスを漏洩させています。公開ページのエディターは誰でもアクセス可能な状態になっており、プライバシー設定の問題があります。",
+      "importance": "Notionは多くの企業や開発者チームが使用する主要なドキュメント管理ツール。メールアドレスの漏洩はフィッシング攻撃やスパム、ターゲット攻撃に悪用される可能性がある。",
+      "targetReaders": "Notion ユーザー、セキュリティ担当者、チーム管理者"
+    },
+    {
+      "rank": 6,
+      "title": "Changes in the system prompt between Claude Opus 4.6 and 4.7",
+      "url": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Anthropicが Claude Opus 4.7 のシステムプロンプト変更を公開しました。主な変更は、Claude in PowerPoint などの新ツール追加、子どもの安全性に関する厳密な指示の拡充、ユーザーの終了要求への尊重、ツール検索機能の活用による曖昧性の解決です。ツール優先アプローチにより、ユーザーに対してより主動的な対応が期待されます。",
+      "importance": "Anthropicは業界で唯一のメジャーAIラボとしてシステムプロンプトを公開しており、これらの変更は LLM の動作や期待値に直結する。新しいツール統合は開発者の利用パターンに影響を与える。",
+      "targetReaders": "AI/LLM 開発者、Claude ユーザー、プロンプトエンジニア"
+    },
+    {
+      "rank": 7,
+      "title": "CEOs admit AI had no impact on employment or productivity",
+      "url": "https://fortune.com/article/why-do-thousands-of-ceos-believe-ai-not-having-impact-productivity-employment-study/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "National Bureau of Economic Research の調査によると、6,000人の CEO/CFO の約90%が過去3年間で AI は雇用や生産性に影響を与えていないと報告しています。回答者の約67%が AI を使用していますが、週あたり約1.5時間の使用にとどまっています。一方、企業は今後3年間で生産性が1.4%増加すると予想しており、ソロー生産性パラドックスの再現を示唆しています。",
+      "importance": "企業の AI 投資は2024年に2,500億ドル以上に達しているが、実際の生産性向上が見られない。この乖離は AI インフラ投資戦略、ROI評価、テクノロジー採用戦略に重大な疑問を提起する。",
+      "targetReaders": "経営幹部、AI/ML 投資判断者、HR/労務管理者、経営コンサルタント"
+    },
+    {
+      "rank": 8,
+      "title": "Blue Origin's rocket reuse achievement marred by upper stage failure",
+      "url": "https://arstechnica.com/space/2026/04/errant-upper-stage-spoils-blue-origins-success-in-reusing-new-glenn-booster/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Blue Origin は New Glenn ロケットの初回の軌道級ブースター再利用に成功しましたが、上段エンジンが目標達成に失敗しました。ブースター「Never Tell Me The Odds」は 11月の初フライト後、2度目のランディングに成功し、SpaceX のような高速なロケット再利用実現を目指しています。ただし上段段階の問題により、完全な任務達成には至りませんでした。",
+      "importance": "Blue Origin は NASA Artemis 計画の重要なロケットプロバイダーです。ブースターの再利用成功はマイルストーン達成を示しますが、上段の問題は商用打ち上げスケジュールと NASA の月面着陸計画に影響する可能性。",
+      "targetReaders": "宇宙産業関係者、NASA 関係者、ロケット技術エンジニア"
+    },
+    {
+      "rank": 9,
+      "title": "Airline worker arrested after sharing photos of bomb damage in WhatsApp group",
+      "url": "https://www.lbc.co.uk/article/dubai-police-spied-private-whatsapp-5HjdXwr_2/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "ドバイ警察は私的な WhatsApp グループ内で爆撃被害の写真を共有した航空会社従業員を逮捕しました。警察は電子監視により私的グループを検知し、従業員を集会に誘い出して逮捕。UAE 政府は大手通信企業 Etisalat と Du の大多数株主であり、ネットワーク上のすべての通信を監視する権限を有しています。",
+      "importance": "私的な暗号化通信が政府当局によって検知・使用される具体的事例です。WhatsApp などの暗号化通信の「プライバシー」の実態を明らかにし、企業と個人の通信セキュリティに対する深刻な脅威を示唆する。",
+      "targetReaders": "セキュリティ専門家、プライバシー活動家、国際ビジネス関係者、通信企業"
+    }
+  ]
+}
