@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-21",
+  "generatedAt": "2026-04-20T22:49:20.230Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "GitHub's fake star economy",
+      "url": "https://awesomeagents.ai/news/github-fake-stars-investigation/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "CMU研究により、GitHubの600万個の偽スターが18,617のリポジトリに分布していることが判明。AI/LLMリポジトリが最大の非悪意的カテゴリで、$0.03～$0.85で公然と販売されている。VCはスター数を投資判断の主要指標として使用しており、FTC規則により違反あたり$53,088の罰金が課される。プロジェクトの成長シグナルを偽造して資金調達する詐欺的なビジネスエコシステムが存在する。",
+      "importance": "オープンソースプロジェクトの評価指標が大規模に操作されており、VC資金調達の意思決定に直結する深刻な信頼問題。開発者とスタートアップの両者に実務的な影響を与える。",
+      "targetReaders": "OSS開発者、スタートアップ創業者、VC担当者、GitHub利用企業"
+    },
+    {
+      "rank": 2,
+      "title": "Deezer says 44% of songs uploaded to its platform daily are AI-generated",
+      "url": "https://techcrunch.com/2026/04/20/deezer-says-44-of-songs-uploaded-to-its-platform-daily-are-20/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Deezerが1日に75,000曲（月間200万曲以上）のAI生成曲が投稿されていると発表。AI生成曲の再生は全体の1～3%だが、85%が詐欺的と判定され収益化されていない。1月比較で日次アップロードが60,000曲（1月）から75,000曲に増加。プラットフォームのアルゴリズム推奨から自動除外され、編集プレイリストにも未掲載。",
+      "importance": "音楽配信業界でAI生成コンテンツが急速に増加しており、クリエイターの権利保護と市場の透明性に関わる重要な課題。収益化メカニズムとプラットフォーム対策の有効性が問われている。",
+      "targetReaders": "音楽ストリーミング事業者、アーティスト、レーベル、コンテンツクリエーター"
+    },
+    {
+      "rank": 3,
+      "title": "Kimi K2.6: Advancing open-source coding",
+      "url": "https://www.kimi.com/blog/kimi-k2-6",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Kimiがオープンソースの大規模言語モデルK2.6をリリース。長時間コーディングタスク、エージェント群化機能で優れた性能を実現。複雑なエンジニアリングタスクで12時間の継続実行、4,000以上のツール呼び出しを実行可能。金融マッチングエンジンのコード最適化で185%のスループット向上を達成。オープンソースモデルとしては長期コーディング信頼性で新基準を設定。",
+      "importance": "オープンソースAIモデルが企業級の複雑なエンジニアリングタスクで実用可能な水準に到達。開発者ツールの権力分散と自社運用の可能性を示唆する。",
+      "targetReaders": "エンタープライズ開発組織、AI/LLM活用企業、オープンソース推進派"
+    },
+    {
+      "rank": 4,
+      "title": "All phones sold in the EU to have replaceable batteries from 2027",
+      "url": "https://www.theolivepress.es/spain-news/2026/04/20/eu-to-force-replaceable-batteries-in-phones-and-tablets-from-2027/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "EUが2027年から販売される全スマートフォンに交換可能なバッテリーを強制する規制を発表。タブレットも対象。デバイス設計、製造プロセス、修理生態系に大きな変化をもたらす。消費者の修理権とe-waste削減を目的とした規制強化。",
+      "importance": "スマートフォンメーカーの製品設計戦略と修理ビジネスモデルに直結する規制変更。Appleを含む主要メーカーの業務フローに影響。",
+      "targetReaders": "スマートフォンメーカー、ハードウェア設計チーム、修理業者、サプライチェーン企業"
+    },
+    {
+      "rank": 5,
+      "title": "John Ternus to become Apple CEO",
+      "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Tim Cookが2026年9月1日付けでApple会長に転任、ハードウェア担当上級副社長John Ternusが最高経営責任者に就任。Cookは1998年入社、2011年から15年間CEO在任。その間Appleの時価総額は約3,500億ドルから4兆ドルに増加、年間売上は1,080億ドルから4,160億ドル以上に成長。Watch、AirPods、Vision Proなどの新カテゴリ開発を主導。",
+      "importance": "Appleの最高経営陣交代で長期戦略や製品開発方針が変わる可能性。テクノロジー業界最大級企業の経営統治改革。",
+      "targetReaders": "Appleの投資家・株主、サプライチェーンパートナー、デバイス開発関係者"
+    },
+    {
+      "rank": 6,
+      "title": "Atlassian enables default data collection to train AI",
+      "url": "https://letsdatascience.com/news/atlassian-enables-default-data-collection-to-train-ai-f71343d8",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Atlassianがデフォルトでユーザーデータ収集を有効化し、AI学習に利用する機能を展開。ユーザーの明示的な同意取得メカニズムについて懸念が生じている。エンタープライズソフトウェアプロバイダーのデータ使用ポリシー変更。",
+      "importance": "エンタープライズ開発ツール利用企業のデータプライバシーと情報セキュリティポリシーに直接影響。デフォルト有効化は多くのユーザーが気付かない可能性。",
+      "targetReaders": "Atlassian製品ユーザー企業のIT部門、情報セキュリティ担当者、法務・コンプライアンス部門"
+    },
+    {
+      "rank": 7,
+      "title": "ggsql: A Grammar of Graphics for SQL",
+      "url": "https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "Positがggsqlのアルファ版をリリース。SQL文法に基づいたグラフィック文法実装で、データ可視化をSQLで定義可能。Quarto、Jupyter、Positron、VS Codeと統合。モジュール化された可視化コンポーネント（VISUALIZE、DRAW）で段階的なプロット開発を実現。",
+      "importance": "データ分析と可視化ワークフローの標準化。SQLユーザーがコード記述感覚で複雑な可視化を作成可能に。ビジネスインテリジェンス・アナリティクスの効率向上。",
+      "targetReaders": "データ分析者、ビジネスアナリスト、データエンジニア、研究者"
+    },
+    {
+      "rank": 8,
+      "title": "We got 207 tok/s with Qwen3.5-27B on an RTX 3090",
+      "url": "https://github.com/Luce-Org/lucebox-hub",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "LuceboxがQwen3.5-27BをRTX 3090で207tok/sで実行する最適化を公開。DFlash投機的デコードとGGUF量子化で自動回帰比で5.46倍高速化。128Kコンテキストを24GB VRAMで実行可能。ハードウェア特有のカーネル最適化により、新しいシリコンを待つ代わりにソフトウェアで性能を引き出すアプローチ。",
+      "importance": "既存GPU（2020年モデル）での効率的なLLM推論が可能に。オンプレミス・エッジデバイスのLLM活用コストを大幅削減。",
+      "targetReaders": "LLM運用企業、オンプレミスAI構築者、エッジAI開発者、GPU活用企業"
+    }
+  ]
+}
