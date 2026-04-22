@@ -1,0 +1,106 @@
+{
+  "date": "2026-04-23",
+  "generatedAt": "2026-04-22T22:51:51.589Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "GitHub CLI now collects pseudoanonymous telemetry",
+      "url": "https://cli.github.com/telemetry",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "GitHub CLIが使用状況の把握のため疑似匿名テレメトリを収集し始めた。ユーザーは環境変数やコンフィグで無効化でき、ログモードで送信内容を確認できる。拡張機能は独自のテレメトリ収集を行う可能性がある。",
+      "importance": "開発者ツールの重要な動向変化。プライバシー意識の高い利用者への影響が大きく、オプトアウト方法の理解が必須。",
+      "targetReaders": "GitHub CLIを日常的に使用する開発者"
+    },
+    {
+      "rank": 2,
+      "title": "Our eighth generation TPUs: two chips for the agentic era",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Googleが第8世代TPU（TPU 8tとTPU 8i）を発表。TPU 8tは大規模モデル訓練向け、TPU 8iは低遅延推論向けに特化。AIエージェント時代に対応した高効率でスケーラブルな設計。2026年末に一般利用可能予定。",
+      "importance": "AI推論・訓練インフラの大型更新。エネルギー効率と性能が大幅向上し、AI エージェント関連のワークロード実装に直結。",
+      "targetReaders": "AI/ML基盤を構築する企業のインフラ担当者"
+    },
+    {
+      "rank": 3,
+      "title": "We found a stable Firefox identifier linking all your private Tor identities",
+      "url": "https://fingerprint.com/blog/firefox-tor-indexeddb-privacy-vulnerability/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "IndexedDBの返却順序からプロセス単位の安定識別子を導出できるFirefoxの脆弱性が発見された。Tor Browserの「New Identity」機能でも識別子が永続化。Mozilla はFirefox 150とESR 140.10.0で修正。",
+      "importance": "プライバシーブラウザ利用者の完全な匿名性を破る重大な脆弱性。信頼・プライバシー設計の落とし穴を示す実例。",
+      "targetReaders": "セキュリティ研究者、プライバシー重視のユーザー、ブラウザ開発者"
+    },
+    {
+      "rank": 4,
+      "title": "Apple fixes bug that cops used to extract deleted chat messages from iPhones",
+      "url": "https://techcrunch.com/2026/04/22/apple-fixes-bug-that-cops-used-to-extract-deleted-chat-messages-from-iphones/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Appleが削除済みメッセージをデバイスに最大1ヶ月保持していたキャッシュ脆弱性を修正。FBI が削除済みSignalメッセージの復元に使用。iOS 18ユーザーにも遡及対応。",
+      "importance": "メッセージングアプリの完全削除機能の信頼性に関わる重要な修正。法執行機関による端末取得時のデータ安全性に直結。",
+      "targetReaders": "iPhoneユーザー、セキュアなメッセージングが必要な利用者"
+    },
+    {
+      "rank": 5,
+      "title": "Google Cloud customer wakes up to $18,000 bill despite $7 budget",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-cloud-customer-wakes-up-to-usd18-000-bill-despite-usd7-budget-thanks-to-forgotten-public-api-key-attacker-put-in-60-000-requests-and-blasted-through-usd1-400-spending-cap",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Google Cloud Run のAI Studioサービスから漏洩したAPI キーを悪用され、$25,672の請求が発生。9つのセーフティ機能がデフォルト無効。Googleは自動的にアカウント階級をアップグレードし、支出上限を拡大。",
+      "importance": "クラウド利用時の予期しない高額請求リスク。デフォルトセキュリティ設定の不十分さが招いた実例で、API キー管理の重要性を示唆。",
+      "targetReaders": "Google Cloud ユーザー、AI Studio 利用者、セキュリティ意識の高い開発者"
+    },
+    {
+      "rank": 6,
+      "title": "Workspace Agents in ChatGPT",
+      "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "OpenAIがChatGPT にWorkspace Agents を導入。チーム向けの共有エージェントで長時間実行ワークフロー、複数ツール統合に対応。GPTs の進化版でクラウド実行。ChatGPT Business/Enterprise/Edu/Teachers プランで研究プレビュー開始。",
+      "importance": "AIエージェントの企業利用の実質化。組織内の ワークフロー自動化が標準化され、生産性向上とAI依存度の深化をもたらす。",
+      "targetReaders": "企業のAI導入担当者、ワークフロー最適化に関心のあるチームリーダー"
+    },
+    {
+      "rank": 7,
+      "title": "DuckDB 1.5.2 – SQL database that runs on laptop, server, in the browser",
+      "url": "https://duckdb.org/2026/04/13/announcing-duckdb-152",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "DuckDB v1.5.2 がリリース。DuckLake v1.0 の安定化、Icebergの機能拡張（GEOMETRY型、ALTER TABLE、パーティション削除など）。新WebAssembly シェルでファイル管理機能、Jepsen テストによるバグ検出と修正。",
+      "importance": "データレイク/ラッキハウスの標準化が進み、Iceberg生態系との連携強化。DuckDB の信頼性が Jepsen で検証。",
+      "targetReaders": "データエンジニア、データレイク構築者、SQLで分析するデータ担当者"
+    },
+    {
+      "rank": 8,
+      "title": "Over-editing refers to a model modifying code beyond what is necessary",
+      "url": "https://nrehiew.github.io/blog/minimal_editing/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "AI コーディングツールが必要以上にコード全体を書き換える「Over-Editing問題」を分析。テスト合格でも構造的差異が大きく、コードレビューを困難化。LLMが不要な改善を加える傾向を実測。",
+      "importance": "AI支援コーディングの実務課題を明示。ブラウンフィールド開発での AI信頼性評価と、レビュー負荷増の実例。",
+      "targetReaders": "AI コーディングツール利用者、コードレビューを担当する開発者"
+    },
+    {
+      "rank": 9,
+      "title": "Parallel agents in Zed",
+      "url": "https://zed.dev/blog/parallel-agents",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Zed が複数エージェントの並列実行に対応。Threads Sidebarでエージェント統制、フォルダアクセス管理、スレッド監視が可能。120fps の滑らかなUIで複数プロジェクト横断作業をサポート。",
+      "importance": "開発者向けエディタがマルチエージェントワークフローの標準化へ。Agentic Engineering の実践基盤が整備。",
+      "targetReaders": "Zed利用者、AI支援開発に関心のあるソフトウェアエンジニア"
+    },
+    {
+      "rank": 10,
+      "title": "Technical, cognitive, and intent debt",
+      "url": "https://martinfowler.com/fragments/2026-04-02.html",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "Margaret-Anne Storey が技術負債に加え、認知負債（チームの理解喪失）と意図負債（目的・制約の記録喪失）の３層を提唱。LLM生成コードの増加に伴い認知負債・意図負債が急増。Shaw & Nave のTri-System理論でAIを System 3 と位置づけ。",
+      "importance": "LLM時代のコード品質管理フレームワークの再定義。単なる技術負債管理では不十分であることを示唆し、チーム認知と意思決定プロセスの重要性を強調。",
+      "targetReaders": "ソフトウェア品質管理者、アーキテクト、AI支援開発導入検討者"
+    }
+  ]
+}
