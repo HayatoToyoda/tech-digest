@@ -1,0 +1,106 @@
+{
+  "date": "2026-04-25",
+  "generatedAt": "2026-04-24T22:42:17.123Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "GPT-5.5",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "OpenAIがGPT-5.5とGPT-5.5 Proを発表。エージェント機能、コード生成、コンピュータ操作において大幅に改善され、GPT-5.4と同等のレイテンシを維持しながら高度な推論能力を実現。ChatGPT、Codex、APIで段階的にロールアウト中。強力なセーフガードを備えて200近くの信頼できるパートナーからのフィードバックを反映。",
+      "importance": "OpenAIの最新フロンティアモデルであり、プロフェッショナルワークロード向けの重要なアップグレード。エージェント機能の進化は開発ツール・ワークフロー全般に大きな影響を与える。",
+      "targetReaders": "AI/LLMを開発・利用している企業や開発者、APIを使用するビジネス"
+    },
+    {
+      "rank": 2,
+      "title": "Google Plans to Invest Up to $40B in Anthropic",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "GoogleがAnthropicへ最大400億ドルの投資を計画。AI業界における大型ストラテジック投資で、LLM開発競争の激化を示す。Googleのバックアップ確保とClaudeの発展を含むAI生態系の再構築が進行中。",
+      "importance": "AI市場における大型M&A級の投資決定。Google・OpenAI・Anthropicの競争構図とAI業界の資金流入パターンを大きく変える。",
+      "targetReaders": "AI企業の投資家、AI業界の戦略立案者、LLMサービス選定の意思決定者"
+    },
+    {
+      "rank": 3,
+      "title": "DeepSeek v4",
+      "url": "https://api-docs.deepseek.com/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "DeepSeekがv4モデルをリリース。deepseek-v4-flash、deepseek-v4-proを提供し、OpenAI/Anthropic互換のAPI形式を採用。思考モード（thinking）のサポートにより、複雑な推論タスクに対応。",
+      "importance": "OpenAI/Anthropic互換APIの採用により、既存開発環境での乗り換えが容易。低コストで高性能なアルタナティブとして選択肢を増加させる。",
+      "targetReaders": "API経由でLLMを利用する開発者・企業、コスト最適化を検討している組織"
+    },
+    {
+      "rank": 4,
+      "title": "Spinel: Ruby AOT Native Compiler",
+      "url": "https://github.com/matz/spinel",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "RubyのAOT（事前コンパイル）ネイティブコンパイラSpinelがリリース。Rubyコードを型推論とC生成を経由してスタンドアロンネイティブバイナリに変換。minirubyと比べて幾何平均11.6倍の高速化を実現。自己ホスティング対応。",
+      "importance": "Rubyのパフォーマンス制限を解決する重要な技術。スタートアップから企業まで、Ruby開発の実用性が飛躍的に向上し、採用範囲が拡大する可能性。",
+      "targetReaders": "Ruby開発者、高パフォーマンスが必要なシステム構築者、言語設計に関心がある技術者"
+    },
+    {
+      "rank": 5,
+      "title": "Spinel: Ruby AOT Native Compiler",
+      "url": "https://github.com/NV404/gova",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Go言語向けの宣言型GUIフレームワークGova。単一Go codebaseからmacOS、Windows、Linux向けのネイティブデスクトップアプリを構築。JavaScriptランタイム・埋め込みブラウザ不要で、静的バイナリを生成。ホットリロード対応。",
+      "importance": "Go開発者向けのモダンGUIフレームワーク。Electron/Tauri等の代替として、シンプルで高速なクロスプラットフォーム開発を実現。",
+      "targetReaders": "Go開発者、クロスプラットフォームデスクトップアプリ開発者、バイナリサイズ・パフォーマンス重視の開発チーム"
+    },
+    {
+      "rank": 6,
+      "title": "My audio interface has SSH enabled by default",
+      "url": "https://hhh.hn/rodecaster-duo-fw/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Rode Caster Duo オーディオインターフェースにデフォルトでSSHが有効化されており、ハードコードされた公開鍵でアクセス可能。ファームウェアに署名検証なしで、修正可能な設計。セキュリティの甘さが明白な事例。",
+      "importance": "IoTデバイスのセキュリティ問題の典型例。デフォルト有効のSSHとハードコード公開鍵は重大な脆弱性。製品セキュリティ設計の重要性を示唆。",
+      "targetReaders": "セキュリティエンジニア、IoTデバイス開発者、製品セキュリティ監査担当者、Rode製品ユーザー"
+    },
+    {
+      "rank": 7,
+      "title": "I cancelled Claude: Token issues, declining quality, and poor support",
+      "url": "https://nickyreinert.de/en/2026/2026-04-24-claude-critics/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Claude Proユーザーが契約キャンセル。トークン制限の急激な枯渇、出力品質の低下、自動化された不適切なサポート対応を報告。初期の肯定的経験から3週間で満足度が急落。",
+      "importance": "Anthropicの顧客満足度と運用サービス品質に関する具体的な問題事例。AI SaaSの利用限度設定・サポート体制の重要性を示唆。",
+      "targetReaders": "Claude Proユーザー、Anthropicの経営陣、LLMサービスプロバイダー、顧客体験設計者"
+    },
+    {
+      "rank": 8,
+      "title": "Tesla discloses $2B AI hardware company acquisition in filing",
+      "url": "https://electrek.co/2026/04/23/tesla-tsla-quietly-discloses-2-billion-ai-hardware-acquisition-10q/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "TeslaがQ1 2026の10-Q提出でAIハードウェア企業買収（最大20億ドル）を開示。企業名・詳細は非公表。12億ドルはサービス条件・パフォーマンスマイルストーン達成時の支払い。AI5チップ・Terafab工場パートナーシップと並行。",
+      "importance": "テスラのAIハードウェア投資の拡大を示す。大型買収の詳細非開示は珍しく、AIハードウェア業界の競争激化と戦略的重要性を反映。",
+      "targetReaders": "テスラ株主・投資家、AI半導体業界関係者、テスラサプライチェーンパートナー"
+    },
+    {
+      "rank": 9,
+      "title": "Refuse to let your doctor record you",
+      "url": "https://buttondown.com/maiht3k/archive/why-you-should-refuse-to-let-your-doctor-record/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "医療現場でのAI自動スクライビングシステム導入に対する批判。プライバシー侵害、不十分なインフォームドコンセント、患者心理への影響、プロバイダー行動の変化、セキュリティリスクを指摘。9つの理由で同意拒否を推奨。",
+      "importance": "ヘルスケア産業のAI導入における倫理・プライバシー問題。患者権利・医療データ保護の重要性を提起。",
+      "targetReaders": "医療機関管理者、患者、医療データセキュリティ専門家、AI倫理研究者"
+    },
+    {
+      "rank": 10,
+      "title": "SDL Now Supports DOS",
+      "url": "https://github.com/libsdl-org/SDL/pull/15377",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "SDL（Simple DirectMedia Layer）がDOSをサポート。DJGPP環境で動作し、VESA UIで画面管理、ダブルバッファリング、音声処理に対応。レガシーシステムとのクロスプラットフォーム対応を実現。",
+      "importance": "レガシーシステム開発の継続性を保証。ゲーム・マルチメディアプログラムの古いプラットフォームへのポーティングが可能に。",
+      "targetReaders": "レトロゲーム開発者、DOSエミュレーション愛好家、クロスプラットフォームライブラリ保守者"
+    }
+  ]
+}
