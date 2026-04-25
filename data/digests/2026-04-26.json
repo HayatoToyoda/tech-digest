@@ -1,0 +1,106 @@
+{
+  "date": "2026-04-26",
+  "generatedAt": "2026-04-25T22:40:35.714Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "DeepSeek v4",
+      "url": "https://api-docs.deepseek.com/news/news260424",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "DeepSeek-V4がプレビュー公開・オープンソース化され、1M（100万）トークンのコンテキスト長を実現しました。V4-Pro（49B活動パラメータ）は閉鎖型の最先端モデルに匹敵し、V4-Flash（13B活動パラメータ）は高速で低コスト。新しいアテンションメカニズムと疎注意技術により、計算コストと メモリ使用量を大幅削減。APIは本日から利用可能で、OpenAI/Anthropic APIとの互換性をサポート。",
+      "importance": "オープンソースの高性能LLMが1M文脈長を標準装備することで、AI開発のコストと アクセシビリティが劇的に改善される重要なマイルストーン。",
+      "targetReaders": "AI開発者、LLMを活用するスタートアップ、大規模言語モデルの選定を検討している企業"
+    },
+    {
+      "rank": 2,
+      "title": "Google plans to invest up to $40B in Anthropic",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-40-billion-in-anthropic",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "GoogleがAnthropicに最大400億ドルの投資を計画。これはAI企業への大型投資として業界再編の重要な動きとなります。",
+      "importance": "GoogleとAnthropicの関係強化は、AI業界の競争構図を大きく変える可能性があり、OpenAI/Microsoftとの競争に直結する戦略的決定。",
+      "targetReaders": "AI業界の投資家、テック企業の経営層、競争動向を注視する開発者"
+    },
+    {
+      "rank": 3,
+      "title": "GPT‑5.5 Bio Bug Bounty",
+      "url": "https://openai.com/index/gpt-5-5-bio-bug-bounty/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "OpenAIがGPT-5.5の生物セキュリティ脆弱性を発見するバグバウンティを開始し、25,000ドルの報酬を提供。5つの生物安全質問を突破する普遍的なジェイルブレイクを探索。4月28日からテスト開始、6月22日までの申請受付。",
+      "importance": "先端AI機能の生物リスク対策に対する実践的なセキュリティ検証であり、AIの安全性向上における重要なステップ。",
+      "targetReaders": "セキュリティ研究者、AI安全性の専門家、レッドチーミング経験者"
+    },
+    {
+      "rank": 4,
+      "title": "New 10 GbE USB adapters are cooler, smaller, cheaper",
+      "url": "https://www.jeffgeerling.com/blog/2026/new-10-gbe-usb-adapters-cooler-smaller-cheaper",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "RTL8159ベースの新しい10G USB 3.2アダプタが市場に登場。$80で購入可能で、従来の大型でホットなThunderboltアダプタの代替となる可能性。ただしUSB 3.2 Gen 2x2ポート搭載マシンでのみ10Gbps全速が達成可能。実測ではFrameworkで6-7Gbps、M4 MacBook Airで同程度の速度にとどまる。",
+      "importance": "10Gbネットワーク接続の民主化により、ノートPC所有者がコスト効率的に高速ネットワークアクセスを得られるようになる実務的な改善。",
+      "targetReaders": "リモートワーカー、ポータブルネットワーク環境を構築したい開発者、ハードウェア選定の実務者"
+    },
+    {
+      "rank": 5,
+      "title": "There Will Be a Scientific Theory of Deep Learning",
+      "url": "https://arxiv.org/abs/2604.21691",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "ディープラーニングの科学理論が出現しつつあることを論じた41ページの論文。学習ダイナミクス、隠れ表現、最終重みなどの特性を刻画する5つの主要研究領域を特定。「学習メカニクス」という新しい枠組みを提唱し、機械的解釈性との相互作用を議論。定量的で検証可能な予測を強調。",
+      "importance": "ディープラーニングの理論的理解の進展は、より信頼性が高く予測可能なAI開発の基盤となり、産業応用の信頼性向上に直結。",
+      "targetReaders": "ML研究者、AI理論に関心のある開発者、深層学習の基礎を理解したい学生"
+    },
+    {
+      "rank": 6,
+      "title": "The AI Industry Is Discovering That the Public Hates It",
+      "url": "https://newrepublic.com/article/209163/ai-industry-discovering-public-backlash",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "AI企業CEO宅へのモロトフ製造剤攻撃やデータセンター計画への武装抵抗など暴力事件が発生。Stanford AI Indexでは、AI専門家の73%が雇用への長期効果に肯定的だが、公衆は23%にとどまる。Gen Z世代ではAIへの興奮が36%から22%に減少、怒りが22%から31%に増加。ポピュリズム的反発が急速に成長。",
+      "importance": "AI業界と一般市民の認識ギャップが深刻化しており、規制、社会受容性、投資判断に大きな影響を与える可能性。",
+      "targetReaders": "AI企業の経営層、政策立案者、PR/コミュニケーション責任者、AI倫理に関心のある開発者"
+    },
+    {
+      "rank": 7,
+      "title": "Niri 26.04: Scrollable-tiling Wayland compositor",
+      "url": "https://github.com/niri-wm/niri/releases/tag/v26.04",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Niri 26.04がリリース。スクロール可能なタイル型Waylandコンポジタで、ウィンドウが右に延びる無限ストリップに配置。最大の要望だった「ぼかし」機能が実装。ext-background-effectプロトコルでアプリ側が対応でき、設定で各種ウィンドウにぼかしを適用可能。GitHubスターは2月に20,000を突破。最小Rust版は1.85。",
+      "importance": "Waylandエコシステムの成熟度が向上し、ユーザーエクスペリエンスの向上がLinuxデスクトップの実用性を高める。",
+      "targetReaders": "Linuxデスクトップユーザー、ウィンドウマネージャーカスタマイズに関心のある開発者、Waylandの標準化に従事するシステムエンジニア"
+    },
+    {
+      "rank": 8,
+      "title": "My audio interface has SSH enabled by default",
+      "url": "https://hhh.hn/rodecaster-duo-fw/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Rode Caster DuoオーディオインターフェイスがデフォルトでSSHが有効状態。ファームウェア更新時のツールによりgzip形式で配信されている。署名チェックがなく、デバイス変更が容易。既知のSSH公開鍵がハードコードされている。消費者向けハードウェアのセキュリティ懸念を露呈。",
+      "importance": "IoTデバイスのデフォルトセキュリティ設定の不備が業界全体の問題として可視化され、ユーザーのデバイスセキュリティリスクが顕在化。",
+      "targetReaders": "セキュリティエンジニア、IoTデバイス開発企業、消費者向けハードウェアの品質管理担当者"
+    },
+    {
+      "rank": 9,
+      "title": "Show HN: A Karpathy-style LLM wiki your agents maintain (Markdown and Git)",
+      "url": "https://github.com/nex-crm/wuphf",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Wuphfは、複数のAIエージェントが共有メモリとして使用する協調型オフィスプラットフォーム。Claude Code/Codex CLIをサポート。Markdown・Gitベースの知識ベースを維持し、エージェント間で文脈を共有。npmで単一コマンドで起動可能。プレ1.0の開発中。",
+      "importance": "複数AIエージェントの協働を実現するインフラが出現し、マルチエージェントワークフローの実装障壁が低下。",
+      "targetReaders": "AI開発者、マルチエージェントシステムの構築者、AIアシスタント統合を検討する企業"
+    },
+    {
+      "rank": 10,
+      "title": "Open source memory layer so any AI agent can do what Claude.ai and ChatGPT do",
+      "url": "https://alash3al.github.io/stash?_v01",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Stashはオープンソースのメモリレイヤーで、AIエージェントが会話履歴を記憶・活用可能にします。ネームスペース機能で知識を階層的に整理（/users、/projects、/selfなど）。PostgreSQL+pgvectorをバックエンド サポート。28のMCPツール、6パイプラインステージをサポート。",
+      "importance": "AIエージェントの継続性と文脈保持が汎用化され、ユーザー体験が大幅に向上し、LLMの実用性が拡大。",
+      "targetReaders": "AI開発者、LLM統合を検討する企業、パーソナルAIアシスタント構築者"
+    }
+  ]
+}
