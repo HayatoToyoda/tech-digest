@@ -1,0 +1,96 @@
+{
+  "date": "2026-04-27",
+  "generatedAt": "2026-04-26T22:42:09.792Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "SWE-bench Verified no longer measures frontier coding capabilities",
+      "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
+      "source": "OpenAI",
+      "category": "AI",
+      "summary": "OpenAIが主要なソフトウェア工学ベンチマーク「SWE-bench Verified」の使用を中止すると発表。調査により59.4%のテストケースに欠陥があり、フロンティアモデルがトレーニングデータから問題を学習していることが判明。同社は業界全体に対しても報告を止めるよう勧告。代替となる新しい評価指標の構築を進めている。",
+      "importance": "AIの能力評価に使用される標準的なベンチマークが信頼性を失ったことは、業界全体のAI進捗測定に大きな影響を与える。開発企業の評価方法の見直しが急務となる。",
+      "targetReaders": "AI開発企業、機械学習研究者、ベンチマーク設計者"
+    },
+    {
+      "rank": 2,
+      "title": "GoDaddy gave a domain to a stranger without any documentation",
+      "url": "https://anchor.host/godaddy-gave-a-domain-to-a-godaddy-account/",
+      "source": "Anchor Host",
+      "category": "Security",
+      "summary": "GoDaddyが27年間使用されていたドメイン(HELPNETWORKINC.ORG)を無線告知で他のユーザーに転送。所有組織は二段階認証とドメインプライバシー保護を有効化していたにもかかわらず、GoDaddy内部ユーザーが数分で転送を完了。結果として全20支部のメール・ウェブサイトが4日間停止。GoDaddyは32回の電話とメール対応で実質的な対応をせず。",
+      "importance": "ドメイン管理プロバイダーのセキュリティと対応プロセスの深刻な欠陥が露呈。多くの組織にとってドメイン転送リスクへの意識向上が必要。",
+      "targetReaders": "ドメイン管理者、エンタープライズIT責任者、サイバーセキュリティ専門家"
+    },
+    {
+      "rank": 3,
+      "title": "Agentic AI systems violate the implicit assumptions of database design",
+      "url": "https://arpitbhayani.me/blogs/defensive-databases/",
+      "source": "Arpit Bhayani",
+      "category": "AI",
+      "summary": "AIエージェントが従来のデータベース設計の根本的な仮定を破壊している。決定論的な呼び出し元、意図的な書き込み、短い接続という40年間の前提が通用しなくなる。エージェントは予測不可能なクエリを生成し、長時間接続を保持し、自律的に書き込む。具体的な防御パターンとして、ステートメント タイムアウト設定やロールベースの権限制限を提案。",
+      "importance": "AIエージェントの急速な導入に伴い、データベース管理者が既存の設計パラダイムを再考する必要がある。本番環境での予期しない障害を防ぐために、新しい防御戦略が緊急に求められている。",
+      "targetReaders": "データベース管理者、システムアーキテクト、AIシステム構築者"
+    },
+    {
+      "rank": 4,
+      "title": "GnuPG – post-quantum crypto landing in mainline",
+      "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q2/000504.html",
+      "source": "GnuPG",
+      "category": "Security",
+      "summary": "GnuPG 2.5.19がリリース。Kyber(ML-KEM/FIPS-203)としても知られるポスト量子暗号化アルゴリズムをサポート。新しいOCB対称暗号オプション、セッションハッシュ表示機能など複数の新機能を追加。2.4シリーズは2ヶ月でサポート終了。すべてのバージョンは後方互換性を維持。",
+      "importance": "量子コンピュータへの耐性を持つ暗号アルゴリズムが広く使用されるGnuPGに統合されることで、将来の暗号セキュリティ対策の実装が進む。組織のアップグレード計画が必要となる。",
+      "targetReaders": "セキュリティ管理者、暗号化通信利用者、情報セキュリティ専門家"
+    },
+    {
+      "rank": 5,
+      "title": "OpenAI Privacy Filter",
+      "url": "https://openai.com/index/introducing-openai-privacy-filter/",
+      "source": "OpenAI",
+      "category": "Security",
+      "summary": "OpenAIがPII(個人識別情報)の検出と削除用のオープンウェイト言語モデル「Privacy Filter」をリリース。文脈認識で個人情報を検出し、ローカルで実行可能。長い入力を効率的に処理。従来のパターンマッチングベースのツールより深い言語理解に基づいており、PII-Masking-300kベンチマークでSOTA達成。",
+      "importance": "AIと個人データ保護の両立が重要になる中、実装しやすいプライバシー保護ツールの提供は業界標準の上昇につながる。開発者が安全にAIを活用できる基盤整備が進む。",
+      "targetReaders": "AI開発者、プライバシー担当者、データ保護エンジニア"
+    },
+    {
+      "rank": 6,
+      "title": "Waymo says can't avoid bike lanes because riders want to be dropped off in them",
+      "url": "https://road.cc/news/driverless-taxis-veering-into-cycle-lanes-normal-practice-says-waymo",
+      "source": "road.cc",
+      "category": "Platform",
+      "summary": "Waymoの自動運転タクシーがロンドンで運用開始直後、自転車レーン侵犯問題が発生。Waymoは自転車活動家に対し、乗客のピックアップ/ドロップオフで自転車レーンに入ることは「通常の慣行」だと主張。英国のHighway Code違反であり違法。過去には自転車利用者がWaymoのドアに被り脳損傷を負った訴訟事例も存在。",
+      "importance": "自動運転技術の実世界展開で、法令遵守と安全設計に関する根本的な課題が露呈。都市インフラと自動運転車の互換性設計の重要性が明らかになり、規制当局の対応が急務。",
+      "targetReaders": "自動運転開発企業、都市計画担当者、交通安全規制当局"
+    },
+    {
+      "rank": 7,
+      "title": "Asahi Linux Progress Linux 7.0",
+      "url": "https://asahilinux.org/2026/04/progress-report-7-0/",
+      "source": "Asahi Linux",
+      "category": "OSS",
+      "summary": "Asahi LinuxチームがLinux 7.0対応のインストーラー自動化を実施。以前は2年間アップデートがなかったが、GitHub Workflowsを利用した自動ビルド・デプロイメント体制を構築。インストールイメージマニフェストをasahi-installer-dataリポジトリに移動し、インストーラーコードベースとは独立して更新可能に。DeviceTreeバイナリ互換性の問題を解決。",
+      "importance": "Apple Siliconプラットフォームへのオープンソース対応を強化。CI/CD自動化により継続的な保守性が向上し、ユーザーサポート効率が改善される。",
+      "targetReaders": "Linuxディストリビューション開発者、Apple Silicon利用者、オープンソース貢献者"
+    },
+    {
+      "rank": 8,
+      "title": "Amateur armed with ChatGPT solves an Erdős problem",
+      "url": "https://www.scientificamerican.com/article/amateur-armed-with-chatgpt-vibe-maths-a-60-year-old-problem/",
+      "source": "Scientific American",
+      "category": "AI",
+      "summary": "23歳の数学トレーニングなしのアマチュア・Liam PriceがChatGPT Pro(GPT-5.4)の単一プロンプトで60年来のErdős予想を解決。AI生成の新しい解法が人間の思考盲点を回避。解法は単なる推測ではなく、テレンス・タオを含む数学者から新規性が確認された。今後さらに広い応用の可能性がある。",
+      "importance": "AIが数学的問題解決で人間の専門家レベルを超える能力を示し、特に「正しい方向」を見つけることで人間と補完的役割を果たせることを実証。科学研究のAI活用が新段階に進む。",
+      "targetReaders": "AI研究者、数学者、科学技術政策立案者"
+    },
+    {
+      "rank": 9,
+      "title": "GitHub unwanted UX change: issue links now open in a popup",
+      "url": "https://github.com/orgs/community/discussions/192666",
+      "source": "GitHub Community",
+      "category": "Platform",
+      "summary": "GitHubがクロスリポジトリのイシューリンクをポップアップで開く変更を試験。ロード時間改善が目的だったが、ユーザーから生産性低下の報告が相次ぐ。リンク先URLのコピーやAIエージェントとの連携が破壊される。GitHubが変更を最終的に原状復帰すると発表。",
+      "importance": "UXの最適化が意図しない方向で実装され、開発者の作業フローを阻害。変更前の検証とユーザーテストの重要性が改めて認識される。",
+      "targetReaders": "GitHub利用開発者、UX/UXリサーチャー、ソフトウェア開発管理者"
+    }
+  ]
+}
