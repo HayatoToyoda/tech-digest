@@ -1,0 +1,106 @@
+{
+  "date": "2026-04-28",
+  "generatedAt": "2026-04-27T22:56:00.533Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "GitHub Copilot is moving to usage-based billing",
+      "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+      "source": "GitHub Blog",
+      "category": "Platform",
+      "summary": "GitHub Copilotは2026年6月1日からプレミアムリクエスト単位（PRU）から使用量ベースのGitHub AIクレジット課金モデルへ移行する。コード補完とNext Edit提案は全プランに含まれ無料だが、その他の機能はトークン消費量に基づいて課金される。基本プラン料金は変わらない（Copilot Pro $10/月、Pro+ $39/月、Business $19/ユーザー/月）が、エージェント機能の需要増に対応するための施策である。",
+      "importance": "GitHub開発者の大多数に影響する重要な料金体系変更であり、AIエージェント活用時のコスト構造を大きく変える可能性がある。",
+      "targetReaders": "GitHub Copilotユーザー、特に有料プランユーザーと企業開発チーム"
+    },
+    {
+      "rank": 2,
+      "title": "Mercor Breach: 4TB of voice samples stolen from 40k AI contractors",
+      "url": "https://app.oravys.com/blog/mercor-breach-2026",
+      "source": "ORAVYS Forensic Intelligence",
+      "category": "Security",
+      "summary": "Lapsus$が4月4日にAIデータラベラー企業Mercorから4TBのボイスサンプルとIDドキュメントを窃取した。40,000名以上の契約者の音声生体認証データが政府発行ID写真と紐付けられた状態で流出。高品質な音声クローニングに必要な2～5分の高品質音声データと本人確認書類の組み合わせにより、銀行認証の迂回やスミッシング攻撃に悪用される可能性が極めて高い。",
+      "importance": "音声生体認証とID情報の組み合わせ漏洩は、詐欺やなりすまし攻撃の深刻なリスクであり、金融機関や個人セキュリティに対する直接的脅威である。",
+      "targetReaders": "AI企業のセキュリティ責任者、金融機関、生体認証システム運用者"
+    },
+    {
+      "rank": 3,
+      "title": "Microsoft and OpenAI end their exclusive and revenue-sharing deal",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-27/microsoft-to-stop-sharing-revenue-with-main-ai-partner-openai",
+      "source": "Bloomberg",
+      "category": "AI",
+      "summary": "MicrosoftとOpenAIの排他的な収益分配契約が終了する。13年続いた両社の提携関係に大きな転換が生じ、AI業界の勢力図に影響を与える可能性がある。",
+      "importance": "業界トップのAI企業2社の関係破綻は、AIサービスの提供体制やライセンス戦略に大きな影響を及ぼす可能性がある。",
+      "targetReaders": "AI企業関係者、OpenAI・Microsoft利用者、AIスタートアップ"
+    },
+    {
+      "rank": 4,
+      "title": "China blocks Meta's acquisition of AI startup Manus",
+      "url": "https://www.cnbc.com/2026/04/27/meta-manus-china-blocks-acquisition-ai-startup.html",
+      "source": "CNBC",
+      "category": "AI",
+      "summary": "中国国家発展改革委員会がMetaによる20億ドルのシンガポール系AI企業Manus買収を却下。シンガポール経由での規制回避（Singapore-washing）の事例として注視されている中での政策的阻止。AI企業の国外移転規制強化を示唆する重要な信号。",
+      "importance": "米中AI規制競争の激化を示し、国境を越えたAI企業買収戦略に規制リスクが高まっていることを示す。",
+      "targetReaders": "VC・テックファンド、AI企業、M&A関連者、海外展開企業"
+    },
+    {
+      "rank": 5,
+      "title": "pgbackrest is no longer being maintained",
+      "url": "https://github.com/pgbackrest/pgbackrest",
+      "source": "GitHub",
+      "category": "OSS",
+      "summary": "PostgreSQL最大級のバックアップソリューション「pgBackRest」の開発が13年で終了される。メインテナンスの継続が不可能となり、スポンサー確保の失敗とメインテナイナーの生計問題が理由。v2.58.0が最終安定版となり、今後はフォークによる新プロジェクトへの移行が予想される。",
+      "importance": "本番環境で広く使用されている重要なOSSの保守終了は、依存する企業のリスク管理に直結する。",
+      "targetReaders": "PostgreSQL運用者、データベース管理者、pgBackRest利用企業"
+    },
+    {
+      "rank": 6,
+      "title": "Dutch central bank ditches AWS and chooses Lidl for European Cloud",
+      "url": "https://www.techzine.eu/news/infrastructure/140634/dutch-central-bank-chooses-lidl-for-european-cloud/",
+      "source": "TechZine",
+      "category": "Platform",
+      "summary": "オランダ中央銀行（DNB）がAWSを放棄し、Lidl傘下のSchwarz DigitsのStackit欧州クラウドプラットフォームに移行。米国クラウド企業への過度な依存を低減し、GDPR準拠のデータソブリンティ確保を目指す。欧州の規制部門による米国クラウド脱却の重要な事例。",
+      "importance": "金融規制機関が米国クラウドを離脱し欧州代替案を選択する動きは、世界的なクラウド市場の再編を示唆する。",
+      "targetReaders": "クラウド戦略責任者、金融機関IT部門、企業インフラ投資判断者"
+    },
+    {
+      "rank": 7,
+      "title": "Show HN: OSS Agent I built topped the TerminalBench on Gemini-3-flash-preview",
+      "url": "https://github.com/dirac-run/dirac",
+      "source": "GitHub",
+      "category": "AI",
+      "summary": "オープンソースAIエージェント「Dirac」がTerminalBench-2でGemini-3-flash-preview使用時に65.2%のスコアで1位。コンテキスト長管理を最適化することで平均64.8%のAPI費用削減を実現。複雑なリファクタリングで100%精度を達成。",
+      "importance": "オープンソースエージェントが商用モデルを凌駕する性能を実現し、効率的なAIツール設計の重要性を示す。",
+      "targetReaders": "AI開発者、オープンソース貢献者、LLM活用検討企業"
+    },
+    {
+      "rank": 8,
+      "title": "Chrome's Prompt API - On-device AI with Gemini Nano",
+      "url": "https://developer.chrome.com/docs/ai/prompt-api",
+      "source": "Chrome Developers",
+      "category": "Platform",
+      "summary": "GoogleがPrompt APIを通じてブラウザ上でGemini Nanoのオンデバイス実行を可能に。Windows/macOS/Linux上のChrome 138以降で、22GB以上の保存容量と特定GPU/CPU要件下で複数のAI機能（Summarizer、Writer、Rewriter等）が利用可能。プライバシーを保ちつつローカル推論を実現。",
+      "importance": "ブラウザネイティブのAI機能が実現し、エッジAI活用とプライバシー保護の両立が現実的になる。",
+      "targetReaders": "Web開発者、Chrome拡張機能開発者、プライバシー志向のサービス企画者"
+    },
+    {
+      "rank": 9,
+      "title": "Running local LLMs offline on a ten-hour flight",
+      "url": "https://deploy.live/blog/running-local-llms-offline-on-a-ten-hour-flight/",
+      "source": "deploy.live",
+      "category": "AI",
+      "summary": "MacBook Pro M5 Max 128GBでGemma 4とQwen 4.6をオフラインで実行。10時間の飛行中に4M+トークン処理し、請求分析ツール構築などの実務作業を完了。電力消費（1%/分）と熱処理がボトルネック、100k+トークンコンテキストで性能低下を確認。",
+      "importance": "高性能ローカルLLM実行でエッジAI活用の実現可能性と限界が明確化され、今後のハードウェア要件が示される。",
+      "targetReaders": "ローカルLLM活用検討者、エッジコンピューティング開発者、リモートワーカー"
+    },
+    {
+      "rank": 10,
+      "title": "Fully Featured Audio DSP Firmware for the Raspberry Pi Pico",
+      "url": "https://github.com/WeeBLabs/DSPi",
+      "source": "GitHub",
+      "category": "OSS",
+      "summary": "Raspberry Pi PicoをDSPオーディオプロセッサに変換するファームウェア「DSPi」。USBサウンドカード機能、パラメトリックEQ、ルーム補正、ヘッドフォンクロスフィードなど業界標準機能を低コストで実装。24ビット/96kHz対応のI2S/S/PDIF出力をサポート。",
+      "importance": "低価格高性能なオーディオプロセッシング実装により、DIYオーディオプロジェクトの敷居が大幅に低下する。",
+      "targetReaders": "オーディオエンジニア、DIY愛好家、組込みシステム開発者"
+    }
+  ]
+}
