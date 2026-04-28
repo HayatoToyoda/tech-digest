@@ -1,0 +1,106 @@
+{
+  "date": "2026-04-29",
+  "generatedAt": "2026-04-28T22:58:45.307Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "GitHub RCE Vulnerability: CVE-2026-3854 Breakdown",
+      "url": "https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Wiz Researchが発見した重大な脆弱性CVE-2026-3854により、認証済みユーザーが単一のgit pushコマンドでGitHubのバックエンドサーバーで任意コマンド実行が可能だった。GitHub.comでは6時間以内に修正されたが、GitHub Enterprise Serverでは全サポート版にパッチがリリースされており、88%のインスタンスがまだ脆弱な状態。サーバー全体の侵害やすべてのホストされたリポジトリへのアクセスが可能。",
+      "importance": "GitHub Enterprise Serverユーザーは緊急に3.19.3以上へのアップグレードが必須で、RCE脆弱性は最も深刻な侵害リスク。",
+      "targetReaders": "GitHub Enterprise Serverを運用する企業のセキュリティ・インフラチーム"
+    },
+    {
+      "rank": 2,
+      "title": "GitHub Copilot code review will start consuming GitHub Actions minutes",
+      "url": "https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "2026年6月1日から、GitHub Copilotのコードレビューは従来のCopilot PRUに加えて、GitHub Actionsの実行分を消費するようになる。AI Creditsとしての使用量ベースの課金に加え、プライベートリポジトリでのActionsの分単位が課金対象に。複数のプランに影響し、ユーザーは予算管理の見直しが必要。",
+      "importance": "GitHub Copilotを活用している企業の運用コストが大きく変わり、予算計画の更新が6月前に必須。",
+      "targetReaders": "GitHub Copilot利用企業の課金管理者・エンジニアリング主導者"
+    },
+    {
+      "rank": 3,
+      "title": "AISLE Discovers 38 CVEs in OpenEMR Healthcare Software",
+      "url": "https://aisle.com/blog/aisle-discovers-38-critical-security-vulnerabilities-in-healthcare-software-used-by-100000-providers",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "AISLE AIセキュリティツールが医療IT標準OpenEMRで38個のCVEを発見し、2018年の人間チームの監査を超える成果を上げた。SQL インジェクション脆弱性により患者情報(PHI)の大規模流出やRCEが可能。OpenEMRは100,000医療提供者と200百万患者に利用される最大規模のオープンソース電子カルテシステム。",
+      "importance": "医療インフラの広範な脆弱性発見により、患者個人情報流出リスクが深刻。同時にAIセキュリティ監査の有効性が実証された。",
+      "targetReaders": "OpenEMRを運用する医療機関・医療IT関係者・セキュリティ実装者"
+    },
+    {
+      "rank": 4,
+      "title": "GitHub Actions is the weakest link",
+      "url": "https://nesbitt.io/2026/04/28/github-actions-is-the-weakest-link.html",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "GitHub Actionsはロックファイル、完全性ハッシュ、バージョンピニング機構がなく、uses:宣言が実行時に毎回可変タグに対して再解決される設計。pull_request_targetトリガーとforkチェックアウトの組み合わせにより、UltralyticsやSpotbugs、tj-actionsなど複数のサプライチェーン侵害が発生。GitHubのドキュメントでも2021年から警告されているが根本的な対策がない。",
+      "importance": "オープンソース全体のサプライチェーン攻撃の中心プラットフォームとなっており、デフォルト設定が私用企業CI向けで危険。",
+      "targetReaders": "GitHub Actions依存のOSSプロジェクト・開発チーム・セキュリティ責任者"
+    },
+    {
+      "rank": 5,
+      "title": "Your phone is about to stop being yours",
+      "url": "https://keepandroidopen.org/en/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "2026年9月以降、Googleは登録なしのAndroidアプリをすべてのデバイスで自動ブロックする政策を実施。すべてのアプリ開発者は中央登録・身分証提出・手数料支払いが必須で、F-Droidなどのアルタナティブダストリビューション、個人開発、非営利団体のアプリが全面的に制限される。開発者向けのバックドアは複雑な9ステップと24時間冷却期間を含む。",
+      "importance": "Androidのオープン性が大きく損なわれ、独立系開発者と市民社会のソフトウェア開発が実質不可能に。サーバー権威主義国での言論統制ツール化の懸念。",
+      "targetReaders": "Android開発者・F-Droid利用者・デジタル自由度に関心のある技術者・市民"
+    },
+    {
+      "rank": 6,
+      "title": "Ghostty is leaving GitHub",
+      "url": "https://mitchellh.com/writing/ghostty-leaving-github",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "GitHub初期ユーザー(ID 1299)で18年毎日利用してきた著名開発者Mitchell Hashimotoが、ほぼ毎日のGitHub障害による開発業務の阻害を理由に、GhosttyをGitHubから移行すると発表。GitHubはPR レビューを含むActionsで数時間のダウンタイムを記録し、本格的な開発作業に適さなくなった状況を指摘。",
+      "importance": "GitHub依存のオープンソース開発の信頼性に対する実装者からの深刻な警告。インフラとしての機能低下が顕在化。",
+      "targetReaders": "GitHub依存のプロジェクト管理者・オープンソース開発者・DevOpsエンジニア"
+    },
+    {
+      "rank": 7,
+      "title": "Warp is now Open-Source",
+      "url": "https://github.com/warpdotdev/warp",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "WarpターミナルがMITライセンス(UI)とAGPLv3(コア)で完全オープンソース化。OpenAIがスポンサー。AIエージェント向けのコードを自前または他社(Claude Code、Gemini CLI)から統合可能。コミュニティ貢献を想定した軽量なワークフロー設計で、準備完了issues や実装可能issues にラベリング。",
+      "importance": "開発環境ツールのエージェント統合がスタンダード化し、複数LLMの並用が容易になる先行例。",
+      "targetReaders": "エージェントベースの開発ワークフロー採用検討中のチーム・ターミナルツール開発者"
+    },
+    {
+      "rank": 8,
+      "title": "OpenAI models coming to Amazon Bedrock: Interview with OpenAI and AWS CEOs",
+      "url": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "MicrosoftとOpenAIが契約を修正し、OpenAIモデルがAWSなど全クラウドプロバイダで提供可能に。Microsoftは引き続き主要パートナーで優先出荷権を保持するが、独占権を喪失。Microsoftのライセンスは2032年まで非独占に変更され、収益シェア支払いは終了。AGI条項も削除。",
+      "importance": "クラウド市場のAI競争が激化し、Anthropicとの競争環境の変化。Azureの差別化が喪失される一方、OpenAIのビジネス選択肢拡大。",
+      "targetReaders": "エンタープライズAIソリューション採用企業・クラウド戦略立案者・OpenAI依存企業"
+    },
+    {
+      "rank": 9,
+      "title": "VibeVoice: Open-source frontier voice AI",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Microsoftがオープンソース音声AIモデル群を公開。ASRは60分長尺オーディオを単一パスで処理し、話者・タイムスタンプ・内容を構造化出力。50言語以上対応。RTSは0.5Bモデルでリアルタイムテキスト音声変換。Hugging Face Transformersライブラリに統合。TTSコードは責任ある使用に関する懸念から削除。",
+      "importance": "大規模オープンソース音声モデルにより、音声AIの民主化が進行。多言語対応とストリーミング機能が実用的。",
+      "targetReaders": "音声AI統合検討中の開発者・多言語音声処理が必要なプロダクト開発チーム"
+    },
+    {
+      "rank": 10,
+      "title": "Claude.ai unavailable and elevated errors on the API",
+      "url": "https://status.claude.com/incidents/9l93x2ht4s5w",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Anthropic Claude.aiおよびClaude APIで認証エラーの増加と大規模障害が発生(17:34-18:52 UTC)。Claude Code、Claude Cowork、Claude for Governmentを含む複数サービスが影響を受けた。6時間以内に復旧。",
+      "importance": "Claude依存アプリケーションの本番環境リスクが再確認され、代替フェイルオーバー設計の必要性を示唆。",
+      "targetReaders": "Claude APIを本番利用する企業・高可用性が必須なシステム設計者"
+    }
+  ]
+}
