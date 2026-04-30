@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-01",
+  "generatedAt": "2026-04-30T22:56:08.681Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Shai-Hulud Themed Malware Found in the PyTorch Lightning AI Training Library",
+      "url": "https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "PyTorchライブラリ「lightning」のバージョン2.6.2と2.6.3が供給チェーン攻撃により侵害されました。マルウェアはモジュール読み込み時に自動実行され、認証情報やクラウドシークレットを盗聴し、GitHubリポジトリを毒殺します。PyIからnpmへ拡大し、npm認証情報を使用して複数のパッケージに波及する可能性があります。深層学習開発者は即座に依存関係を確認し、認証情報をローテーションする必要があります。",
+      "importance": "AI/ML開発の重要なライブラリが侵害された極めて深刻な供給チェーン攻撃です。影響範囲が広く、認証情報盗聴リスクがあります。",
+      "targetReaders": "PyTorchやPyTorch Lightningを使用する機械学習エンジニア、DevOpsエンジニア、セキュリティチーム"
+    },
+    {
+      "rank": 2,
+      "title": "LinkedIn scans for 6,278 extensions and encrypts the results into every request",
+      "url": "https://404privacy.com/blog/linkedin-is-scanning-your-browser-extensions-this-is-how-they-use-the-data/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "LinkedInがブラウザ拡張機能6,278個をスキャンし、そのデータを全リクエストに暗号化して含めています。2017年から継続している操作で、ユーザーの職業プロフィールと個人的なブラウザ習慣を紐付けて追跡しています。求職活動、政治志向、障害対応拡張機能など機密情報の推測に利用される可能性があります。",
+      "importance": "LinkedInが企業プラットフォームで個人情報を無断で追跡している重大なプライバシー侵害です。規制当局の関心を引く可能性があります。",
+      "targetReaders": "プライバシー意識が高いユーザー、セキュリティ研究者、規制当局、LinkedInユーザー"
+    },
+    {
+      "rank": 3,
+      "title": "Zed 1.0",
+      "url": "https://zed.dev/blog/zed-1-0",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "Zedエディタが1.0に到達し、5年の開発を完了しました。ElectronではなくGPU駆動のRust製GPUIフレームワークで構築され、複数のAIエージェント並列実行、エディタ予測、Agent Client Protocolサポートなど先進機能を備えています。Windows/Mac/Linuxに対応し、エンタープライズ向けZed for Businessも発表されました。",
+      "importance": "VS Codeに続く新世代AIネイティブコーディング環境が正式リリースされ、開発者ツール市場に大きな影響を与えます。",
+      "targetReaders": "エンジニア、開発チーム、エディタ選定責任者、AI駆動開発に関心がある開発者"
+    },
+    {
+      "rank": 4,
+      "title": "Granite 4.1: IBM's 8B Model Matching 32B MoE",
+      "url": "https://firethering.com/granite-4-1-ibm-open-source-model-family/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "IBMがGranite 4.1を発表しました。8Bパラメータのモデルが従来の32B MoEモデルを上回るベンチマーク結果を達成しました。15兆トークンの訓練と5段階の最適化により、データ品質を優先したアプローチで従来モデルを大幅に改善しています。Apache 2.0ライセンスでオープンソース提供されます。",
+      "importance": "オープンソースLLMの品質が急速に向上し、エンタープライズAI導入の選択肢が広がります。",
+      "targetReaders": "企業AI実装者、OSS LLM利用開発者、AIモデル選定担当者"
+    },
+    {
+      "rank": 5,
+      "title": "CopyFail was not disclosed to Gentoo developer",
+      "url": "https://www.openwall.com/lists/oss-security/2026/04/30/10",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "CVE-2026-31431「CopyFail」というLinuxカーネルの重大な権限昇格脆弱性が2017年から存在していました。4.14で導入され、6.18.22と6.19.12で修正されていますが、6.12/6.6/6.1など長期サポート版には未だに未適用です。Gentoo開発者は後方移植の複雑さから対応に困難を抱えています。",
+      "importance": "Linux長期サポート版に影響する重大な権限昇格脆弱性が広範に存在し、バックポートが困難です。",
+      "targetReaders": "Linux管理者、セキュリティエンジニア、Linuxディストリビューション保守者"
+    },
+    {
+      "rank": 6,
+      "title": "Alignment whack-a-mole: Finetuning activates recall of copyrighted books in LLMs",
+      "url": "https://github.com/cauchy221/Alignment-Whack-a-Mole-Code",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "ファインチューニングがLLMの著作権本の逐語的想起を活性化することが判明しました。アライメント技術で削除されたはずの記憶がファインチューニングプロセスで復活します。研究論文とコード、Gemini/DeepSeekでの再現スクリプトが公開されており、LLMのセーフガード設計に根本的な課題があることを示しています。",
+      "importance": "AIセーフガードの脆弱性と著作権侵害リスクが明示され、規制当局やLLM企業の対応が急務です。",
+      "targetReaders": "AI研究者、LLM開発企業、法務・コンプライアンス担当、セーフガード設計者"
+    },
+    {
+      "rank": 7,
+      "title": "Does Postgres Scale?",
+      "url": "https://www.dbos.dev/blog/benchmarking-workflow-execution-scalability-on-postgres",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "単一のPostgresサーバーで秒間14.4万回の書き込み（日間120億回）と秒間4.3万ワークフローの処理を実現し、予想を超えるスケーラビリティを実証しました。ボトルネックはWALフラッシュでCPU/IOPSではなく、ほぼすべてのユースケースで十分な性能です。",
+      "importance": "Postgresが次世代ワークフロー実行システムの基盤として十分なスケール性を持つことが実証され、マイクロサービスアーキテクチャの選択肢が広がります。",
+      "targetReaders": "データベース設計者、バックエンド開発者、インフラストラクチャアーキテクト、ワークフロー実装者"
+    },
+    {
+      "rank": 8,
+      "title": "Rivian allows you to disable all internet connectivity",
+      "url": "https://rivian.com/support/article/can-i-disable-all-data-collection-from-my-vehicle",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Rivianが車両の全インターネット接続を無効化するオプションを提供しました。カナダ車両はSettings メニューのトグルで、その他の車両はサービスセンター経由でeSIM無効化ができます。ただしナビゲーション、レーンキープアシスト、OTAアップデートが機能しなくなります。",
+      "importance": "自動車メーカーがデータ収集拒否権をユーザーに与えた先進的事例で、規制要件への対応と競合優位性を示しています。",
+      "targetReaders": "プライバシー意識の高い自動車購入者、規制当局、自動車メーカーのプロダクト設計者"
+    },
+    {
+      "rank": 9,
+      "title": "Mozilla's opposition to Chrome's Prompt API",
+      "url": "https://github.com/mozilla/standards-positions/issues/1213#issuecomment-4347988313",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "MozillaがChrome提案のPrompt APIに反対姿勢を示しました。Blinkが実装に向けて動いている中、WebML関連の新API仕様について標準化プロセスで異議を唱えており、ブラウザベンダー間の仕様策定で対立が生じています。",
+      "importance": "Web標準化プロセスでブラウザベンダー間に溝があり、AI/ML機能のWeb統合方針に影響する可能性があります。",
+      "targetReaders": "Web標準関係者、ブラウザベンダー、Web開発者、W3C参加者"
+    },
+    {
+      "rank": 10,
+      "title": "Full-Text Search with DuckDB",
+      "url": "https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "DuckDBの全文検索（FTS）機能が実装されました。Okapi BM25アルゴリズム、語幹処理、ストップワード削除に対応していますが、フレーズクエリやベクトル検索には未対応です。Postgresなど他のDBSとの機能比較により、DuckDBの利点と限界を明確にしています。",
+      "importance": "DuckDBが分析用途での高度なテキスト検索機能を获得し、データ分析プラットフォームとしての競争力が向上しました。",
+      "targetReaders": "データ分析エンジニア、DuckDB利用者、検索機能実装者、データサイエンティスト"
+    }
+  ]
+}
