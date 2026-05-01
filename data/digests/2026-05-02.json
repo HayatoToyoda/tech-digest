@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-02",
+  "generatedAt": "2026-05-01T22:53:34.431Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "CPanel and WHM Authentication Bypass – CVE-2026-41940",
+      "url": "https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "cPanel/WHM全バージョン対象の認証バイパス脆弱性が発見され、既に野生環境での悪用が確認されている。この脆弱性は「セッション読み込み・保存」に関するもので、インターネットの約70百万ドメインを管理するパネルに影響。複数のバージョンで修正パッチが既にリリースされており、直ちのアップグレードが推奨されている。",
+      "importance": "ホスティングインフラ全体の管理層に影響する重大脆弱性であり、既にゼロデイとして悪用されているため、管理者の即座の対応が必須。",
+      "targetReaders": "ウェブホスティング、システム管理者、DevOps担当者"
+    },
+    {
+      "rank": 2,
+      "title": "AWS stops billing Middle East cloud customers as repairs to war damage drag on",
+      "url": "https://arstechnica.com/gadgets/2026/05/amazon-stuck-with-months-of-repairs-after-drone-strikes-on-data-centers/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "イランの無人機攻撃によってUAEとバーレーンのAWSデータセンターが被害を受け、復旧に数ヶ月かかる見通し。AWSはME-CENTRAL-1とME-SOUTH-1リージョンの課金を引き続き停止し、既に推定1億5000万ドルの損失を計上。顧客には他リージョンへの移行を強く推奨。",
+      "importance": "中東地域のクラウド基盤が半年近く利用不可となる事態であり、ビジネス継続性に直結する重大な影響が発生。",
+      "targetReaders": "AWS利用企業、中東でクラウドサービスを提供する事業者"
+    },
+    {
+      "rank": 3,
+      "title": "Spotify adds 'Verified' badges to distinguish human artists from AI",
+      "url": "https://www.bbc.com/news/articles/c5yerr4m1yno",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Spotifyが人間アーティストを識別するための「Verified」バッジを導入。ソーシャルアカウント連携、一貫したリスナー活動、コンサート開催記録などの「実アーティスト」の信号をベースに認証。99%以上のアクティブに検索されるアーティストが対象となる見通し。",
+      "importance": "AI生成音楽の増加に対する業界的対応であり、今後のコンテンツ真正性検証の標準化を示唆。ただしAI使用の検出ではなくアーティスト認証に限定される点は批評がある。",
+      "targetReaders": "音楽配信サービス利用者、クリエイター、音楽業界関係者"
+    },
+    {
+      "rank": 4,
+      "title": "Claude Opus 4.7 knows the real Kelsey",
+      "url": "https://www.theargumentmag.com/p/i-can-never-talk-to-an-ai-anonymously",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Claude Opus 4.7が未発表の高校時代の個人原稿から著者を特定可能であることが判明。わずか125語のテキストから実名を高精度で推定。ChatGPTやGeminiはこの能力を示さず、Opus 4.7固有の能力と考えられる。",
+      "importance": "高度なAIモデルが個人の執筆スタイルから身元特定可能であることが実証され、インターネット匿名性の終焉を示唆。プライバシーと言論の自由に関わる根本的な課題。",
+      "targetReaders": "プライバシー研究者、言論・表現の自由の関心者、AI安全研究者"
+    },
+    {
+      "rank": 5,
+      "title": "OpenWarp",
+      "url": "https://openwarp.zerx.dev",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Warpターミナルの仕様を保持しながらBYOP(自分のプロバイダ)機能を追加したコミュニティフォーク。OpenAI/Anthropic/DeepSeek/Ollama等6つのAPIプロトコルをネイティブサポート。認証情報はローカル保存のみで、クラウド送信なし。minijinjaテンプレートエンジンで動的プロンプト制御可能。",
+      "importance": "ターミナルAI機能の所有権・制御権を完全にユーザーに返すアプローチ。開発者ツールにおけるプライバシー・自主性重視の傾向を反映。",
+      "targetReaders": "開発者、DevOps、セキュリティ意識の高いユーザー"
+    },
+    {
+      "rank": 6,
+      "title": "Advanced Quantization Algorithm for LLMs",
+      "url": "https://github.com/intel/auto-round",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "IntelのAutoRoundは2-4ビットの超低ビット幅でLLM/VLMを高精度量子化する高度なツールキット。SignRoundアルゴリズムにより最小限のチューニングで実現。vLLM/SGLang/Transformers等に統合済み。DeepSeek-R1 200GB版で97.9%の精度保持を実現。",
+      "importance": "LLM推論コストと実装環境のハードルを大幅に低減。エッジデバイス・リソース制約環境でのLLM展開が現実的に。",
+      "targetReaders": "ML/AI開発者、推論最適化に携わるエンジニア、コスト削減を求める企業"
+    },
+    {
+      "rank": 7,
+      "title": "City Learns Flock Accessed Cameras in Children's Gymnastics Room as a Sales Demo",
+      "url": "https://www.404media.co/city-learns-flock-accessed-cameras-in-childrens-gymnastics-room-as-a-sales-pitch-demo-renews-contract-anyway/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "ジョージア州ダンウッディ市の調査で、Flockが子供の体操室やプール、ユダヤ人コミュニティセンター等を含む複数の監視カメラに営業デモ用としてアクセスしていたことが判明。Flockは顧客認可とシステムデバッグを主張。市は契約を継続。",
+      "importance": "民間監視技術企業によるプライバシー侵害の実例。特に子供が関わる施設への無制限アクセスは深刻。透明性と規制の不備を露呈。",
+      "targetReaders": "プライバシー活動家、自治体管理者、市民、監視社会に関心あるジャーナリスト"
+    },
+    {
+      "rank": 8,
+      "title": "An open letter asking NHS England to keep its code open",
+      "url": "https://keepthingsopen.com",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "NHS England技術陣がリポジトリのソースコード非公開化を決定したことに対し、公的資金で開発されたコードの公開維持を求める公開書簡。236署名集約。NHS Service Standard原則12「Make new source code open」に基づく異議。オープンソースは品質・脆弱性検出・セキュリティを向上。",
+      "importance": "公共部門のソフトウェア開発におけるオープンソース原則の実装可能性を示す重要な事例。医療システムのセキュリティと税金の効率利用に関わる。",
+      "targetReaders": "政府デジタル責任者、公共部門システム開発者、オープンガバメント推進者"
+    },
+    {
+      "rank": 9,
+      "title": "Credit cards are vulnerable to brute force attacks",
+      "url": "https://metin.nextc.org/posts/Credit_Cards_Are_Vulnerable_To_Brute_Force_Kind_Attacks.html",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "PCI DSSに準拠するはずのEコマースでも、表示・保存される限定情報（BIN、有効期限、名義人）から実クレジットカード番号をブルートフォース攻撃で復元可能であることを実証。3Dセキュア有効でも複数の未授権トランザクション試行が記録される。",
+      "importance": "業界標準の最小限規制がセキュリティギャップを生む実証例。クレジットカード詐欺の根本的脆弱性を暴露。消費者と金融機関の両方に影響。",
+      "targetReaders": "セキュリティ研究者、金融機関、Eコマース企業、決済システム設計者"
+    },
+    {
+      "rank": 10,
+      "title": "Show HN: WhatCable, a tiny menu bar app for inspecting USB-C cables",
+      "url": "https://github.com/darrylmorley/whatcable",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "macOSメニューバーアプリ。接続されたUSB-Cケーブルの仕様を平易英語で表示。Thunderbolt/USB4判定、充電制限原因特定、ケーブルe-marker情報、チャージャーPDO一覧を取得。IOKit経由でシステム情報を抽出。Apple Silicon対応、Homebrewインストール可。",
+      "importance": "USB-Cの複雑性を可視化する実用ツール。充電速度低下の原因診断が容易化。ユーザーエクスペリエンスの向上例。",
+      "targetReaders": "macユーザー、USB周辺機器トラブル対応者、技術者"
+    }
+  ]
+}
