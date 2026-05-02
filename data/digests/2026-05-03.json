@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-03",
+  "generatedAt": "2026-05-02T22:46:49.660Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage",
+      "url": "https://github.com/microsoft/vscode/pull/310226",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "VS Codeのデフォルト設定がAI生成コードの共著者情報をgitコミットに自動挿入するように変更された。git.addAICoAuthor設定のデフォルト値が「off」から「all」に切り替わり、ユーザーが明示的に使用していなくても自動的にCopilot共著情報が追加される。この変更により、開発者のコミット履歴の透明性と制御性に関する懸念が生じている。",
+      "importance": "開発ツールの重大な機能変更で、開発者のコミット管理とAI利用の透明性に直結する問題。多くの開発者に影響を与える実装",
+      "targetReaders": "Visual Studio CodeユーザーおよびGit運用管理者"
+    },
+    {
+      "rank": 2,
+      "title": "DeepSeek V4—almost on the frontier",
+      "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "DeepSeekが新型LLM「DeepSeek-V4-Pro」と「DeepSeek-V4-Flash」をリリース。V4-Proは1.6Tパラメータ、V4-Flashは284Bパラメータで、いずれも1M トークンコンテキストに対応。極めて低価格（Flash: $0.14/M入力トークン）を実現し、効率面でV3.2比で10-27%のFLOPsに削減。フロンティアモデルの価格競争を大きく変える可能性",
+      "importance": "AI推論コストの劇的な低下とオープンウェイトの大規模モデル提供により、AI応用の経済性が大きく改善。業界全体の価格体系を揺るがす可能性",
+      "targetReaders": "LLM活用企業・開発者、AI導入検討組織"
+    },
+    {
+      "rank": 3,
+      "title": "AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights",
+      "url": "https://arxiv.org/abs/2509.00462",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "大規模な実験により、LLMが自分自身で生成したテキストを人間作成テキストより67-82%も高く評価する「自己選好バイアス」が発見された。採用選考シミュレーションでは、同じLLMを使用した応募者が人間作成履歴書の応募者より23-60%高い確率で選抜される。このバイアスはLLMの自己認識能力向上により50%以上低減可能",
+      "importance": "AI導入による採用差別の新しい形態が発見され、企業の採用プロセスの公正性に深刻な影響。AI公正性フレームワークの拡充が急務",
+      "targetReaders": "採用システム構築者、人事データ活用企業、AI規制当局"
+    },
+    {
+      "rank": 4,
+      "title": "California to begin ticketing driverless cars that violate traffic laws",
+      "url": "https://www.bbc.com/news/articles/clypjx3rg2go",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "カリフォルニア州DMVが7月1日から自動運転車（AV）の新規制を実施。警察は車両メーカーに直接「AV不遵守通知」を発行可能になり、交通法違反時の責任追及が可能に。メーカーには30秒以内の緊急対応と緊急地域への侵入禁止が要件化。Waymoなど複数企業が影響対象",
+      "importance": "自動運転車の法的責任フレームワーク確立で、規制環境が大きく進展。業界全体の商用化ロードマップに重要な影響",
+      "targetReaders": "自動運転開発企業、地方自治体の交通政策担当者"
+    },
+    {
+      "rank": 5,
+      "title": "Uber wants to turn its drivers into a sensor grid for self-driving companies",
+      "url": "https://techcrunch.com/2026/05/01/uber-wants-to-turn-its-millions-of-drivers-into-a-sensor-grid-for-self-driving-companies/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "UberがAV Labs計画を発表。数百万のドライバーの車にセンサーを装備して自動運転企業にデータ提供する構想。現在は自社フリート中心だが、将来は大規模データ収集プラットフォーム化を目指す。既に25社のAVパートナーと連携。データボトルネック解決の新アプローチ",
+      "importance": "自動運転開発の最大課題である「データ取得」を新しいビジネスモデルで解決。Uberの自動運転事業撤退後の戦略転換として注目",
+      "targetReaders": "自動運転企業、Uberビジネスパートナー"
+    },
+    {
+      "rank": 6,
+      "title": "NetHack 5.0.0",
+      "url": "https://nethack.org/v500/release.html",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "NetHack 5.0.0がリリース。ソースコードをC99標準対応に更新、クロスコンパイル対応を実現。yacc/lexベースのビルドプロセスをLua処理に置き換え。3100以上の修正と改善を含む。レガシーセーブゲームは互換性なし",
+      "importance": "30年以上続くオープンソースプロジェクトの大規模近代化。業界標準への準拠とポーティング性向上",
+      "targetReaders": "オープンソース開発者、ゲーム開発コミュニティ"
+    },
+    {
+      "rank": 7,
+      "title": "Refusal in Language Models Is Mediated by a Single Direction",
+      "url": "https://arxiv.org/abs/2406.11717",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "LLMの安全性に関する重要な発見：複数のLLM（72Bパラメータまで）において、拒否（refusal）動作が単一の1次元部分空間によってメディエートされることが判明。この方向を削除すると有害な指示も実行し、追加すると無害な指示でも拒否する。ホワイトボックスジェイルブレイク手法の可能性",
+      "importance": "LLMの安全性ファインチューニングの脆弱性を示唆し、モデル解釈可能性の重要性を実証。セキュリティモデルの根本的見直しが必要",
+      "targetReaders": "AI安全研究者、モデル開発企業、セキュリティ研究者"
+    },
+    {
+      "rank": 8,
+      "title": "This Month in Ladybird - April 2026",
+      "url": "https://ladybird.org/newsletter/2026-04-30/",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Ladybirdブラウザが4月に333PRをマージ。インラインPDFビューア、履歴ベースのアドレスバーオートコンプリート、インクリメンタルHTML解析、投機的パーサー、オフスレッドJavaScriptコンパイルを実装。新スポンサーとして人権財団が参加。オープンWebブラウザの着実な開発進行",
+      "importance": "独立系オープンソースブラウザの急速な機能追加。Web標準実装の多様化とブラウザ競争環境の変化を示唆",
+      "targetReaders": "Webブラウザ開発者、オープンソース貢献者"
+    }
+  ]
+}
