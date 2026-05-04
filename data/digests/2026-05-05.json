@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-05",
+  "generatedAt": "2026-05-04T22:58:49.470Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "US healthcare marketplaces shared citizenship and race data with ad tech giants",
+      "url": "https://techcrunch.com/2026/05/04/us-healthcare-marketplaces-shared-residents-application-information-with-advertising-and-tech-giants/",
+      "source": "TechCrunch",
+      "category": "Security",
+      "summary": "米国の20州の政府運営医療保険マーケットプレイスのほぼすべてが、Google、LinkedIn、Meta、Snapなどの広告技術企業に住民の申請情報（市民権、人種、家族の投獄状況など機密情報を含む）を共有していた。ピクセルトラッカーの誤設定により、医療データを含むウェブサイトから機密情報が漏洩している。7百万人以上のアメリカ人が州の保険マーケットプレイスを通じて医療保険に加入しており、大規模な個人情報漏洩の影響を受けている。",
+      "importance": "政府ウェブサイトでの大規模な個人情報漏洩事件であり、機密の医療・個人情報が広告企業に無断共有されている重大なプライバシー侵害。",
+      "targetReaders": "データセキュリティ担当者、医療IT企業、プライバシー規制担当者"
+    },
+    {
+      "rank": 2,
+      "title": "Microsoft Edge stores all passwords in memory in clear text, even when unused",
+      "url": "https://twitter.com/L1v1ng0ffTh3L4N/status/2051308329880719730",
+      "source": "Twitter/X",
+      "category": "Security",
+      "summary": "Microsoft Edgeがすべてのパスワードをメモリ上に平文で保存していることが報告された。未使用のパスワードでも暗号化されず保存されている状態にある。このセキュリティ欠陥により、メモリダンプを取得されるとパスワードが露出する危険性がある。",
+      "importance": "Edgeユーザーの全パスワードが平文で保存されるという重大なセキュリティ脆弱性で、Windows企業ユーザーに直接影響。",
+      "targetReaders": "ブラウザセキュリティ研究者、企業IT管理者、Edgeユーザー"
+    },
+    {
+      "rank": 3,
+      "title": "Trademark violation: Fake Notepad++ for Mac",
+      "url": "https://notepad-plus-plus.org/news/npp-trademark-infringement/",
+      "source": "Notepad++ Official",
+      "category": "Security",
+      "summary": "notepad-plus-plus-mac.orgという偽のウェブサイトが、Notepad++の商標と開発者の名前・略歴を無許可で使用しており、公式のmacOS版として誤認させている。このサイトはNotepad++プロジェクトと無関係だが、技術メディアを含む複数のユーザーが公式版と勘違いしている。Notepad++はmacOS版を一度もリリースしたことがない。",
+      "importance": "OSS開発者が長年直面する商標悪用問題で、ユーザーが偽装プロダクトをダウンロードする危険性がある。",
+      "targetReaders": "OSS開発者、セキュリティ研究者、Notepad++ユーザー"
+    },
+    {
+      "rank": 4,
+      "title": "I am worried about Bun",
+      "url": "https://wwj.dev/posts/i-am-worried-about-bun/",
+      "source": "Personal Blog",
+      "category": "OSS",
+      "summary": "JavaScript実行環境BunはAnthropicに2025年12月に買収されたが、親会社がBunをサポートすることに対する懸念が生じている。Anthropicは同社の主力製品Claude Codeに依存しているはずだが、Claude Codeの品質が低下しており、親会社のBunに対する関心の欠如が明らかになった。JavaScriptコミュニティで信頼されたツールが投資家主導の企業傘下に入った後の不安を反映している。",
+      "importance": "Node.js代替の有望なOSSがVC企業に買収された後、メンテナンスの持続性に問題が生じている事例。開発者ツール戦略に影響。",
+      "targetReaders": "JavaScriptおよびNode.js開発者、OSS管理者、企業買収戦略に関わる人"
+    },
+    {
+      "rank": 5,
+      "title": "Redis array: short story of a long development process",
+      "url": "https://antirez.com/news/164",
+      "source": "Antirez Blog",
+      "category": "OSS",
+      "summary": "Redisの新しいArray データタイプが4か月の開発期間を経てマージされた。開発者はGPT 5.xなどのLLMを活用して仕様設計と実装を加速化し、メモリ効率化のための3階層ディレクトリ構造の実装や大規模ストレステストを実施。AIアシスタンスにより、妥協のない高品質な実装が実現された。",
+      "importance": "主要OSSプロジェクトがLLMを開発効率向上の主要ツールとして本格活用している事例で、開発者ツール業界のトレンドを示唆。",
+      "targetReaders": "Redis利用者、OSSメンテナー、LLM活用による開発効率の研究者"
+    },
+    {
+      "rank": 6,
+      "title": "How OpenAI delivers low-latency voice AI at scale",
+      "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/",
+      "source": "OpenAI",
+      "category": "AI",
+      "summary": "OpenAIが9億人以上の週間アクティブユーザーに向けた低遅延音声AI配信のためのWebRTCスタック再構築を発表。従来の1ポート1セッション方式から分割リレイ・トランシーバアーキテクチャに変更し、グローバル展開でも遅延を最小化。自然な会話速度での音声AIインタラクションを実現する技術的課題と解決策を詳述。",
+      "importance": "ChatGPT音声、Realtime APIなど、大規模実運用の音声AI基盤技術が公開され、業界標準としての影響力が大きい。",
+      "targetReaders": "音声AI開発者、WebRTC実装者、リアルタイムAPI構築者"
+    },
+    {
+      "rank": 7,
+      "title": "How Monero's proof of work works",
+      "url": "https://blog.alcazarsec.com/tech/posts/how-moneros-proof-of-work-works",
+      "source": "Alcazar Security Blog",
+      "category": "OSS",
+      "summary": "MoneroのRandomX Proof of Workは、Bitcoin のSHA-256のような固定ハッシュ関数ではなく、ランダムな仮想マシンプログラムを実行してメモリを集約的に使用する設計。これによりASIC耐性を実現し、CPUマイニングを有利にする。2019年導入のこの仕組みは、マイニング集中化を防ぎ、通常ユーザーの参加を可能にすることを目指している。",
+      "importance": "ブロックチェーンのマイニング公平性に関わる重要な技術で、暗号資産セキュリティ設計の参考になる。",
+      "targetReaders": "暗号資産開発者、ブロックチェーン研究者、マイニング戦略に関わる人"
+    },
+    {
+      "rank": 8,
+      "title": "Using \"underdrawings\" for accurate text and numbers",
+      "url": "https://samcollins.blog/underdrawings/",
+      "source": "Personal Blog",
+      "category": "AI",
+      "summary": "生成AIモデル（Gemini 3.0 Pro）による画像生成で、テキストや数字の正確性が課題となっていたのを解決する「underdrawing」技術を提案。SVGなどで数字の位置を事前に確定した画像を生成AIへの入力として使用することで、正確なテキスト配置を実現。決定論的処理と生成的処理を組み合わせた実践的な手法。",
+      "importance": "生成AIの弱点である正確なテキスト生成を解決する実用的テクニックで、AIアプリケーション開発者にとって重要。",
+      "targetReaders": "生成AI開発者、デザイナー、AIアプリケーションビルダー"
+    },
+    {
+      "rank": 9,
+      "title": "Offenders sentenced up to 10 years for spying on TSMC",
+      "url": "https://www.taipeitimes.com/News/front/archives/2026/04/28/2003856358",
+      "source": "Taipei Times",
+      "category": "Security",
+      "summary": "元TSMC技術者が同社の2ナノプロセス技術機密を東京エレクトロンに漏洩させた件で、10年の懲役刑を宣告。複数の技術者が関与し、エッチング装置関連の機密が盗まれた。この事件は国家安全保障法による初の企業案件として、台湾の産業機密保護を強化する先例となった。",
+      "importance": "半導体産業の機密漏洩による国家安全保障上の脅威として重大で、サプライチェーン企業間のセキュリティ対策が急務。",
+      "targetReaders": "半導体産業セキュリティ関係者、インテリジェンス分析者、企業機密管理者"
+    },
+    {
+      "rank": 10,
+      "title": "PyInfra 3.8.0",
+      "url": "https://github.com/pyinfra-dev/pyinfra/releases/tag/v3.8.0",
+      "source": "GitHub",
+      "category": "OSS",
+      "summary": "インフラストラクチャ自動化ツールPyInfra 3.8.0がセマンティックバージョニング採用とともにリリース。コマンドインジェクション対策の強化、Docker/SystemD/SELinux対応の拡充、APTのdeb822形式サポート、多数のバグ修正が実施。エンタープライズ向けインフラ管理ツールとしての信頼性が向上。",
+      "importance": "インフラ自動化ツールのセキュリティと機能強化で、DevOps/SRE環境の安定性に直結。",
+      "targetReaders": "DevOps/SRE エンジニア、インフラストラクチャ管理者、自動化ツール利用者"
+    }
+  ]
+}
