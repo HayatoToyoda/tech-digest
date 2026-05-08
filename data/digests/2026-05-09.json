@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-09",
+  "generatedAt": "2026-05-08T22:57:46.361Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Google Cloud Fraud Defence is just WEI repackaged",
+      "url": "https://privatecaptcha.com/blog/google-cloud-fraud-defence-wei/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "GoogleがWEI（Web Environment Integrity）として2023年に提案後、反発を受けて撤回した仕組みを、reCAPTCHA更新として「Google Cloud Fraud Defense」として実装した。このシステムはQRコードスキャンによる認証を要求し、Android向けにGoogle Play Servicesの認証APIに依存している。デ-Googled Androidユーザーは検証に失敗する設計になっており、オープンウェブのベンダーコントロールが強化される。",
+      "importance": "ウェブセキュリティとプライバシーに関わる重大な方針転換。公開プロセスを回避した規制の抜け穴であり、開発者がこれを採用すれば、特定ベンダーのエコシステム強化に加担することになる。",
+      "targetReaders": "セキュリティエンジニア、ウェブ開発者、プライバシー重視のユーザー"
+    },
+    {
+      "rank": 2,
+      "title": "Google broke reCAPTCHA for de-googled Android users",
+      "url": "https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Google Cloud Fraud Defenseの実装により、GrapheneOSなどのカスタムROMユーザーがreCAPTCHA検証に失敗する。iOSでは追加ソフトウェア不要なのに対し、Android版はPlay Services v25.41.30以上の実行を強制。この非対称性はセキュリティ関係なく、エコシステム支配が目的であることを示している。",
+      "importance": "プライバシーとベンダーロックイン問題が露呈。開発者が採用するreCAPTCHAが事実上、特定デバイス・OS構成の強要になる。",
+      "targetReaders": "プライバシーセキュリティ関心者、de-Googleユーザー、ウェブ開発者"
+    },
+    {
+      "rank": 3,
+      "title": "Hardening Firefox with Claude Mythos Preview",
+      "url": "https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "MozillaがClaude Mythos PreviewなどのAIモデルを使用し、Firefoxの潜在的セキュリティバグを前例のない数検出・修正した。15年物のバグを含む複数の深刻な脆弱性（WebAssembly GC、IPC race condition、UAFなど）が発見されている。AIの脆弱性検出精度が実用的レベルに達したことを示す。",
+      "importance": "AI支援セキュリティ監査の有効性が実証された。他のプロジェクトも同様手法を採用可能であり、セキュリティ防御体制が大きく変わる可能性がある。",
+      "targetReaders": "セキュリティエンジニア、オープンソースプロジェクトメンテナー、CTO"
+    },
+    {
+      "rank": 4,
+      "title": "Canvas online again as ShinyHunters threatens to leak schools' data",
+      "url": "https://www.theverge.com/tech/926458/canvas-shinyhunters-breach",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "教育プラットフォームCanvasがShinyHuntersによるデータ漏洩で一時オフライン。9000校、2億7500万人の学生・教職員データが流出の危機。Instructureはフリーティーチャーアカウントを一時シャットダウン。ShinyHuntersはTicketmaster、AT&T、Rockstar Gamesなど大手企業を狙う常習者。",
+      "importance": "教育機関への大規模サイバー攻撃と身代金要求。学生個人情報の大量流出リスク、および勒誘の増加傾向が組織セキュリティに与える圧力。",
+      "targetReaders": "教育機関IT管理者、セキュリティ責任者、個人情報保護担当者"
+    },
+    {
+      "rank": 5,
+      "title": "AI is breaking two vulnerability cultures",
+      "url": "https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "AIが脆弱性検出を高速化し、従来の「coordinated disclosure」と「bugs are bugs」という対立する2つの脆弱性対応文化を破壊しつつある。Linuxの静かな修正戦略が成立しなくなり、複数のAIが並行して同じバグを発見するため、短い公開期間（embargo）でも保護が不充分になっている。",
+      "importance": "脆弱性管理プロセスの大規模な再構築が必要。長期embargos戦略の終焉とセキュリティリスクの加速化を意味する。",
+      "targetReaders": "セキュリティ研究者、Linux커널メンテナー、脆弱性管理責任者"
+    },
+    {
+      "rank": 6,
+      "title": "Mojo 1.0 Beta",
+      "url": "https://mojolang.org/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Modular社がMojo 1.0 Beta をリリース。Pythonの直感性、Rustのメモリ安全性、Zigのコンパイル時メタプログラミングを融合したAI専用言語。GPU プログラミング、Python相互運用性、SIMD最適化が標準搭載。AI/ML開発の効率化とパフォーマンス両立を実現。",
+      "importance": "AI時代の新しいプログラミング言語が実装段階に。Python生態系との互換性を保ちながら、パフォーマンスと安全性を両立する選択肢が初めて実用的。",
+      "targetReaders": "ML/AIエンジニア、高性能計算開発者、言語設計関心者"
+    },
+    {
+      "rank": 7,
+      "title": "Cloudflare to cut about 20% of its workforce",
+      "url": "https://www.reuters.com/business/world-at-work/cloudflare-cut-over-1100-jobs-2026-05-07/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Cloudflareが全従業員数の約20%（1100名以上）のレイオフを実施。大型テック企業による大規模人員削減が続く中、インフラ企業にも波及。",
+      "importance": "テック業界全体の景気後退圧力とCTO/企業戦略への影響。Cloudflare依存プロジェクトの事業継続性への懸念。",
+      "targetReaders": "テック企業人事、Cloudflare依存企業の事業責任者、労働市場観察者"
+    },
+    {
+      "rank": 8,
+      "title": "ClojureScript Gets Async/Await",
+      "url": "https://clojurescript.org/news/2026-05-07-release",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "ClojureScript 1.12.145がES2016async/awaitサポートを追加。^:asyncヒント指定でJavaScriptのasync関数を発行。Promiseベースの最新ブラウザAPIやライブラリとの相互運用が簡潔に。ユーザーからの要望が高かったJavaScript相互運用性が大幅改善。",
+      "importance": "Clojure/ClojureScriptコミュニティの近代的なJavaScript生態系との統合進行。関数型プログラミングと非同期処理の融合が容易に。",
+      "targetReaders": "ClojureScript開発者、関数型Web開発者、モダンJavaScript関心者"
+    }
+  ]
+}
