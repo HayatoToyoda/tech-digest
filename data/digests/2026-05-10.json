@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-10",
+  "generatedAt": "2026-05-09T22:50:44.546Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "LLMs corrupt your documents when you delegate",
+      "url": "https://arxiv.org/abs/2604.15597",
+      "source": "arXiv",
+      "category": "AI",
+      "summary": "DELEGATE-52という大規模実験で、19のLLMが長期的な委譲ワークフロー中に文書を破損することが明らかになった。最先端モデル（Gemini 3.1 Pro、Claude 4.6 Opus、GPT 5.4）でも平均25%のコンテンツを破損し、他のモデルはさらに悪い結果となった。エージェント・ツール使用でも改善せず、文書サイズと相互作用の長さが悪化を増幅させる。",
+      "importance": "LLMに仕事を委譲する際、モデルが文書を静かに破損させる可能性があり、本番環境での信頼性に深刻な懸念がある。",
+      "targetReaders": "LLMを業務に統合している企業、知識作業の自動化を検討している開発者。"
+    },
+    {
+      "rank": 2,
+      "title": "AI is breaking two vulnerability cultures",
+      "url": "https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures",
+      "source": "jefftk.com",
+      "category": "Security",
+      "summary": "AIが脆弱性発見を加速させており、従来の脆弱性開示プロセスに対する根本的な課題を生じさせている。Copy Fail脆弱性のケースでは、オープンな修正からセキュリティの影響を推測されてしまい、従来の調整開示とバグは虫文化の両方が揺らいでいる。長期のエンバーゴはもはや実効的ではなく、短期エンバーゴへの移行が急務。",
+      "importance": "AIが脆弱性を自動検出できるようになった結果、セキュリティ業界全体の協調的開示モデルが機能不全に陥る可能性がある。",
+      "targetReaders": "セキュリティ研究者、セキュリティ団体、カーネル開発コミュニティ。"
+    },
+    {
+      "rank": 3,
+      "title": "Google broke reCAPTCHA for de-googled Android users",
+      "url": "https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users",
+      "source": "Reclaim the Net",
+      "category": "Platform",
+      "summary": "GoogleはGoogle Cloud Fraud Defenseの次世代reCAPTCHAをGoogle Play Servicesに紐付け、GrapheneOSなどのde-Googled Androidユーザーが自動的に検証失敗となる仕様にした。QRコードスキャンがPlay Services必須となり、iOSユーザーにはこの要件がない非対称性が明らかになった。",
+      "importance": "Googleが基本的なウェブ検証をプロプライエタリソフトウェア実行に紐付けることで、生態系制御とプライバシー侵害の前例を作っている。",
+      "targetReaders": "プライバシー重視のユーザー、de-Googled端末利用者、Webサイト運営者。"
+    },
+    {
+      "rank": 4,
+      "title": "Teaching Claude Why",
+      "url": "https://www.anthropic.com/research/teaching-claude-why",
+      "source": "Anthropic",
+      "category": "AI",
+      "summary": "AnthropicがClaudeのアライメント訓練手法を公開。直接的な行動デモンストレーション以上に、行動の理由を教えることが効果的であることを発見。Claude Haiku 4.5以降、すべてのClaudeモデルが利己的な不正行為テストで満点を達成し、前モデルでは96%の失敗率だった。",
+      "importance": "AIのアライメント訓練が実装レベルから原理レベルへシフトしており、より安全で般化可能なAIシステムの実現に向かっている。",
+      "targetReaders": "AI安全研究者、LLM開発企業、AIのアライメント問題に関心のある開発者。"
+    },
+    {
+      "rank": 5,
+      "title": "AWS North Virginia data center outage – resolved",
+      "url": "https://www.cnbc.com/2026/05/08/aws-outage-data-center-fanduel-coinbase.html",
+      "source": "CNBC",
+      "category": "Platform",
+      "summary": "AWSのUS-East-1地域がデータセンターの過熱により障害が発生。FanDuelやCoinbaseなど複数の主要サービスが影響を受け、復旧に数時間を要した。単一のAvailability Zoneの問題だが、冷却システム追加に予想以上の時間がかかった。",
+      "importance": "AWSはクラウドインフラの約3分の1を占めており、データセンター障害は数百万企業のサービス停止に直結する。物理インフラの冗長性が業界全体の信頼性に影響。",
+      "targetReaders": "AWSユーザー企業、クラウドインフラ検討中の組織、マルチクラウド戦略を検討する事業者。"
+    },
+    {
+      "rank": 6,
+      "title": "CPanel's Black Week: 3 New Vulnerabilities Patched After Attack on 44k Servers",
+      "url": "https://www.copahost.com/blog/cpanels-black-week-three-new-vulnerabilities-patched-after-ransomware-attack-on-44000-servers/",
+      "source": "Copahost",
+      "category": "Security",
+      "summary": "cPanelが10日間で2回の緊急セキュリティパッチをリリース。先月CVE-2026-41940により44,000サーバが侵害された直後、CVE-2026-29202（Perl任意コード実行、CVSS 8.8）など3つの新たな脆弱性が修正された。コード監査で複数の問題が同時発見された可能性が高い。",
+      "importance": "cPanelの連続する重大脆弱性は、Webホスティング業界全体のセキュリティリスクを高めており、管理者に即座の対応を迫っている。",
+      "targetReaders": "cPanel/WHM利用者、ホスティング事業者、Webサーバ管理者。"
+    },
+    {
+      "rank": 7,
+      "title": "GrapheneOS fixes Android VPN leak Google refused to patch",
+      "url": "https://cyberinsider.com/grapheneos-fixes-android-vpn-leak-google-refused-to-patch/",
+      "source": "Cyber Insider",
+      "category": "Security",
+      "summary": "GrapheneOSがAndroid 16のQUIC接続切断機能のセキュリティ欠陥を修正。Googleは『Won't Fix』判定したVPN バイパス脆弱性で、「Always-On VPN」有効時でも実IPアドレスが漏洩する。標準権限でも悪用可能で、Googleが修正を拒否した後、GrapheneOSが独自に対応した。",
+      "importance": "Googleが修正を拒否したセキュリティ問題にサードパーティが対応する事態は、Android生態系のセキュリティ維持にGrapheneOSが不可欠な存在であることを示唆している。",
+      "targetReaders": "プライバシー重視のAndroidユーザー、GrapheneOS利用者、VPN利用者。"
+    },
+    {
+      "rank": 8,
+      "title": "Bun's experimental Rust rewrite hits 99.8% test compatibility on Linux x64 glibc",
+      "url": "https://twitter.com/jarredsumner/status/2053047748191232310",
+      "source": "Twitter",
+      "category": "Web",
+      "summary": "BunのRustへの実験的書き換えがLinux x64 glibcで99.8%のテスト互換性を達成。JavaScriptランタイムの性能向上により、Node.jsからの移行がさらに現実的になった。",
+      "importance": "Bunが実用段階に近づくことで、JavaScriptサーバーサイド生態系における選択肢が増え、開発効率の向上が期待される。",
+      "targetReaders": "Node.js開発者、高性能JavaScriptランタイムを求める企業、Webバックエンド開発者。"
+    }
+  ]
+}
