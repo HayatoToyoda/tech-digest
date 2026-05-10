@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-11",
+  "generatedAt": "2026-05-10T22:52:27.384Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "GitHub is sinking",
+      "url": "https://dbushell.com/2026/04/29/github-is-sinking/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "GitHubのアップタイム低下が顕著になり、複数のプロジェクトがCodebergやForgejo等の代替プラットフォームへの移行を開始している。Microsoftによる買収後のサービス品質劣化とCopilotの問題が指摘されている。Gitの分散性により、中央化依存から脱出することの重要性が強調されている。",
+      "importance": "開発者インフラの信頼性低下が実際の移行を引き起こしており、プロジェクト管理戦略の見直しが急務である。",
+      "targetReaders": "GitHub依存度の高いオープンソース開発者とエンタープライズ開発組織"
+    },
+    {
+      "rank": 2,
+      "title": "Incident Report: CVE-2024-YIKES",
+      "url": "https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "JavaScriptの侵害されたパッケージから始まり、Rust圧縮ライブラリ、Pythonビルドツールを経由して約400万人の開発者にマルウェアが配布された実例。最終的には無関係の暗号化採掘ワームに誤って修正されるまで73時間続いた。サプライチェーン攻撃の複雑性と多段階の脆弱性を示唆している。",
+      "importance": "依存関係管理の根本的な脆弱性とセキュリティチェーンの弱点が明白で、開発組織のリスク管理体制の強化が必須である。",
+      "targetReaders": "DevOps担当者、セキュリティチーム、大規模プロジェクトのメンテナー"
+    },
+    {
+      "rank": 3,
+      "title": "A recent experience with ChatGPT 5.5 Pro",
+      "url": "https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "ChatGPT 5.5 Proが数時間でPHDレベルの研究成果を生成した実例。LLMはErdős問題などの研究課題を解き、既知の結果の組み合わせではなく新しいアプローチを提案し始めている。数学研究の門戸が低くなる一方で、問題の難易度基準そのものが上昇している。",
+      "importance": "LLMが学術研究の実効的な競争者となり、学問のあり方と人間研究者の役割に根本的な変化をもたらす段階に入った。",
+      "targetReaders": "研究者、学術機関、教育組織、AI能力の実装的限界を理解したい実務家"
+    },
+    {
+      "rank": 4,
+      "title": "Bun's experimental Rust rewrite hits 99.8% test compatibility on Linux x64 glibc",
+      "url": "https://twitter.com/jarredsumner/status/2053047748191232310",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "BunのRust再実装がLinux x64 glibc環境で99.8%のテスト互換性を達成。JavaScriptランタイムのパフォーマンス向上とより堅牢な実装を示唆している。",
+      "importance": "JavaScriptツールチェーンの性能競争が激化し、Node.js/Denoに対抗する実用的な代替手段が成熟しつつある。",
+      "targetReaders": "JavaScriptツールチェーン運用者、Node.js依存プロジェクトのメンテナー"
+    },
+    {
+      "rank": 5,
+      "title": "Chrome's AI features may be hogging 4GB of your computer storage",
+      "url": "https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "GoogleがChromeにGemini Nano AI機能を自動的に4GBのモデルファイルとして導入。ユーザーへの事前通知なしにストレージを消費し、削除するにはAI機能を無効化する必要がある。プライバシーメリットとストレージ負担のトレードオフが問題化している。",
+      "importance": "主要ブラウザがユーザー同意なしにローカルAIモデルを強制するケースが増えており、ストレージ管理とプライバシー設定の透明性が課題である。",
+      "targetReaders": "エンドユーザー、IT管理者、ブラウザベースアプリケーション開発者"
+    },
+    {
+      "rank": 6,
+      "title": "Local AI needs to be the norm",
+      "url": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "アプリケーション開発でOpenAI/Anthropic APIへの依存が常態化している傾向に対し、ローカルAI実装による脆弱性低減を主張。AppleのデバイスNeuralEngineやローカルモデルAPIの活用により、ネットワーク依存、プライバシー侵害、複雑な分散システム構築を回避できる。",
+      "importance": "クラウド依存アーキテクチャの問題が可視化され、ローカル推論技術の成熟がオフラインファースト設計の再評価につながる。",
+      "targetReaders": "モバイルアプリ開発者、エッジコンピューティング実装者、プライバシー重視の組織"
+    },
+    {
+      "rank": 7,
+      "title": "YC's Biggest Scandals",
+      "url": "https://ycombinator.fyi/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Y Combinatorの複数スタートアップが詐欺的行為で摘発。Delveは493件の偽造監査報告書でSOC 2詐称、Centralはライバル企業のビジネスモデルを窃取、Naiveはオープンソースライセンス侵害でコード再利用。YC自体も企業選別能力の欠如を指摘されている。",
+      "importance": "著名アクセレレーターのデューデリジェンス失敗が露呈し、スタートアップエコシステムの信頼性とコンプライアンス体制の不備が明白化した。",
+      "targetReaders": "VC投資家、スタートアップ創業者、デューデリジェンス担当者、規制当局"
+    },
+    {
+      "rank": 8,
+      "title": "Gemini API File Search is now multimodal",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Google Gemini APIのFile Searchがマルチモーダル対応へ。テキストと画像を統合処理し、カスタムメタデータフィルタリングとページ引用機能を追加。RAG（検索拡張生成）システムの実用性が大幅に向上。",
+      "importance": "エンタープライズAIアプリケーションの検索・索引機能が成熟し、大規模ドキュメント管理とビジュアルアセット検索の生産性が飛躍的に向上する。",
+      "targetReaders": "エンタープライズAI実装者、RAGシステム開発者、ドキュメント管理システム構築者"
+    },
+    {
+      "rank": 9,
+      "title": "Show HN: I made a Clojure-like language in Go, boots in 7ms",
+      "url": "https://github.com/nooga/let-go",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "let-goはGoで実装されたClojure方言で、10MBの単一バイナリでブートが7msを実現。スタンドアローンバイナリやWASMコンパイル対応。Clojure互換性95.4%を達成しつつ、JVM（363ms）やBabashka（18ms）を大幅に上回る起動速度を提供。",
+      "importance": "軽量スクリプト言語とCLI用途でのランタイムオーバーヘッド削減が実現され、Lisp言語エコシステムの実用性が向上する。",
+      "targetReaders": "スクリプト言語ユーザー、CLIツール開発者、Clojure開発者のGoへの親和性を求める層"
+    },
+    {
+      "rank": 10,
+      "title": "Louis Rossmann offers to pay legal fees for a threatened OrcaSlicer developer",
+      "url": "https://www.tomshardware.com/3d-printing/louis-rossmann-tells-3d-printer-maker-bambu-lab-to-go-bleep-yourself-over-its-lawsuit-against-enthusiast-right-to-repair-advocate-offers-to-pay-the-legal-fees-for-a-threatened-orcaslicer-developer",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "修理の権利活動家Louis Rossmannが、Bambu Labから訴訟脅迫を受けたOrcaSlicer開発者を支援するため最初の$10,000の法務費用を提供。Bambu Labは第三者統合を「インフラリスク」と称して30万件の不正リクエスト報告。Right to Repair運動が製造業の垣根制度に対抗する実例。",
+      "importance": "消費者修理権と製造業者の著作権・インフラ保護の対立が司法闘争へ進展し、デバイス所有権の概念が再定義される可能性がある。",
+      "targetReaders": "Right to Repair推進者、3Dプリンタユーザー、開発者権利倡導者、知的財産権に関心のある実務家"
+    }
+  ]
+}
