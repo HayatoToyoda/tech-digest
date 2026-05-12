@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-13",
+  "generatedAt": "2026-05-12T23:05:27.597Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "CERT is releasing six CVEs for serious security vulnerabilities in dnsmasq",
+      "url": "https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2026q2/018471.html",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "dnsmasqの長年にわたる6つの深刻な脆弱性がCERTによりリリースされました。これらは大多数の非古いバージョンに影響し、ベンダーへの事前開示が完了しています。パッチが適用されたバージョン2.92rel2が利用可能で、2.93rc1が近日中にリリース予定です。AI駆動のセキュリティ研究の増加により、大量のバグ報告が寄せられており、アップデートが急務です。",
+      "importance": "dnsmasqは多くのLinuxシステムやネットワークデバイスで使用される重要なDNS/DHCPサーバーで、これらの脆弱性は広範な影響を持つため、全システム管理者にとって重大です。",
+      "targetReaders": "システム管理者、セキュリティエンジニア、Linux環境に従事する全ての開発者"
+    },
+    {
+      "rank": 2,
+      "title": "Bambu Lab is abusing the open source social contract",
+      "url": "https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-contract/",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Bambu Labが、同社のAGPLv3ライセンスコード上に構築されたOrcaSlicer-bambulabフォークの開発者に対して、偽りの法的主張（模倣攻撃など）で脅迫し、クラウド接続の強制を拒否するユーザーを排除しようとしています。OrcaSlicer開発者の反論に対して、Bambu Labは一方的な声明を公表し、対話の余地がない状況です。",
+      "importance": "AGPLライセンスの趣旨を踏みにじる大企業による法的恫喝は、オープンソースエコシステム全体への信頼を損ないます。小規模な開発者への不当な扱いはコミュニティの自由度を脅かします。",
+      "targetReaders": "オープンソース開発者、FOSS権利を重視するハードウェアユーザー、法的問題に関心のあるコミュニティ"
+    },
+    {
+      "rank": 3,
+      "title": "Dead.Letter (CVE-2026-45185) – How XBOW found an unauthenticated RCE on Exim",
+      "url": "https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "GnuTLSとのTLS接続処理中に発生するuse-after-free脆弱性がExim 4.97で発見されました。TLSシャットダウン時のバッファ解放後、BDATレシーバーが1バイト(\\n)を解放済みメモリに書き込み、アロケータメタデータを破損させてRCEに至ります。特別な設定不要でトリガー可能な高深刻度の脆弱性です。",
+      "importance": "Eximはメール配信の中核インフラであり、認証不要でRCEが可能な脆弱性は全Eximユーザーに即座の対応を要求します。",
+      "targetReaders": "メールサーバー管理者、Eximを運用する企業のセキュリティチーム"
+    },
+    {
+      "rank": 4,
+      "title": "Instructure pays ransom to Canvas hackers",
+      "url": "https://www.insidehighered.com/news/tech-innovation/administrative-tech/2026/05/11/instructure-pays-ransom-canvas-hackers",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "教育技術企業Instructureは、LMS「Canvas」を2度侵害したランサムウェアグループ「ShinyHunters」に身代金を支払いました。275百万ユーザーのデータが流出し、個人情報や学生間の数十億件のプライベートメッセージが含まれます。北米高等教育機関の41%がCanvasを使用しており、多くの大学が影響を受けています。",
+      "importance": "教育機関の運営システム侵害は学生データと大学運営の双方に深刻な影響をもたらし、身代金支払いは将来の攻撃を助長する懸念があります。",
+      "targetReaders": "大学IT部門、教育機関のセキュリティ責任者、学生データ保護に関わる職員"
+    },
+    {
+      "rank": 5,
+      "title": "EU to crack down on TikTok, Instagram's 'addictive design' targeting kids",
+      "url": "https://www.cnbc.com/2026/05/12/tiktok-instagram-social-media-addictive-design-eu-crack-down.html",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "EUは無限スクロール、自動再生、プッシュ通知などの中毒的設計機能を対象にTikTokとInstagramへの規制措置を予定しており、夏までに法案提出見込みです。年齢検証専用アプリも開発済みで、デジタルウォレットに統合可能です。MinAge13の実装不備も調査対象となっています。",
+      "importance": "EUの規制は全世界のプラットフォーム設計に影響を及ぼし、年齢確認の新基準が確立される可能性があります。",
+      "targetReaders": "ソーシャルメディア企業、グローバルプロダクトマネージャー、EU市場対応責任者"
+    },
+    {
+      "rank": 6,
+      "title": "If AI writes your code, why use Python?",
+      "url": "https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "AIモデルが高難度言語（Rust、Go）でコード生成の精度が大幅向上（SWE-bench Verified 80%以上）し、言語選択基準が変わりました。Microsoftが10年のTypeScriptコンパイラをGoで書き直し、AIによる100K行Rustコンパイラ開発が$20Kで実現。強い型システムと高速コンパイル-チェックループがAIアシスト開発に最適です。",
+      "importance": "プロジェクト立ち上げ時の言語選択戦略が根本的に変わり、パフォーマンス言語の採用障壁が大幅低下しました。",
+      "targetReaders": "技術リーダー、新規プロジェクトの企画者、AIコード生成を活用する開発組織"
+    },
+    {
+      "rank": 7,
+      "title": "Quack: The DuckDB Client-Server Protocol",
+      "url": "https://duckdb.org/2026/05/12/quack-remote-protocol",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "DuckDBが新しいリモートプロトコル「Quack」を発表し、クライアント-サーバー構成での複数同時ライター対応が可能になりました。HTTP上に構築され、セットアップが簡単で、バルク操作から小規模トランザクションまで広範囲なワークロードに対応。プロトコルオーバーヘッドを削減し、高パフォーマンスを実現します。",
+      "importance": "SQLite互換のプロセス内アーキテクチャの利点を保ちながら、マルチプロセスアクセスシナリオでの制限が解決される重要なマイルストーンです。",
+      "targetReaders": "データアナリスト、分析エンジニア、テレメトリ収集インフラを構築するDevOps"
+    },
+    {
+      "rank": 8,
+      "title": "The Future of Obsidian Plugins",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "Obsidianが「Obsidian Community」を立ち上げ、4,000以上のプラグイン/テーマ向けの新しいディレクトリと開発者ダッシュボードを提供。全バージョンの自動セキュリティ/コード品質レビュー、チーム向けツール、120百万ダウンロード突破。AIコードエージェントの増加に対応した段階的レビュー移行です。",
+      "importance": "オープンソースプラグインエコシステムの安全性と品質を自動化により大規模対応可能にしたモデルケースです。",
+      "targetReaders": "Obsidianプラグイン開発者、ナレッジマネジメント関連者"
+    },
+    {
+      "rank": 9,
+      "title": "Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model",
+      "url": "https://github.com/cactus-compute/needle",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Gemini 3.1をわずか26Mパラメータの軽量モデル「Needle」に蒸留し、ツール呼び出し機能を実装。本番環境で毎秒6000トークンのプリフィル速度を実現し、Mac/PC上でローカルファインチューニング可能。オープンウェイト・オープンデータセットで、デバイスAI向けの新基準を確立します。",
+      "importance": "エッジデバイス上での実用的なAIエージェント実行が現実化し、個人デバイスでの自律実行が可能になります。",
+      "targetReaders": "エッジAI開発者、小型言語モデル活用を検討する組織"
+    },
+    {
+      "rank": 10,
+      "title": "Show HN: Statewright – Visual state machines that make AI agents reliable",
+      "url": "https://github.com/statewright/statewright",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "ステートマシン制約により、AIエージェントが各フェーズで使用可能なツールを制限するプラグイン。Claude Code、Cursor等複数のAIプラットフォーム対応。実験結果では13.8GB~19.9GBモデルでSWE-bench 5タスク中2/10から10/10に改善。小型モデルでの信頼性向上が実証されています。",
+      "importance": "AIエージェントの信頼性と予測可能性を向上させる実用的手法で、本番展開のハードルを低下させます。",
+      "targetReaders": "AIエージェント開発者、継続的な改善を必要とするAIシステム導入企業"
+    }
+  ]
+}
