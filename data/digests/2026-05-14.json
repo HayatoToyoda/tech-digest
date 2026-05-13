@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-14",
+  "generatedAt": "2026-05-13T23:07:03.007Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Leaving GitHub for Forgejo",
+      "url": "https://jorijn.com/en/blog/leaving-github-for-forgejo/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "開発者がGitHubからセルフホストのForgejoへ移行する動きが加速している。オランダ政府も2026年4月にcode.overheid.nlでForgejoインスタンスを公開し、GitHubの高い障害率（月平均40件）やAI学習の強制オプトイン、所有権の欠如を理由に移行を決定。GitHubは2025年8月にMicrosoftのCoreAI部門傘下となり、FISA Section 702やCLOUD Actによる米国政府のデータアクセスリスクが存在する。",
+      "importance": "開発インフラの重要性が高まる中、政府機関を含む大規模組織がデータ主権と管理権を理由に移行を始めており、GitHubの独占状態が揺らぎ始めている。",
+      "targetReaders": "エンタープライズデベロッパー、DevOps担当者、セキュリティと規制遵守を重視する組織のIT責任者"
+    },
+    {
+      "rank": 2,
+      "title": "Composer leaks contents of tokens configured as GitHub OAuth tokens",
+      "url": "https://github.com/composer/composer/security/advisories/GHSA-f9f8-rm49-7jv2",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Composerに重大なセキュリティ脆弱性が発見された。GitHub Actions の新しいトークン形式（ghs_<id>_<base64url-JWT>）に含まれるハイフンが正規表現検証に失敗し、トークン全体がstderrに漏洩する。shivammathur/setup-phpなど広く使用されるアクションが自動的にGITHUB_TOKENをcomposer設定に登録するため、多くのリポジトリが影響を受ける可能性がある。",
+      "importance": "CI/CDパイプライン内での認証情報の漏洩は極めて危険であり、GitHub Actionsの新トークン形式が段階的にロールアウト中のため、まだ影響を受けていないリポジトリも近い将来リスクにさらされる。",
+      "targetReaders": "PHP開発者、GitHub Actions ユーザー、DevOps/SRE、セキュリティチーム"
+    },
+    {
+      "rank": 3,
+      "title": "Linux gaming is faster because Windows APIs are becoming Linux kernel features",
+      "url": "https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/",
+      "source": "XDA",
+      "category": "Platform",
+      "summary": "Linuxゲーミングが急速に成長しており、2026年3月にSteamのユーザーシェアで初めて5%を超えた。Wine/Protonを通じた翻訳層に頼る時代から、NTSYNCなどWindows固有機能をLinuxカーネルネイティブに実装する段階へ移行。Windows 10サポート終了やSteam Deckの普及がLinuxゲーマーを増やし、カーネルレベルの最適化がパフォーマンス向上の重要な要因となっている。",
+      "importance": "Windows 10の廃止期限（2025年10月）とLinuxゲーミングの実用性向上により、OSの選択が実質的に変わり始めており、ゲーム開発とLinuxエコシステムの関係が根本的に変化している。",
+      "targetReaders": "ゲーム開発者、Linuxデスクトップユーザー、プラットフォーム戦略決定者、グラフィックスソフトウェアエンジニア"
+    },
+    {
+      "rank": 4,
+      "title": "Kickstarter is forced to ban adult content by payment processors",
+      "url": "https://kotaku.com/kickstarter-is-the-latest-platform-seemingly-forced-to-ban-adult-content-by-payment-processors-2000695648",
+      "source": "Kotaku",
+      "category": "Platform",
+      "summary": "Kickstarterが支払い処理業者Stripeからの圧力により、アダルトコンテンツの規制を大幅に強化した。2026年5月に規制が更新され、「暗示的性行為」「MILF/DILF」「暗示的裸体」など詳細な制限が導入される。2025年にSteamとItch.ioが同様の措置を取っており、支払い処理業者による検閲が業界全体で加速している。",
+      "importance": "支払い処理業者がコンテンツ規制の実質的な決定権を持つようになり、プラットフォームの自律性と表現の自由に対する脅威となっており、デジタルプラットフォームの規制構造が大きく変わりつつある。",
+      "targetReaders": "クリエイター、プラットフォーマー、決済処理の利害関係者、言論の自由を重視する組織"
+    },
+    {
+      "rank": 5,
+      "title": "When \"idle\" isn't idle: how a Linux kernel optimization became a QUIC bug",
+      "url": "https://blog.cloudflare.com/quic-death-spiral-fix/",
+      "source": "Cloudflare Blog",
+      "category": "OSS",
+      "summary": "Linuxカーネル内のCUBIC（RFC 9438）の app-limited exclusion 最適化実装が、QUIC実装のquicheで深刻なバグを引き起こした。拥塞ウィンドウがミニマムで永続的に固定され、回復不可能な状態に陥る「死のスパイラル」が発生。テストの61%で失敗する不安定性を確認し、単一行に近いシンプルな修正で解決。",
+      "importance": "インターネットトラフィックの大部分を支配するCUBICアルゴリズムのバグがCloudflareなどの大規模サービスに直接的な影響を与え、カーネル最適化とネットワークスタック間の隠れた相互作用を露呈させた。",
+      "targetReaders": "ネットワークエンジニア、カーネル開発者、QUIC/TCPプロトコル実装者、インフラストラクチャ最適化担当者"
+    },
+    {
+      "rank": 6,
+      "title": "Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model",
+      "url": "https://github.com/cactus-compute/needle",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Gemini 3.1をツール呼び出し機能を持つ26Mパラメータモデルに蒸留したNeedleプロジェクトを公開。Simple Attention Networkアーキテクチャで、Mac/PCローカルで微調整可能。本番環境では6000トークン/秒のプリフィル、1200トークン/秒のデコード速度を達成。重みとデータセット生成コードが完全にオープンソース化されている。",
+      "importance": "大規模モデルの蒸留技術により、エッジデバイス（スマートフォン、ウェアラブル）上で実用的なAI機能が実現可能になり、個人用AI時代の基盤技術として機能する。",
+      "targetReaders": "ML エンジニア、エッジAI開発者、モバイルアプリ開発者、コスト効率を求めるAI実装者"
+    },
+    {
+      "rank": 7,
+      "title": "In-person examinations at Princeton will be proctored starting July 1",
+      "url": "https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-133-years-precedent",
+      "source": "Daily Princetonian",
+      "category": "Platform",
+      "summary": "プリンストン大学が133年間続いたオナーシステム（自主監視制度）を廃止し、2026年7月から全試験を有人監視に変更する。AI使用とスマートフォンの普及により、カンニングが見破りにくくなり、学生の報告姿勢も低下。2025年度の調査では約30%の学生が試験や課題でカンニングしたと報告。",
+      "importance": "AI時代の教育機関における学問的誠実性維持の方針転換を示す最初の事例となり、他の大学も同様の措置を採用する可能性が高く、教育システム全体のあり方に影響を与える。",
+      "targetReaders": "教育機関の管理者、AI導入検討中の大学、学生評価システム設計者、教育ポリシー立案者"
+    },
+    {
+      "rank": 8,
+      "title": "Twin brothers wipe 96 government databases minutes after being fired",
+      "url": "https://arstechnica.com/tech-policy/2026/05/drop-database-what-not-to-do-after-losing-an-it-job/",
+      "source": "Ars Technica",
+      "category": "Security",
+      "summary": "退職直後にITスタッフが政府の96データベースを削除する事件が発生。兄弟がファイルシステムとイベントログを削除後、ラップトップのOSを再インストール。FBIの捜査により銃火器も押収。2026年5月、兄のMuneebは有罪認否、弟のSohaibは裁判で有罪判決を受けた。",
+      "importance": "内部脅威への対策の重要性を示す具体例となり、バックアップ体制、アクセス制御、アウティング管理、監査ログの重要性が再認識される。",
+      "targetReaders": "インフラセキュリティ管理者、政府機関のIT責任者、アクセス制御設計者、インシデント対応チーム"
+    }
+  ]
+}
