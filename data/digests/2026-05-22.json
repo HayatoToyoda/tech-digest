@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-22",
+  "generatedAt": "2026-05-21T23:05:18.980Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+      "source": "OpenAI",
+      "category": "AI",
+      "summary": "OpenAIの汎用推論モデルが、Paul Erdősが1946年に提起した平面単位距離問題に関する80年近くの長年の予想を反証しました。AIが自律的に開いている数学問題を解決した初の事例で、外部の数学者によって証明が検証されています。この成果は代数整数論の高度な考え方を初等幾何学の問題に適用し、多項式的改善をもたらしています。",
+      "importance": "AIが単なる補助ツールではなく、独創的で複雑な推論能力を持つことを実証し、数学とAI双方のコミュニティにとって重要なマイルストーンとなります。",
+      "targetReaders": "AI研究者、数学者、AI能力の限界を理解したい技術者。"
+    },
+    {
+      "rank": 2,
+      "title": "GitHub confirms breach of 3,800 repos via malicious VSCode extension",
+      "url": "https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/",
+      "source": "BleepingComputer",
+      "category": "Security",
+      "summary": "GitHubは従業員がインストールした悪意あるVS Code拡張機能により、約3,800個の内部リポジトリが侵害されたことを確認しました。該当する拡張機能はVS CodeマーケットプレイスからRemoveされ、関連デバイスは隔離されています。このセキュリティインシデントはTanStack npm供給チェーン攻撃と関連しており、TeamPCPハッカーグループが関与しています。",
+      "importance": "VS Code拡張機能経由の供給チェーン攻撃は開発者に直接の脅威であり、オープンマーケットプレイスの検証メカニズムの重要性を浮き彫りにします。",
+      "targetReaders": "開発者、DevOps、セキュリティ担当者。"
+    },
+    {
+      "rank": 3,
+      "title": "Waymo pauses Atlanta service as its robotaxis keep driving into floods",
+      "url": "https://techcrunch.com/2026/05/21/waymo-pauses-atlanta-service-as-its-robotaxis-keep-driving-into-floods/",
+      "source": "TechCrunch",
+      "category": "Platform",
+      "summary": "Waymoは強い雨や浸水した道路への対応が不十分であることが判明したため、アトランタおよびサンアントニオのサービスを一時停止しました。NHTSAへの報告書では最終的な対策が完成していないことが明記され、気象警報に依存するシステムが豪雨時に不適切に機能していることが示されています。これは学校バス追い越し問題に次ぐ、Waymoの継続的な安全上の課題です。",
+      "importance": "自動運転タクシーの実装段階での重大な安全上の欠陥は、規制調査（NHTSA、NTSB）対象となり、商用展開の現実的な課題を示しています。",
+      "targetReaders": "自動運転技術者、規制当局、モビリティ産業関係者。"
+    },
+    {
+      "rank": 4,
+      "title": "We're testing new ad formats in Search and expanding our Direct Offers pilot",
+      "url": "https://blog.google/products/ads-commerce/google-marketing-live-search-ads/",
+      "source": "Google",
+      "category": "AI",
+      "summary": "GoogleはGeminiを統合した新しい検索広告フォーマット（Conversational Discovery広告、AI-powered Shopping広告など）をテスト中で、AI Mode利用者の75%がより高速で確実な購買判断をしていると報告しています。これらの広告にはAIによる独立した説明が組み込まれ、透明性と信頼性が確保されています。パフォーマンスマックスとAI Maxツールの設定がキャンペーン最適化に必須となります。",
+      "importance": "Google広告プラットフォームへのAI深度統合は広告業界の運用方法を大きく変え、マーケターとプラットフォーム戦略の根本的なシフトを示しています。",
+      "targetReaders": "デジタルマーケター、Google広告運用者、E-commerce企業。"
+    },
+    {
+      "rank": 5,
+      "title": "Python 3.15: features that didn't make the headlines",
+      "url": "https://blog.changs.co.uk/python-315-features-that-didnt-make-the-headlines.html",
+      "source": "Blog",
+      "category": "OSS",
+      "summary": "Python 3.15は大型機能（遅延インポート、Tachyonプロファイラ）だけでなく、Asyncio TaskGroupのキャンセル機能やコンテキストマネージャーの非同期サポート改善など、実用的な小機能も多数実装しています。TaskGroup.cancel()はAsyncioのstructured concurrencyを簡潔にし、デコレータ機能との互換性も向上しています。",
+      "importance": "Pythonの進化は並行処理と非同期プログラミングの実装を継続的に改善しており、実務的な開発効率向上に直結します。",
+      "targetReaders": "Python開発者、データサイエンティスト、並行処理を扱う開発者。"
+    },
+    {
+      "rank": 6,
+      "title": "Google's Antigravity bait and switch",
+      "url": "https://www.0xsid.com/blog/antigravity-bait-n-switch",
+      "source": "Personal Blog",
+      "category": "AI",
+      "summary": "GoogleのAntigravity IDEは強制更新によってレガシーIDE機能を削除し、会話型AIチャットボットに一本化されました。ユーザーは2つバージョンの共存インストールが不可能であり、設定とチャット履歴の喪失を余儀なくされ、I/O 2026での「最新版」への自動移行により既存ワークフローが破壊されています。",
+      "importance": "Googleの強制アップデート戦略がユーザーの生産性ワークフローを損なう事例として、AIツール設計における互換性と段階的移行の重要性を示しています。",
+      "targetReaders": "開発ツールユーザー、IDE開発者、AI補助コーディングツール利用者。"
+    },
+    {
+      "rank": 7,
+      "title": "News outlets are limiting the Internet Archive's access to their journalism",
+      "url": "https://www.niemanlab.org/2026/05/more-than-340-local-news-outlets-are-limiting-the-internet-archives-access-to-their-journalism/",
+      "source": "Nieman Lab",
+      "category": "Web",
+      "summary": "340以上の米国ローカルニュースサイトがAI学習データへの利用懸念からInternet Archiveへのアクセスを制限しており、主要企業（McClatchy、Advance Local、Tribune Publishing等）が大多数です。研究者やジャーナリストはWayback Machineのローカルニュースアーカイブに依存しており、ブロッキングは長期的な一次史料の保存に悪影響を与えています。",
+      "importance": "AIに対する懸念が公開情報の保存と利用可能性に影響を与え、デジタル記録保存と著作権保護のバランスに関する重要な課題を提起しています。",
+      "targetReaders": "ジャーナリスト、研究者、図書館員、情報アーカイブ管理者。"
+    },
+    {
+      "rank": 8,
+      "title": "Show HN: Rmux – A programmable terminal multiplexer with a Playwright-style SDK",
+      "url": "https://github.com/helvesec/rmux",
+      "source": "GitHub",
+      "category": "OSS",
+      "summary": "RmuxはRustで再構築されたターミナルマルチプレクサで、tmux互換のCLI、daemon-backed SDK、型付きAPI、persistent sessionsを提供します。エージェント時代の要件（スクリプト可能、検査可能、detachable）を満たし、SSH経由での長時間実行エージェント管理が可能で、Windows Named Pipesもサポートしています。v0.2.0は90個のtmuxコマンド実装をカバーしています。",
+      "importance": "AIエージェントやヘッドレスワークフロー向けのターミナル制御基盤として、従来のtmuxとは異なる用途層をサポートする実装が出現しています。",
+      "targetReaders": "AIエージェント開発者、DevOps、ターミナル自動化エンジニア。"
+    },
+    {
+      "rank": 9,
+      "title": "Flipper One – we need your help",
+      "url": "https://blog.flipper.net/flipper-one-we-need-your-help/",
+      "source": "Flipper Project",
+      "category": "Platform",
+      "summary": "Flipper OneはFlipperプロジェクトが発表した新しいLinuxシステム・オン・モジュール（SoM）ベースのサイバーデック。NFC/RFID対応のFlipperゼロと異なり、IP層通信（Wi-Fi 6E、Gigabit Ethernet、5G対応）に特化し、PCI Express/USB 3.0/SATAでの高速モジュール拡張が可能です。開発過程をオープン化し、完全オープンなLinuxプラットフォームとして実装を進めています。",
+      "importance": "オープンソースハードウェアのあり方と、エージェント時代のネットワーク接続デバイス設計方向を示す事例として重要です。",
+      "targetReaders": "ハードウェア開発者、セキュリティ研究者、オープンソース支持者。"
+    },
+    {
+      "rank": 10,
+      "title": "Vivaldi 8.0",
+      "url": "https://vivaldi.com/blog/vivaldi-on-desktop-8-0/",
+      "source": "Vivaldi",
+      "category": "Platform",
+      "summary": "Vivaldi 8.0は「Unified」という新しいUIデザイン哲学を導入し、タブ・ツールバー・パネルの層状構造を単一の連続サーフェスに統合しました。テーマが全体に一貫して適用され、複雑な内部構造を簡潔化しながらユーザー設定の柔軟性は維持されています。7000以上のテーマが利用可能で、既存カスタムテーマの互換性も選択可能です。",
+      "importance": "ブラウザUI設計における統一性とユーザー制御のバランス、および大規模な視覚的リデザインの実装方法を示す好例です。",
+      "targetReaders": "ブラウザユーザー、UI/UXデザイナー、クロスプラットフォームツール開発者。"
+    }
+  ]
+}
