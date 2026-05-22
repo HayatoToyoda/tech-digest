@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-23",
+  "generatedAt": "2026-05-22T23:03:18.239Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Project Glasswing: An Initial Update",
+      "url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "source": "Anthropic",
+      "category": "Security",
+      "summary": "Anthropic のProject Glasswing は、AI を使用して重要なオープンソースソフトウェアの脆弱性を発見するプロジェクト。約50のパートナーと共に1ヶ月で10,000件以上の高/重大度脆弱性を発見。従来は脆弱性発見がボトルネックだったが、今は検証・修正・展開のスピードが限界因子となっている。Cloudflareは2,000件のバグ発見（400件は高/重大度）で、偽陽性率は人間テスターより良好。",
+      "importance": "AI によるセキュリティ脅威の加速が現実化し、業界全体の対応体制が試されている。脆弱性管理のパラダイムシフトが起きている。",
+      "targetReaders": "セキュリティ責任者、DevOps エンジニア、オープンソース保守者"
+    },
+    {
+      "rank": 2,
+      "title": "The memory shortage is causing a repricing of consumer electronics",
+      "url": "https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone",
+      "source": "David Oks Blog",
+      "category": "Platform",
+      "summary": "AI の爆発的な需要拡大がメモリの供給を逼迫させ、スマートフォン市場に構造的変化をもたらしている。2026年の世界スマートフォン出荷は13%減（過去最大の単年度減少）、特にアフリカ・中東で20%以上減。数十年続いた電子機器の低価格化トレンドが終焉を迎え、低所得国での計算機アクセスが急減する可能性。",
+      "importance": "グローバルデジタルデバイド拡大の危機。先進国の AI 需要が途上国の基本的な IT アクセスを脅かしている。",
+      "targetReaders": "携帯キャリア幹部、新興市場ビジネスマネージャー、グローバル政策立案者"
+    },
+    {
+      "rank": 3,
+      "title": "DeepSeek makes the V4 Pro price discount permanent",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "source": "DeepSeek",
+      "category": "AI",
+      "summary": "DeepSeek が V4 Pro の75%割引を恒久化、さらにキャッシュヒット時の入力トークン価格を1/10に削減。4月26日からの価格調整により、競争力ある LLM API 価格設定が実現。OpenAI などとの価格競争が激化し、業界全体の API 価格低下圧力が強まる。",
+      "importance": "中国 AI モデルの急速なコスト削減がグローバル LLM 市場の価格構造を変えている。利益率への圧力が業界全体に波及。",
+      "targetReaders": "LLM サービス提供企業、AI スタートアップ経営者、 API 利用者"
+    },
+    {
+      "rank": 4,
+      "title": "Lawmakers Demand Answers as CISA Tries to Contain Data Leak",
+      "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
+      "source": "Krebs on Security",
+      "category": "Security",
+      "summary": "CISA の契約業者が AWS GovCloud キーを含む大量の機密情報を GitHub に公開。2025年11月に作成された Public プロフィールから認証情報が露出、保護機能が意図的に無効化された。複数の議員が安全文化の低下と契約管理能力を疑問視。",
+      "importance": "米国重要インフラセキュリティを担当する政府機関自体が重大な情報漏洩を起こし、政治問題化。内部管理体制の根本的課題を露呈。",
+      "targetReaders": "政府機関 CIO/セキュリティ責任者、連邦契約企業、インフラセキュリティ業界"
+    },
+    {
+      "rank": 5,
+      "title": "Flipper One – we need your help",
+      "url": "https://blog.flipper.net/flipper-one-we-need-your-help/",
+      "source": "Flipper",
+      "category": "OSS",
+      "summary": "Flipper Zero ではなく別プロジェクトの Flipper One は、PCI Express/USB 3.0/SATA 対応の拡張性重視のオープン Linux プラットフォーム。Wi-Fi 6E、ギガビットイーサネット、5G M.2 対応で、SDR やローカル AI 実装が可能。開発資金と技術的困難から、コミュニティ支援を公開募集。",
+      "importance": "Flipper Zero の成功に続く新プロジェクトで、セキュリティ研究コミュニティの期待が高い。オープンハードウェア + エージェント時代への対応。",
+      "targetReaders": "セキュリティ研究者、ハードウェアエンジニア、オープンソースコミュニティ"
+    },
+    {
+      "rank": 6,
+      "title": "Deno 2.8",
+      "url": "https://deno.com/blog/v2.8",
+      "source": "Deno",
+      "category": "Platform",
+      "summary": "Deno 2.8 で `deno audit fix` と `deno bump-version` サブコマンド追加、npm 脆弱性の自動修正と一括バージョン管理が可能に。さらに `deno ci` コマンドで lockfile 一致性の確認が標準化。ワークスペース機能拡張で複数パッケージ管理が効率化。",
+      "importance": "Node.js/npm の脆弱性管理が Deno で大幅に簡素化。セキュリティと開発効率の両面で実用性向上。",
+      "targetReaders": "Deno ユーザー、 Node.js からの移行検討者、DevOps エンジニア"
+    },
+    {
+      "rank": 7,
+      "title": "Microsoft starts canceling Claude Code licenses",
+      "url": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
+      "source": "The Verge",
+      "category": "AI",
+      "summary": "Microsoft が6月30日までに Claude Code ライセンスの大部分をキャンセルし、開発者を GitHub Copilot CLI に移行させる方針。財務・戦略上の理由と、Copilot CLI の機能強化を理由に。Claude Code は Microsoft 内で高い人気があったが、自社ツール統合への戦略転換。",
+      "importance": "Microsoft が Anthropic との提携を縮小し、自社 AI ツール構築に集中。企業の AI ツール選択が競争激化で流動化。",
+      "targetReaders": "Microsoft 開発者、GitHub Copilot ユーザー、 AI コーディングツール企業"
+    },
+    {
+      "rank": 8,
+      "title": "AI has a multiplying effect on existing technical skills",
+      "url": "https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/",
+      "source": "Josh W Comeau",
+      "category": "AI",
+      "summary": "AI のスキル影響は二分化：深い技術知識を持つ開発者は生産性が10倍以上向上（Matt Perry の例：Q1 目標60issue を160に達成），一方経験の浅い開発者は MVP 段階で停滞。AI は強力なツールだが、適切に使いこなすには既存の技術スキルが必須。",
+      "importance": "AI が万能ツールではなく「熟練者向け増幅装置」という現実が明確化。スキルギャップの拡大が産業構造に影響。",
+      "targetReaders": "開発者キャリア形成者、 tech lead、 AI スキル教育企画者"
+    },
+    {
+      "rank": 9,
+      "title": "Bun support is now limited and deprecated",
+      "url": "https://github.com/yt-dlp/yt-dlp/issues/16766",
+      "source": "GitHub (yt-dlp)",
+      "category": "Platform",
+      "summary": "yt-dlp が Bun ランタイムのサポートを制限・廃止。対応バージョンを 1.2.11～1.3.14 に限定、以降は完全廃止の可能性。理由は npm サプライチェーン攻撃への脆弱性と、Rust 再実装後の Bun の開発不安定性（「vibe-coding」への懸念）。",
+      "importance": "Deno 競合の Bun が重要プロジェクトから離脱。JavaScript ランタイム選択での信頼性問題が顕在化。",
+      "targetReaders": "Bun ユーザー、 JavaScript ランタイム開発者、オープンソース保守者"
+    },
+    {
+      "rank": 10,
+      "title": "Why Japanese companies do so many different things",
+      "url": "https://davidoks.blog/p/why-japanese-companies-do-so-many",
+      "source": "David Oks Blog",
+      "category": "Platform",
+      "summary": "Toto のケーススタディ：トイレ大手だが、電子チャック（e-chuck）という AI メモリ製造向けのセラミック部品ビジネスが急成長。2026年 Q1 営利が230%増。日本の多角化企業が隠された高収益ビジネスを保有し、AI ブームで急速評価向上。サプライチェーン重要性の中核企業。",
+      "importance": "AI メモリ需要が電子部品産業の利益構造を急変させている。日本メーカーのサプライチェーン支配力が評価される。",
+      "targetReaders": "サプライチェーン管理者、半導体・メモリ業界関係者、投資家"
+    }
+  ]
+}
