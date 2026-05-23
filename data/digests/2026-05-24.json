@@ -1,0 +1,96 @@
+{
+  "date": "2026-05-24",
+  "generatedAt": "2026-05-23T22:55:47.479Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Project Glasswing: An Initial Update",
+      "url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "source": "Anthropic",
+      "category": "AI",
+      "summary": "AnthropicのProject Glasswingは、AIモデルによるサイバー脅威に先制的に対応するため、約50パートナーと協力して重要インフラソフトウェアの脆弱性を検出している。Claude Mythos Previewを使用して1ヶ月間に10,000件以上の重大・高度な脆弱性を発見し、一部パートナーではバグ検出率が10倍以上に増加した。検証・開示・パッチ適用の速度がセキュリティの新たなボトルネックとなっている。",
+      "importance": "AI時代のサイバーセキュリティの根本的な課題を明示しており、脆弱性検出の加速がセキュリティ対応体制を変革する。",
+      "targetReaders": "サイバーセキュリティ担当者、インフラ管理者、脆弱性管理チーム"
+    },
+    {
+      "rank": 2,
+      "title": "BambuStudio has been violating PrusaSlicer AGPL license since their fork",
+      "url": "https://xcancel.com/josefprusa/status/2054602354851254330",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Bambu LabがPrusaSlicerのAGPLライセンス違反を継続している問題が指摘され、中国の5つの法律フレームワーク（2017-2023）による強制的なデータ共有・暗号化制御・越境管轄の問題が背景にあると分析されている。国家情報法・暗号化法・データセキュリティ法などにより、中国企業は政府への情報提供を強制され、その事実を秘密にすることも義務付けられている。",
+      "importance": "オープンソースプロジェクトのライセンス違反とジオポリティカルリスクの交差点を示す重要なケーススタディで、中国の法的枠組みがテック産業に与える影響を可視化している。",
+      "targetReaders": "オープンソース開発者、ライセンスコンプライアンス担当者、サプライチェーンセキュリティ関係者"
+    },
+    {
+      "rank": 3,
+      "title": "CISA tries to contain data leak",
+      "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
+      "source": "Krebson Security",
+      "category": "Security",
+      "summary": "CISAの契約業者がAWS GovCloudキーと多数の内部システム認証情報を含む機密データを公開GitHubアカウントに意図的に公開していた。2025年11月に作成されたリポジトリから認証情報保護を無効化した痕跡が見つかり、議会から厳しい質問が出ている。Trump政権下での人員削減がセキュリティ文化の低下につながったとの指摘も。",
+      "importance": "米国の重要なサイバーセキュリティ機関自体が重大な認証情報漏洩を経験しており、政府機関のセキュリティ体制の脆弱性を示す深刻な事例。",
+      "targetReaders": "政府機関セキュリティ関係者、企業情報セキュリティ担当者、認証情報管理専門家"
+    },
+    {
+      "rank": 4,
+      "title": "The FBI Wants 'Near Real-Time' Access to US License Plate Readers",
+      "url": "https://www.wired.com/story/security-news-this-week-fbi-license-plate-reader-real-time/",
+      "source": "Wired",
+      "category": "Security",
+      "summary": "FBI調達記録により、FBIが全米のナンバープレートリーダー（ALPR）データへのリアルタイムアクセスを数百万ドルで購入しようとしていることが判明。議会ではALPRの州・地方政府による使用を制限しようとする超党派的な動きがある一方、FBIは同時に全国的なサーベイランス体制を構築しようとしている。",
+      "importance": "政府監視体制の拡大とプライバシー保護の相反する動きが同時に進行しており、市民のプライバシー権に関わる重要なジオポリティカル問題。",
+      "targetReaders": "プライバシーアドボケート、市民自由の擁護者、企業のデータ保護責任者"
+    },
+    {
+      "rank": 5,
+      "title": "Oura says it gets government demands for user data",
+      "url": "https://this.weekinsecurity.com/oura-says-it-gets-government-demands-for-user-data-will-it-share-how-many/",
+      "source": "This Week in Security",
+      "category": "Security",
+      "summary": "Ouraリングの健康データはエンドツーエンド暗号化されておらず、スタッフによるアクセスが可能な設計になっており、政府要求により裁判官の令状で容易にアクセスされうる。Ouraは政府から定期的なデータ要求を受けていると認めたが、その頻度や提供データ量を開示していない。米国防省・Palantir提携による信頼低下に加えて、データセキュリティ設計の根本的な問題が浮上。",
+      "importance": "ヘルステック企業の設計選択がユーザープライバシーと政府監視アクセスの直結につながる具体例で、ウェアラブルデバイスのセキュリティ設計の重要性を示す。",
+      "targetReaders": "ヘルスケアテック企業、ウェアラブルデバイス開発者、プライバシー保護規制当局"
+    },
+    {
+      "rank": 6,
+      "title": "SpaceX launches Starship v3 rocket",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-v3-megarocket-first-test-flight",
+      "source": "Space.com",
+      "category": "Platform",
+      "summary": "SpaceXがStarship V3（第12回サブオービタルテスト）を発射し、設計オーバーホールされた新型の初飛行を実現。33基のRaptorエンジンのうち1基が停止し、上段も6基中1基を失ったが、軌道投入に成功。V2からV3への移行で製造効率化と信頼性向上を目指している。",
+      "importance": "次世代ロケット開発の重要なマイルストーンであり、民間宇宙産業の商用化進展を示す。",
+      "targetReaders": "宇宙産業関係者、ロケット開発エンジニア、商用宇宙プロジェクト投資家"
+    },
+    {
+      "rank": 7,
+      "title": ".NET (OK, C#) gets union types",
+      "url": "https://andrewlock.net/exploring-the-dotnet-11-preview-2-dotnet-gets-union-types/",
+      "source": "Andrew Lock Blog",
+      "category": "Web",
+      "summary": "C# 15（.NET 11）がついに関数型言語で一般的なUnion型をサポート。複数の異なる型を表現できるようになり、Result<TSuccess, TError>パターンが言語ネイティブで実装可能に。型安全性とエラーハンドリングの改善により、C#はより関数型パラダイムに接近。",
+      "importance": "長年要望されてきたUnion型の実装により、C#の型システムが大幅に強化され、エラーハンドリングと関数型プログラミングの実践がより容易になる。",
+      "targetReaders": ".NET開発者、C#プログラマ、エンタープライズシステム構築者"
+    },
+    {
+      "rank": 8,
+      "title": "z386: An Open-Source 80386 Built Around Original Microcode",
+      "url": "https://nand2mario.github.io/posts/2026/z386/",
+      "source": "nand2mario",
+      "category": "OSS",
+      "summary": "復元された80386オリジナルマイクロコードを用いてFPGA上に再構成されたz386は、DOS 6/7、保護モード、DoomやCannon Fedderなどのゲームを実行可能。8,000行のコードでao486（17,600行）より効率的に実装され、85MHzで動作する教育的かつ実用的なCPUが完成。",
+      "importance": "古いプロセッサアーキテクチャの完全な復元は、コンピュータ考古学とハードウェア教育の優れた例であり、マイクロコード逆エンジニアリングの実践的成果。",
+      "targetReaders": "コンピュータアーキテクチャ研究者、FPGA開発者、レトロコンピューティング愛好家"
+    },
+    {
+      "rank": 9,
+      "title": "80386 Microcode Disassembled",
+      "url": "https://www.reenigne.org/blog/80386-microcode-disassembled/",
+      "source": "reenigne",
+      "category": "OSS",
+      "summary": "高解像度の80386ダイ画像から94,720ビットのマイクロコードROMを画像処理・ニューラルネットワーク・人間支援による自動化で抽出・逆アセンブル。複雑な命令デコーダ、保護テストPLA、マイクロオペレーション形式の解析により、40年前のプロセッサの内部動作を完全に可視化。",
+      "importance": "マイクロコード・レベルの完全な逆エンジニアリングにより、古いハードウェアの内部動作が科学的に理解可能になり、アーキテクチャ研究とハードウェアセキュリティ分析の新地平を開く。",
+      "targetReaders": "ハードウェアセキュリティ研究者、CPUアーキテクチャ設計者、デジタル考古学者"
+    }
+  ]
+}
