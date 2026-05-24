@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-25",
+  "generatedAt": "2026-05-24T22:59:47.339Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Microsoft open-sources \"the earliest DOS source code discovered to date\"",
+      "url": "https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/",
+      "source": "Ars Technica",
+      "category": "OSS",
+      "summary": "マイクロソフトがMS-DOS以前の最古のDOSソースコードである86-DOS 1.00カーネルと開発スナップショット、CHKDSKなどのユーティリティを公開した。このリリースはMS-DOSブランディング前のコードであり、Tim Patersonが開発したオリジナルのQDOS/86-DOSに遡る。PC産業の歴史における重要な資産がオープンソース化され、コンピュータ科学の歴史研究や学習に貢献する。",
+      "importance": "コンピュータ産業の初期段階のソースコードが保存・公開されることは歴史的意義が大きく、プログラミング教育やレガシーシステム理解の重要な資料となる。",
+      "targetReaders": "コンピュータ史に興味がある開発者、OS開発者、レトロコンピューティング愛好家"
+    },
+    {
+      "rank": 2,
+      "title": "DeepSeek makes the V4 Pro price discount permanent",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "source": "DeepSeek API Docs",
+      "category": "AI",
+      "summary": "DeepSeekがフラグシップモデルV4 Proの75%割引を恒久化した。キャッシュヒット時の入力トークン価格が1/10に削減され、2026年5月31日以降も75%割引が標準価格となる。これにより大規模言語モデルの運用コストが大幅に低下し、AI活用の採算性が向上する。",
+      "importance": "AI推論コストの大幅削減は企業でのLLM導入を加速させ、生成AI市場の民主化に直結する実務的インパクトが大きい。",
+      "targetReaders": "AI/LLMサービスの開発者、機械学習エンジニア、クラウドコスト最適化を検討する企業"
+    },
+    {
+      "rank": 3,
+      "title": "Why is Vivado 2026.1 dropping Linux support for free tier?",
+      "url": "https://adaptivesupport.amd.com/s/question/0D5Pd00001YQLdMKAX/why-is-vivado-20261-dropping-linux-support-for-free-tier-?language=en_US",
+      "source": "AMD Adaptive Support",
+      "category": "Platform",
+      "summary": "Vivado 2026.1のフリーティアがLinuxサポートを廃止する。これはAMD/Xilinxの主要FPGA開発ツールの大幅な制限であり、Linux上でのFPGA設計環境に影響を与える。オープンソースハードウェア開発コミュニティに対する制約強化である。",
+      "importance": "FPDAツール企業による商用化戦略強化であり、Linux開発者の採用障壁となり得る。オープンハードウェア開発者に実務的な影響がある。",
+      "targetReaders": "FPGA開発者、ハードウェアエンジニア、Linux上で組み込み開発を行う技術者"
+    },
+    {
+      "rank": 4,
+      "title": "Memory has grown to nearly two-thirds of AI chip component costs",
+      "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+      "source": "Epoch AI",
+      "category": "AI",
+      "summary": "2024年から2025年にかけてAIチップのメモリ（HBM）コスト比率が52%から63%に増加した。総コンポーネント支出は220億ドルから520億ドルに増加し、HBM支援だけで約200億ドルの増加を占める。メモリ争奪が次のボトルネックになりつつある。",
+      "importance": "AIチップ製造のサプライチェーン構造が大きく変わり、メモリベンダー（SK Hynix、Micronなど）の供給能力がAI産業拡大の制約条件になる可能性がある。",
+      "targetReaders": "AI硬件企業、半導体投資家、チップ設計エンジニア、サプライチェーン戦略策定者"
+    },
+    {
+      "rank": 5,
+      "title": "Scammers are abusing an internal Microsoft account to send spam links",
+      "url": "https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/",
+      "source": "TechCrunch",
+      "category": "Security",
+      "summary": "詐欺師がMicrosoftの内部通知アカウント（msonlineservicesteam@microsoftonline.com）を悪用して数ヶ月間にわたりスパム・フィッシングメールを送信していた。自動通知システムが過度なカスタマイズを許可していることが問題。Microseshiftは検出ブロック機構の強化とアカウント削除で対応中。",
+      "importance": "大企業の内部システムが悪用される深刻なセキュリティ脆弱性であり、ユーザーが正規メールと偽造メールを区別困難になる信頼性の問題に直結する。",
+      "targetReaders": "セキュリティ管理者、メール管理者、企業IT部門、サイバーセキュリティ従事者"
+    },
+    {
+      "rank": 6,
+      "title": "Constraint Decay: The Fragility of LLM Agents in Back End Code Generation",
+      "url": "https://arxiv.org/abs/2605.06445",
+      "source": "arXiv",
+      "category": "AI",
+      "summary": "LLMエージェントが構造的制約条件下でバックエンド生成時に大幅にパフォーマンスが低下することを明らかにした研究。構造要件が増加するにつれて「制約減衰」現象が発生し、有能な設定でも基準比で平均30ポイントの推論成功率低下が見られた。データ層欠陥（不正確なクエリ構成、ORM実行時エラー）が主原因。",
+      "importance": "本番運用レベルのコード生成にLLMを活用する際、実際の業務で必要となる複雑な構造制約への対応が未成熟であることを示す。AI支援コード生成の実務導入に重要な制限である。",
+      "targetReaders": "バックエンド開発者、AI支援開発ツール評価者、ソフトウェアアーキテクト"
+    },
+    {
+      "rank": 7,
+      "title": "Perceptual Image Codec: What Matters in Practical Learned Image Compression",
+      "url": "https://apple.github.io/ml-pico/",
+      "source": "Apple ML",
+      "category": "AI",
+      "summary": "AppleがPICO（Perceptual Image Codec）を発表。人間の視覚系に最適化された実用的な学習型画像コーデック。AV1/AV2/VVC比で2.3～3倍のビットレート削減を実現しながら、iPhone 17 Pro Maxで230ms（エンコード）/150ms（デコード）の高速処理を達成。大規模主観評価研究に基づく。",
+      "importance": "実用レベルの推論性能と圧縮効率を両立した学習型コーデックの実現は、モバイルデバイスでの画像処理や通信帯域幅最適化に大きな実務的価値がある。",
+      "targetReaders": "モバイルアプリ開発者、メディア処理エンジニア、ビデオストリーミング企業"
+    },
+    {
+      "rank": 8,
+      "title": "Migrating from Go to Rust",
+      "url": "https://corrode.dev/learn/migration-guides/go-to-rust/",
+      "source": "Corrode",
+      "category": "Web",
+      "summary": "GoからRustへの移行ガイド。Goの正確性保証、ランタイムトレードオフ、開発者人間工学を比較。Goは17-19%の開発者に利用されているが、Rustは構造的に強い保証を提供。バックエンドサービス中心のガイドで、段階的なマイグレーション戦略を提示。",
+      "importance": "実用的な言語選択への指針を提供。Rustの借用チェッカーが提供する型安全性は大規模システムの信頼性向上に直結するが、学習曲線が存在する。",
+      "targetReaders": "バックエンド開発者、システムエンジニア、言語選択を検討するチーム"
+    }
+  ]
+}
