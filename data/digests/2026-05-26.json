@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-26",
+  "generatedAt": "2026-05-25T23:07:17.415Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "California moves to exempt Linux from its age-verification law after backlash",
+      "url": "https://www.tomshardware.com/software/linux/california-moves-to-exempt-linux-from-its-upcoming-age-verification-law-after-backlash-over-forcing-operating-systems-to-collect-users-ages-amendment-proposed-by-the-same-lawmaker-who-wrote-the-original-law",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "カリフォルニア州が提案するAB1856修正案により、オープンソース・オペレーティングシステムがデジタル年齢確認法（AB1043）の対象から除外される見通しが立った。同法は2027年1月に発効予定で、OSレベルでのユーザー年齢検証を義務づけるものだったが、Debian、Fedora、Ubuntuなど主流Linuxディストリビューションは免除される。この変更は、プライバシー擁護団体やLinux開発者からの強い反発を受けたもの。",
+      "importance": "オープンソース開発の自由度に直結する重要な規制変更であり、OSレベルでの監視インフラ構築という危険性から開発者コミュニティが守られることになる。",
+      "targetReaders": "Linux開発者、OSS開発者、規制動向に関心のある技術者"
+    },
+    {
+      "rank": 2,
+      "title": "Microsoft Copilot Cowork Exfiltrates Files",
+      "url": "https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "Microsoft 365のCopilot Coworkにおいて、間接プロンプトインジェクション攻撃により企業ファイルが流出する脆弱性が報告された。攻撃者はポイズンされたスキルを通じてファイルへの事前認証ダウンロードリンクを取得し、ユーザーが操作中のエージェントがメッセージに埋め込まれた画像にアクセスする際にデータを流出させる。ユーザー承認なしにメール送信が実行される設計が問題。",
+      "importance": "エージェント型AIが複数システムにアクセスする際の根本的なセキュリティリスクを示しており、企業がこの機能の採用時に認識すべき設計上の脆弱性。",
+      "targetReaders": "Microsoft 365管理者、セキュリティ担当者、エンタープライズAIの導入検討者"
+    },
+    {
+      "rank": 3,
+      "title": "Migrating from Go to Rust",
+      "url": "https://corrode.dev/learn/migration-guides/go-to-rust/",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "バックエンド開発においてGoからRustへの移行に関する実務的なガイドが公開された。著者は両言語での実装経験があり、正確性保証、ランタイムトレードオフ、開発体験の観点から中立的な比較を提供。GoとRustが重なる領域や乖離点、段階的な移行戦略について詳細に解説。",
+      "importance": "エコシステムが成熟しつつあるRustへの移行を検討する企業やチーム向けの実践的な情報提供として重要。",
+      "targetReaders": "バックエンド開発者、言語選択に関心のあるエンジニア、インフラ刷新を検討する技術リーダー"
+    },
+    {
+      "rank": 4,
+      "title": "Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks",
+      "url": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/",
+      "source": "Hacker News",
+      "category": "Security",
+      "summary": "オランダ当局がロシアのサイバー攻撃・影響工作に利用されていたホスティング企業の共同経営者2名を逮捕し、800台以上のサーバーを押収した。逮捕者はEU制裁対象のStark Industries Solutionsの基盤を提供していた企業に関連。2025年のKrebsOnSecurityの報道に続く実行段階への進展。",
+      "importance": "サイバーセキュリティ基盤への規制・執行強化の具体例であり、ロシア関連の悪用インフラへの国際的な対抗姿勢を示す。",
+      "targetReaders": "セキュリティ運用者、ネットワーク基盤管理者、サイバー脅威インテリジェンス担当者"
+    },
+    {
+      "rank": 5,
+      "title": "IBM Spins Off the First Pure-Play Quantum Chip Foundry",
+      "url": "https://futurumgroup.com/insights/2-billion-chips-act-investment-in-quantum-bets-on-ibms-300mm-superconducting-silicon/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "米国商務省とIBMが20億ドルのCHIPS Act投資を通じて、量子チップファウンドリAnderson（アルバニー）を設立する。IBMが10億ドルを投資し、米国政府が10億ドルのインセンティブを提供。300mm超伝導シリコン量子ビット製造に焦点。9社への2億ドル配分により、超伝導以外の量子モダリティもサポート。",
+      "importance": "量子コンピューティングの製造基盤構築という米国の産業政策上の重要な施策であり、今後の量子技術開発のペースに大きく影響。",
+      "targetReaders": "量子コンピューティング開発者、半導体業界関係者、戦略的投資判断を行う企業"
+    },
+    {
+      "rank": 6,
+      "title": "Launch HN: Chert (YC P26) – Twilio for iMessage",
+      "url": "https://www.trychert.com",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "YC P26スタートアップのChertは、iMessageを通じたB2Bメッセージング基盤を提供するAPI。冷たいメール対比で10倍のレスポンスレートを実現。リアルタイム配信、既読確認、リアクション、グループチャット対応。SMSフォールバック機能により、非iMessageユーザーへも到達。",
+      "importance": "企業のアウトリーチチャネルとしてiMessageの活用を可能にする新しいインフラで、営業・マーケティング効率化のユースケースが明確。",
+      "targetReaders": "SaaS営業チーム、マーケティング自動化ツール採用者、API統合の検討者"
+    },
+    {
+      "rank": 7,
+      "title": "Building Pi with Pi",
+      "url": "https://lucumr.pocoo.org/2026/5/24/pi-oss/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Armin Ronacher氏がAIエージェント駆動で開発されるOSSプロジェクト「Pi」において直面する課題をレポート。AIが生成した低品質な問題報告（90%以上がAI生成、診断が不正確）がプロジェクト管理に悪影響。イシュートラッカーの役割が変化し、プロンプト入力としても機能するために、高品質なレポートの重要性が増加。",
+      "importance": "AIエージェントによる開発自動化の進展に伴い、新たな課題（AI生成ノイズの増加）が顕在化し、OSS運営モデルの見直しが必要になる。",
+      "targetReaders": "OSSメンテナー、AI駆動開発の導入者、品質管理エンジニア"
+    },
+    {
+      "rank": 8,
+      "title": "Defeating Git Rigour Fatigue with Jujutsu",
+      "url": "https://ikesau.co/blog/defeating-git-rigour-fatigue-with-jujutsu/",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Jujutsuバージョン管理システムを使用して、開発中の粗雑なコミット履歴を最終段階で整理する新しいワークフローが紹介された。従来のGit厳格性の負担を軽減し、開発終盤に全変更をコンパートメント化されたコミットに再編成。jj squash コマンドとインタラクティブモードを活用。",
+      "importance": "Jujutsuの実践的使用例を示し、開発生産性向上の具体的手法を提供。Git移行を検討する開発チームへの参考値。",
+      "targetReaders": "Jujutsu/Git利用開発者、版管理改善を検討するエンジニア、大規模機能開発チーム"
+    },
+    {
+      "rank": 9,
+      "title": "C extensions, portability, and alternative compilers",
+      "url": "https://lemon.rip/w/6-c-extensions-compilers/",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "C言語の標準準拠コードが実務では稀であり、glibc互換性、コンパイラ拡張への依存、ヘッダファイルの非標準化など、ポータビリティの課題が詳細に解説される。GCC/Clang以外のコンパイラ実装時に直面する実践的な障壁と回避策が記述。",
+      "importance": "代替Cコンパイラ開発やツールチェーン選定時の現実的な制約を明らかにし、標準化の課題を浮き彫りにする。",
+      "targetReaders": "C言語開発者、コンパイラ開発者、ツールチェーン管理者"
+    },
+    {
+      "rank": 10,
+      "title": "The bootstrapper's EU stack for under €10 per month",
+      "url": "https://eualternative.eu/guides/bootstrapper-free-tier-eu-stack/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "EU圏のスタートアップが月額10ユーロ以下で完全なインフラを構築するためのガイド。Hetzner Cloud（7ユーロ/月）のコンピュート、複数の無料/低コストメールサービス、分析、監視、フォーム、認証ツールをリスト化。GDPR対応、オープンソースオプション、セルフホスト可能性も考慮。",
+      "importance": "EU創業者向けに実行可能な低コスト基盤を提示し、規制要件を満たしながらMVP開発を加速させる実務的リソース。",
+      "targetReaders": "ブートストラップスタートアップ、EU圏起業家、コスト意識の高い開発者"
+    }
+  ]
+}
