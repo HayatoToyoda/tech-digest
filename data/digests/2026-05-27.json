@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-27",
+  "generatedAt": "2026-05-26T23:12:35.907Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "Uber president says AI spending is getting 'harder to justify'",
+      "url": "https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify",
+      "source": "The Verge",
+      "category": "AI",
+      "summary": "Uber exhausted its annual AI budget in just four months of 2026 and is now questioning the ROI on its investments. President Andrew Macdonald stated the company cannot draw a clear line between increasing token consumption for Claude Code and actual useful consumer features being delivered. This marks a significant shift as companies begin scrutinizing whether massive AI spending translates to tangible business value.",
+      "importance": "これはAI投資の現実的な限界を示す重要な事例であり、多くのテック企業がAIに過度な投資をしている中で、実際の成果測定の難しさを露呈させています。",
+      "targetReaders": "AI戦略を策定している経営層、AI投資の効果測定に関わるプロダクトマネージャー、テック業界の動向を注視している投資家"
+    },
+    {
+      "rank": 2,
+      "title": "Using AI to write better code more slowly",
+      "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+      "source": "Nolan Lawson",
+      "category": "AI",
+      "summary": "著者は、AIコーディングツールを低品質なコードを高速生成するためのツールではなく、高品質コード作成のための補助手段として活用すべきだと主張しています。複数のAIモデルを使用したバグ検出とコードレビュープロセスで、著者は93-96%の精度を実現し、本番環境での信頼性を大幅に向上させました。",
+      "importance": "AIコーディングの実用的な使い方を示す実践例であり、スピードよりも品質を重視するアプローチの価値を証明しています。開発チームの意思決定に直結する内容です。",
+      "targetReaders": "エンジニアリングリーダー、AIコーディングツール導入を検討している開発チーム、コード品質管理を重視する組織"
+    },
+    {
+      "rank": 3,
+      "title": "Big tech's anti-labor playbook has come for Wikipedia",
+      "url": "https://medium.com/@jakeorlowitz/wikipedia-is-doing-the-capitalist-thing-56a393232943",
+      "source": "Medium",
+      "category": "Platform",
+      "summary": "Wikimedia Foundationは5月中旬、MediaWikiのリード開発者であるBrooke Vibberを含む複数の長年の従業員と組合活動家を解雇し、Community Techチームを解散させました。財団は$296百万の準備金と好調なAI関連の新収益源を保有しており、ウィキペディアの編集者らはストライキを含む連帯行動を予告しています。",
+      "importance": "AI収益化により潤沢な資金がある一方で、コミュニティ志向のチームを削減する矛盾を露呈させており、プラットフォーム企業のガバナンス問題として重要です。",
+      "targetReaders": "プラットフォーム企業の経営層、労働組合関係者、オープンソース/コミュニティプロジェクト管理者、企業倫理に関心のある投資家"
+    },
+    {
+      "rank": 4,
+      "title": "Stack Overflow's forum is dead but the company's still kicking",
+      "url": "https://sherwood.news/tech/stack-overflow-forum-dead-thanks-ai-but-companys-still-kicking-ai/",
+      "source": "Sherwood News",
+      "category": "Platform",
+      "summary": "Stack Overflowの利用者数は激減し、月間質問数は2008年の初期レベルに落ち込みましたが、企業はAIデータライセンス事業により年間売上を$115百万まで倍増させました。Stack Internal（高速API提供）は25,000社に使用され、赤字は$84百万から$22百万に削減されました。プラットフォームはコミュニティから得られた信頼とデータをAI企業に収益化するモデルへシフトしています。",
+      "importance": "プラットフォーム衰退でも企業は生き残る新ビジネスモデルの成功例であり、ユーザー生成コンテンツの価値化とAI時代の戦略転換を示しています。",
+      "targetReaders": "プラットフォーム企業のビジネス戦略担当者、AI企業の調達・パートナーシップ担当者、デジタルコンテンツの商用化に関わる経営層"
+    },
+    {
+      "rank": 5,
+      "title": "A sleep-like consolidation mechanism for LLMs",
+      "url": "https://arxiv.org/abs/2605.26099",
+      "source": "arXiv",
+      "category": "AI",
+      "summary": "研究者らはTransformerモデルの文脈長スケーリング問題に対応する「睡眠のような統合メカニズム」を提案しました。モデルが定期的に最近の文脈をステートスペースモデル内の永続的な高速重みに変換し、推論時のレイテンシを保ちながら性能を向上させます。合成タスクと数学推論で正規Transformerが失敗した場合に成功することが実証されました。",
+      "importance": "長い文脈を扱うLLMの性能制約を根本的に解決する可能性がある研究であり、推論効率と精度の両立を実現する実装レベルでの改善を示しています。",
+      "targetReaders": "LLM研究開発者、AI基盤モデル企業の技術者、長い文脈処理が必要なアプリケーション開発者"
+    },
+    {
+      "rank": 6,
+      "title": "Dropbox CEO Drew Houston to step down",
+      "url": "https://www.cnbc.com/2026/05/26/dropbox-ceo-drew-houston-ashraf-alkarmi.html",
+      "source": "CNBC",
+      "category": "Platform",
+      "summary": "Dropbox創業者のDrew Houston CEOが19年後にエグゼクティブチェアマンへ転任し、プロダクト部門の責任者であったAshraf Alkarmiが共同CEO（最終的に単独CEO）になることが発表されました。売上は過去2年間ほぼ横ばいで、時価総額は$6.3百万に低迷しており、Y Combinatorからの初の上場企業という成功にもかかわらず、競合他社（Google、Apple、Microsoft）との差別化に苦戦しています。",
+      "importance": "大手クラウドストレージプラットフォームのリーダーシップ交代であり、プロダクト主導から新しい戦略方向への転換を示唆しています。",
+      "targetReaders": "Dropbox利用企業の情報システム責任者、クラウドストレージ企業の経営層、テック企業の戦略転換に関心のあるアナリスト"
+    },
+    {
+      "rank": 7,
+      "title": "Launch HN: Minicor (YC P26) – Windows desktop automations at scale",
+      "url": "https://www.minicor.com/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "MinicorはレガシーシステムへのAIデプロイメント向けRPAプラットフォームで、Self-Healing Agentを用いて93-96%のクリック精度を実現しています。UI変更時に自動適応し、従来の脆弱なRPAツールと異なり本番環境で信頼性を発揮。医療、自動車、ロジスティクス企業が数週間でゼロから本番運用に到達できます。",
+      "importance": "APIがないレガシーシステムの自動化問題を解決する実践的なAIソリューションであり、エンタープライズシステム統合の大きな課題に対応しています。",
+      "targetReaders": "レガシーシステム統合を担当するエンタープライズIT部門、RPA導入を検討している企業、業務自動化を推進するビジネスリーダー"
+    },
+    {
+      "rank": 8,
+      "title": "Use boring languages with LLMs",
+      "url": "https://jry.io/writing/use-boring-languages-with-llms/",
+      "source": "jry.io",
+      "category": "AI",
+      "summary": "著者は、言語エコシステムの一貫性がAIモデルの出力品質に大きく影響することを主張しています。JavaScriptやPythonなどの断片化した言語は、多くの実装パターンを含むため、LLMが不安定な出力を生成しやすく、一方、規約が強く一貫した言語はより信頼できるコードを生成します。AI時代には言語選択が従来よりも重要になります。",
+      "importance": "AIコーディングツール時代の言語選定基準を示し、技術的一貫性がシステム信頼性に直結することを示唆しています。",
+      "targetReaders": "技術スタック選定責任者、AI導入によるコード品質管理を重視するアーキテクト、開発効率を最適化しようとしている組織"
+    }
+  ]
+}
