@@ -1,0 +1,106 @@
+{
+  "date": "2026-05-28",
+  "generatedAt": "2026-05-27T23:19:59.349Z",
+  "items": [
+    {
+      "rank": 1,
+      "title": "I think Anthropic and OpenAI have found product-market fit",
+      "url": "https://simonwillison.net/2026/May/27/product-market-fit/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Anthropic と OpenAI は 2026 年 4 月に大幅な価格変更を実施し、エンタープライズ向けプランをAPI 使用量ベースに統一しました。従来の定額プラン（Anthropic は月額 $20/シート）から API 価格への移行により、大規模な AI 利用企業の請求額が大幅に増加しています。両社は新型モデル（GPT-5.5、Opus 4.7）をリリースし、API 価格を引き上げており、エンタープライズ顧客のロックインを進めています。",
+      "importance": "LLM の実装企業の収益化戦略が転換点を迎え、エンタープライズ顧客のコスト構造が根本的に変わることを示しています。AI 導入を検討する企業にとって実装価格の急速な上昇が重要な課題になります。",
+      "targetReaders": "AI API を大規模利用する企業の経営層、IT コスト管理を担当する技術者"
+    },
+    {
+      "rank": 2,
+      "title": "Tech CEOs are apparently suffering from AI psychosis",
+      "url": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Box 創業者 Aaron Levie は、CEO が AI の実装に必要な「最後の 1 マイル」の複雑さを理解していないため、AI 能力を過大評価する傾向を指摘しています。2026 年第 1 四半期だけで 115,430 人のテック業界従業員が解雇され、企業が AI 効率化を理由に組織削減を進めています。CEO は AI で成功したプロトタイプを見て実行可能性を過度に評価し、実際の検証や品質管理の工数を見落としているとのこと。",
+      "importance": "AI 導入による組織削減が根拠薄弱な期待に基づいている可能性を示唆しており、企業の AI 戦略の信頼性や実装リスクを評価する際の重要な指摘です。",
+      "targetReaders": "AI 導入を検討する企業の経営層、採用・組織戦略を担当する人事・経営企画部門"
+    },
+    {
+      "rank": 3,
+      "title": "YouTube to automatically label AI-generated videos",
+      "url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "YouTube は 2026 年 5 月から AI 生成動画の自動検出・ラベル付け機能をロールアウトします。フォトリアリスティックな AI 生成コンテンツについて、クリエイターが明示しない場合でも自動で検出して「AI で生成」というラベルを付与。ラベルは動画プレーヤー直下に表示され、ユーザーは動画を理解する際に AI 生成の事実を一目で認識できます。",
+      "importance": "プラットフォームが AI 生成コンテンツの透明性を強制する動きは、今後のコンテンツ信頼性維持の標準になる可能性が高く、クリエイターとプラットフォームの関係を変える重要な方針転換です。",
+      "targetReaders": "YouTube にコンテンツを配信するクリエイター、AI 生成ツール提供企業"
+    },
+    {
+      "rank": 4,
+      "title": "DuckDuckGo search saw 28% more visits after Google said people love AI mode",
+      "url": "https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/",
+      "source": "Hacker News",
+      "category": "Web",
+      "summary": "Google CEO の「ユーザーは AI モードを愛している」という発言直後、DuckDuckGo の AI なし検索ページ（noai.duckduckgo.com）へのアクセスが 22～28% 増加しました。DuckDuckGo モバイルアプリのインストールは US で 18～33% 増加し、特に iOS で 69.9% のピーク増加を記録。DuckDuckGo CEO は Google の強制的な AI 搭載に対し、「ユーザーに選択肢を提供する」戦略で差別化しています。",
+      "importance": "ユーザーが Google の強制的な AI 統合に反発を示し、プライバシーと選択肢を重視する検索エンジンへのシフトが起きており、検索市場の競争構図が変わりつつあります。",
+      "targetReaders": "検索エンジン最適化を考える企業、プライバシー重視のユーザー"
+    },
+    {
+      "rank": 5,
+      "title": "Claude Code as a Daily Driver: Claude.md, Skills, Subagents, Plugins, and MCPs",
+      "url": "https://arps18.github.io/posts/claude-code-mastery/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "Anthropic の Claude Code を本格的に運用するためのベストプラクティスガイド。プラン・実行の分離、検証ループの仕組み化、Claude.md による AI の自己改善ルール定義、Plan モードでの計画・検討フェーズの活用など、AI エージェントを実務ツール化するための具体的なワークフローを解説。適切な運用で 2～3 倍の品質向上が見込める。",
+      "importance": "AI コーディングツールの実用化には単なるプロンプト入力ではなく、検証・反復・ガバナンスの仕組みが必要であることが明確になり、エンタープライズでの AI 活用の現実的な運用モデルを示しています。",
+      "targetReaders": "Claude Code など AI コーディングアシスタントを導入・運用する開発チーム"
+    },
+    {
+      "rank": 6,
+      "title": "PostHog: Training our own AI models",
+      "url": "https://posthog.com/blog/training-ai-models",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "PostHog は顧客のセッションリプレイデータを活用して独自の AI モデルを訓練する計画を発表。セッション分析の自動化、合成ユーザーテスト、コンバージョン最適化提案などに活用します。EU ユーザーと特定の契約ユーザーはオプトアウト可能で、データは訓練前に匿名化。プロダクト企業による顧客データの AI 学習活用が本格化。",
+      "importance": "SaaS 企業が顧客データを AI 訓練に活用する動きが加速し、データプライバシーと機能向上のバランスが新たな競争軸になってきており、規制対応と透明性の重要性が高まります。",
+      "targetReaders": "プロダクト分析ツル導入企業の法務・プライバシー担当者、データ活用戦略を検討する CTO"
+    },
+    {
+      "rank": 7,
+      "title": "Go: Support for Generic Methods",
+      "url": "https://github.com/golang/go/issues/77273",
+      "source": "Hacker News",
+      "category": "OSS",
+      "summary": "Go 言語に総称メソッド（Generic Methods）を追加する提案が公式で議論されています。従来は関数は総称型をサポートしていましたが、メソッドは対応していませんでした。提案では「インターフェース実装の手段」ではなく「型に関連付けられた関数として」の総称メソッドを許可し、既に 2000+ の肯定的なサポートを獲得。",
+      "importance": "Go の総称型サポートが段階的に進化し、メソッド設計の柔軟性が大幅に向上すれば、Go でのジェネリックプログラミングが実用的になり、言語の競争力が高まります。",
+      "targetReaders": "Go 開発者、言語デザインに関心を持つ開発チーム"
+    },
+    {
+      "rank": 8,
+      "title": "Incident with Pull Requests, Issues, Git Operations and API Requests",
+      "url": "https://www.githubstatus.com/incidents/xy1tt3hs572m",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "GitHub で 2026 年 5 月 27 日、Git 操作、PR、Issue、API リクエストのパフォーマンス低下が発生。12:10 UTC に調査開始、12:54 UTC に継続的な調査報告、13:16 UTC に解決報告。根本原因分析は後日共有予定。",
+      "importance": "GitHub の一時的なサービス障害は多くの開発チームの業務を影響。プラットフォームの安定性と冗長性の継続的な改善が業界全体の課題です。",
+      "targetReaders": "GitHub に依存する開発チーム、インシデント対応を検討する企業"
+    },
+    {
+      "rank": 9,
+      "title": "Show HN: Open-source Workspace (mail,docs,spreadsheet,drive) web/iOS",
+      "url": "https://tinycld.org/",
+      "source": "Hacker News",
+      "category": "Platform",
+      "summary": "TinyCld はメール、カレンダー、連絡先、ドライブ、ドキュメント、スプレッドシートを統合したオープンソース Workspace スイート。$5/月 VPS で自社ホスト可能で、Google Workspace (月額 $7.20/ユーザー) や Microsoft 365 (月額 $6/ユーザー) の完全な代替を目指す。データは自分のサーバーに保管され、Google の再ホスト機能で移行も簡単。iOS アプリは App Store で配布中。",
+      "importance": "自社ホスト可能で追跡広告やデータマイニングなしの「プライベート Workspace」選択肢の登場は、エンタープライズのデータ主権要件の満たし方を変える可能性があります。",
+      "targetReaders": "プライバシーとデータ所有権を重視する企業、Workspace 統合ツール導入を検討する IT 部門"
+    },
+    {
+      "rank": 10,
+      "title": "I'm Tired of Talking to AI",
+      "url": "https://orchidfiles.com/im-tired-of-ai-generated-answers/",
+      "source": "Hacker News",
+      "category": "AI",
+      "summary": "開発者が相談に回答するはずの人間が実際には ChatGPT の出力をそのまま転送する、GitHub コミュニティで同じ AI 回答が何度も投稿される、など人間への相談がすべて AI 経由になる現象を報告。AI 生成回答が的外れでも検証されず、実務での判断や学習が失われている懸念。",
+      "importance": "AI ツールの浸透により、実務コミュニケーションと知識伝承の質が低下する傾向が顕在化し、組織内での学習文化とコミュニティの健全性維持が新たな課題になります。",
+      "targetReaders": "コミュニティ管理者、技術組織の人事・教育部門、AI ツール導入企業の経営層"
+    }
+  ]
+}
